@@ -1,0 +1,501 @@
+,line,cluster number
+0,<amanita_> Spaztic_One: if you are in a terminal sudo apt-get install htop then run htop,1
+1,<guest__> need ?     hmmm      we don't need computers at all.,2
+2,<amanita_> spaztic_one: it will help you to kill processess.,1
+3,<reggi> pierre_: do you know if you have the drivers for your video card installed?,3
+4,<pierre_> yeah,3
+5,<pierre_> regular movies works etc,3
+6,<pierre_> and drivers are installed for everything,3
+7,<reggi> just youtube in full screen doesn't work pierre_?,3
+8,"<Spaztic_One> So, I need to get htop to be able to list running processes to kill them?",1
+9,<pierre_> ANY streamed video via browser,3
+10,<Cheery> how to set smbd workgroup?,4
+11,<pierre_> works on normal but not fullscreen,3
+12,<guest__> Spaztic_One no.    there are several ways to list processes,1
+13,<reggi> pierre_: is this a new installation of ubuntu?,3
+14,"<candrea> Spaztic_One: not necessarily, you can also just use ""killall teamviewer""",1
+15,<pierre_> reggi: didnt work on my old one either,3
+16,<pierre_> reggi: ive had the installation for 3-4 months tho,3
+17,<dewman> is anyone familier with how to configure amanda for 10.04?,5
+18,<reggi> pierre_: which browser are you using?,3
+19,<m4dv0y> hi there,6
+20,<pierre_> firefox,3
+21,"<guest__> Spaztic_One if you know the name of an app you want to kill just run    killall <name>     or you can search for the name with things like ""ps""  which is already installed",1
+22,<Spaztic_One> What is one that lists processes because it can't find a process called teamviewer,1
+23,<Spaztic_One> and ps only lists two items,1
+24,<reggi> pierre_: do you have chromium?,3
+25,<pierre_> nah getting it,3
+26,<pierre_> brb,3
+27,"<guest__> Spaztic_One ""ps ax""",1
+28,<reggi> pierre_: ok,3
+29,<candrea> Spaztic_One: ps x,1
+30,<luist> how do i install python-pykickstart on my ubuntu 10.04??,7
+31,"<candrea> Spaztic_One: or, since you can't use the mouse: ps x | less",1
+32,"<Spaztic_One> thanks, was just about to ask how to only display one page at a time",1
+33,<guest__> luist apt-get install <blah>     if you have the package you can use   dpkg -i <path/to/blah>,7
+34,"<Bisa> hello folks, Im trying to solve some problems with my hard drives and usb disks - am I assuming that erasing fstab and restarting enables me to get a fresh start so to speak or will this totally break the mounting of my devices?",8
+35,<luist> guest__: its not in the repos and i dont have the package,7
+36,<guest__> Spaztic_One heh.  you can scroll up in the terminal too...,1
+37,<guampa> anyone using nx?,9
+38,<guest__> luist then find the package and go from there.,7
+39,<luist> guest__: where can i find it? any deb package is ok?,7
+40,<MiketheMagiCat> Hi.  Can someone help me? I had Ubuntu installed on my computer. I also have Windows Vista (which I hate). But today it would not let me go online. It said there was a broken link. I could not find it. I uninstalled it. I installed Download Ubuntu Desktop Edition 32 bit. And then it told me when it finished downloading to choose a program to open it up. I chose Internet Explorer. Now I can't find the,10
+41,"<MiketheMagiCat> 	MiketheMagiCat	program anywhere on the computer, or in my files. I also tried loading it on to my usb flash drive, and it didn't work. Is there a phone number to call for support for Linux products. I am a beginner and an idiot.",10
+42,"<maitrey> <maitrey> Hi,  I have formatted my usb and then there was the permissions problem. I have used the ""chown"" message in terminal, but now I can't copy anything on it from another computers. How shall I give the permissions to all the computer/users?",11
+43,<maitrey> <maitrey> <maitrey> thanks,11
+44,"<candrea> Spaztic_One: once you have found the pid of the process (the number in the leftmost column), type ""q"" to exit from less",1
+45,<guest__> luist where... python.org ???   any .deb ok... no.  use one that is compatable with your other packages (python),7
+46,<schorem> hi all,12
+47,<pgpkeys> I'm getting a bunch of errors   .: 5: Can't open /scripts/functions,13
+48,"<Spaztic_One> candrea, can't scroll when the mouse doesn't work, or at least I don't know how to via the keyboard",1
+49,<pgpkeys> when update-grub is run from packages like linux-image,13
+50,<guest__> luist dpkg will warn you if there are dependancy issues.   and you can take action to correct that,7
+51,"<candrea> Spaztic_One: if you're using less, just use the arrows of the keyboard",1
+52,<pgpkeys> i get the errors right after cryptsetup runs (even though I'm not using an encrypted config),13
+53,<guest__> Spaztic_One page-up  button   or maybe   shift+page-up,1
+54,<yashi-> Spaztic_One: just put |less behind the command,1
+55,<guest__> s/button/key/,1
+56,<jacob_> Hey guys,14
+57,<pgpkeys> it looks like its occuring right after cryptsetup adds the information to the initrd image about the resume device candidate(s),13
+58,"<oCean_> Spaztic_One: or, just search for a pattern: ps axuw | grep team",1
+59,<Spaztic_One> I was talking about scrolling when not in |less,1
+60,<jacob_> anyone willing to help me with something?,14
+61,<guest__> Spaztic_One me too,1
+62,"<pgpkeys> Please ask SICCO questions :) Specific, Informative, Concise, Complete, and On-Topic. This means we need a description of the problem, it's symptoms, ect ect. Without this information, we can not assist you since we can not troubleshoot a problem if we have no info regarding what it should be doing and is not.",14
+63,<oCean_> jacob_: just ask your question in the channel please,14
+64,<luist> guest__: python.org wont give me this package :P,7
+65,"<Spaztic_One> but either way, pkill teamviewer and pkill <pid> didn't nuke the program",1
+66,<pgpkeys> damn. thought i'd disabled that trigger permenantly,14
+67,"<candrea> Spaztic_One: use ""kill -9 <pid>""",1
+68,"<jacob_> My external hard drive will not connect to ubuntu, it is the only problem i seem to have, its a 500gb WD elements external HDD, any other USB devices and external hard drives seem to work except this one",15
+69,"<oCean_> luist: why would you need it? Whoever told you you need it, can't they provide the package?",7
+70,<Spaztic_One> HUZZAH!,1
+71,<Spaztic_One> Thanks guys,1
+72,<yashi-> jacob_: what do you mean? auto mount doesnt work? or doesnt ubuntu detect it?,15
+73,"<jacob_> ubuntu seems to detect it, the auto mount does not work",15
+74,<insigne_> algum brasileiro ?/,16
+75,<Pici> !br | insigne_,16
+76,<ubottu> insigne_: Entre em #ubuntu-br usando /join #ubuntu-br para ajuda em portugues. Obrigado.,16
+77,<luist> oCean_: ill take a better look... i need it to build a livecd image to install meego on a virtual machine,7
+78,<candrea> Spaztic_One: glad to know that your problem is solved :),1
+79,<Spaztic_One> Yup,1
+80,<yashi-> jacob_: so you can mount it manually?,15
+81,<jacob_> i beleive i have been told to try this but it didnt work,15
+82,"<jkiv> I tried installing something with dpkg and it failed... but when I use apt-get, it references the file I tried to dpkg and fails to do what I want it to do: ""E: Couldn't find package openoffice.org3.2-debian-menus_3.2-9502_all.deb""",17
+83,"<jacob_> i was on Linux forums, i can give you the link if you wish",15
+84,<rowan_> hi i need help,18
+85,<yashi-> jacob_: you can see all harddrives which ubuntu found via sudo fdisk -l,15
+86,<IdleOne> rowan_: ask and someone will help if they can,18
+87,"<Spaztic_One> In retrospect, it probably would have been easier to simply ask how to locate/identify and kill a program using the terminal only. I was about 99% sure that it was teamviewer that was causing the problem",1
+88,<yashi-> jacob_: then try sudo mount /dev/harddrive name(something like sdc1) /add the folder where you want to mount it,15
+89,<xangua> jkiv: not a good idea install packages from other distros,17
+90,dgtl|screen is now known as dgtlchlk,19
+91,<jacob_> Okay i will try this and report back,15
+92,<guest__> who broke eject ?    it doesn't work when things are mounted other than /media   ???,20
+93,"<jkiv> xangua, trying to do http://ubuntuforums.org/showthread.php?t=1404156 on 9.04.  Last step failed.  Trying to back out.",17
+94,"<scampbell> guest__: it won't eject if the mount is in use, it works fine for me from manual mount points though.",20
+95,"<rowan_> i have a network drive being shared by windows network and today when i sign in i get some thing on my desktop called ""drive letter""onmedion.volume and in my places it is called x-nautilus-desktop: f on medion.volume however when i go to open this network drive it opens up alot of windows with the folder manager but you can stop them with xkill. Eventually they go but i cant view any of my files or places",21
+96,wazzup is now known as wiiguy,22
+97,<yashi-> guest__: use umount instead of eject :/,20
+98,<rowan_> but you can't stop them*,21
+99,<jacob_> so i should do something like this?,15
+100,<jacob_> jacob@jacob-laptop:~$ sudo mount /dev/sda3/media,15
+101,<guest__> scampbell hmmm   i have to use umount because eject complains about blah not being under /media   ;/,20
+102,"<xangua> jkiv: just extract the deb and install it, make sure to first remove openoffice from repository",17
+103,"<djbeenie_> im getting fed up with the sound on my ubuntu, it works some days and somedays it does not",23
+104,<guest__> yashi- pfft    yeah   umount and then manually open the tray,20
+105,<uberj> djbeenie_: the more you use it the easeir it becomes,23
+106,"<rowan_> i have a network drive being shared by windows network and today when i sign in i get some thing on my desktop called ""drive letter""onmedion.volume and in my places it is called x-nautilus-desktop: f on medion.volume however when i go to open this network drive it opens up alot of windows with the folder manager but you can't stop them with xkill. Eventually they go but i cant view any of my files or places",21
+107,<djbeenie_> lol,23
+108,<rowan_> apparently this bug was meant to be solved by the latest update,21
+109,"<yanick_> Seveas-train, ...hmm... if my memory is mostly free, then I would like to know why I just watched my hd scratch for over 2 min straight after I switched from Netbeans to Chrome ?",24
+110,<rowan_> i checked and i have them all,21
+111,"<scampbell> guest__: Hmm, I just mounted a dvd to /mnt and ejected it. guess I'm of no use :(",20
+112,<rowan_> any ideas guys?,21
+113,"<jkiv> xangua, doing so failed.  I'm trying to revert.  apt-get, for some reason, wants the location of the failed .deb.",17
+114,<jimbo> I wish to make an empty .deb package that simply brings in other packages as dependencies.  Is there a name for this so I can learn how?,25
+115,"<yanick_> I have a core 2 duo with 4GB of RAM, Netbeans ans Chrome is open, but yet simply opening a terminal takes 30 seconds.",24
+116,<yashi-> jacob_: are you sure it is sda3? sda is the name of the hard drive the numbers behind it represend the single partitions...im just wondering because sda is my primary device (internal),15
+117,"<djbeenie_> is there a way to re-start alsa, this was easy to do in gentoo.  /etc/init.d/alsa restart",23
+118,"<rowan_> i have a network drive being shared by windows network and today when i sign in i get some thing on my desktop called ""drive letter""onmedion.volume and in my places it is called x-nautilus-desktop: f on medion.volume however when i go to open this network drive it opens up alot of windows with the folder manager but you can't stop them with xkill. Eventually they go but i cant view any of my files or places",21
+119,<yanick_> top is not reporting the same thing as system-monitor,24
+120,<jacob_> it might be just sdb,15
+121,<guest__> yashi- yeah  sda is usually the boot device,15
+122,<yashi-> jacob_: type sudo fdisk -l it lists all devices you have,15
+123,<jacob_> Yeah it must be /dev/sdb because its the only 500gb there,15
+124,<guest__> there ya go,15
+125,<yashi-> jacob_: ok now you have to mount the device for example sudo mount /dev/sdb1 /media/sdb1,15
+126,"<pierre_> reggi: tried with chrome, didnt work i still get the video on my laptop instead of the TV",3
+127,<yashi-> there has to be a folder in media called sdb1,15
+128,<pierre_> reggi: even tho i have the browser on the TV screen not the laptop,3
+129,<guest__> sdb if it's not partitioned,15
+130,<jacob_> its not partitioned,15
+131,<djbeenie_> anyone know how to restart alsa?,23
+132,<yashi-> jacob_: you should do that before mounting it,15
+133,"<jkiv> xanga, got it. I was in the dir with the .deb... Doing a wildcard openoffice* had it thinking it was a file satisfying the wildcard.",17
+134,<guest__> yashi- do what before mounting it ???,15
+135,"<jacob_> Why? and this is what i get, : jacob@jacob-laptop:~$ sudo mount /dev/sdb/media/sdb        mount: can't find /dev/sdb/media/sdb in /etc/fstab or /etc/mtab",15
+136,<rowan_> Help Me Please,21
+137,"<rowan_> i have a network drive being shared by windows network and today when i sign in i get some thing on my desktop called ""drive letter""onmedion.volume and in my places it is called x-nautilus-desktop: f on medion.volume however when i go to open this network drive it opens up alot of windows with the folder manager but you can't stop them with xkill. Eventually they go but i cant view any of my files or places",21
+138,"<Typh> Is there any way to fix the bug where clicks constantly go ""through"" the title bar you're clicking on?",26
+139,<guest__> heh jacob_ missing a space between device and mountpoint,15
+140,<yashi-> jacob_: you have to put a blank between the /dev/sdb<->and the mount folder,15
+141,<jimbo> jacob_: /dev/sdb is the device.  /dev/sdb1 is the first partition on the device.  You only mount partititions.,15
+142,<guest__> jimbo no   wrong.  you only mount file systems.   you don't mount partitions,15
+143,<RainRain> what do people do for scheduled backups on ubuntu - have been using the very powerful cobian on windows for the last year but i cant seem to find anything like it on windows ( GUI and scheduled and network backups ) .. thanks,27
+144,"<jimbo> Also guys I don't think it's beneficial to name mountpoints after partition names.  They can change, and then things get very confusing.",15
+145,<jimbo> guest__: fair enough,15
+146,<jimbo> but filesystems exist on partitions,15
+147,<guest__> jimbo you can have a file system without a partition,15
+148,"<rowan_> i have a network drive being shared by windows network and today when i sign in i get some thing on my desktop called ""drive letter""onmedion.volume and in my places it is called x-nautilus-desktop: f on medion.volume however when i go to open this network drive it opens up alot of windows with the folder manager but you can't stop them with xkill. Eventually they go but i cant view any of my files or places",21
+149,<xangua> !repeat > rowan_,21
+150,"<ubottu> rowan_, please see my private message",21
+151,<yanick_> I just closed every application exception system-monitor and x-chat... still 2GB or RAM used. what's using so much ram???,24
+152,<rowan_> i cannot see it,21
+153,<yashi-> yashi-: ps -aux,24
+154,<guest__> jimbo on this computer for example.  my root file system is on /dev/sda   there are no partitions,15
+155,<yashi-> yanick_: ps -aux,24
+156,<jacob_> so how should it be? could u correct it so i can copy paste just so i know im doing it right?,15
+157,<rowan_> how do i view them in xchat,21
+158,<rowan_> ?,21
+159,"<yanick_> yashi-, ""Please wait while the system is lagging trying to open web browser....""",24
+160,<guest__> jacob_ for q in sda5 sda4 sda3 sda2 sda1 sda ;do mount /dev/$q /mnt ;done,15
+161,<guest__> err,15
+162,<rowan_> how do i view private messages in xchat,21
+163,<guest__> jacob_ for q in sdb5 sdb4 sdb3 sdb2 sdb1 sdb ;do mount /dev/$q /mnt ;done,15
+164,"<yanick_> yashi-, http://pastie.org/1098161",24
+165,"<DeepThoughts> I just apt-get upgrade on my Ubuntu Server 10.04 and it installed an updated version of Samba. Now I'm unable to access my shares (not even from the server using smbclient). The error I see when typing ls in smbclient is the following: ""NT_STATUS_ACCESS_DENIED listing \*"", does anyone have a clue what might have gone wrong?",28
+166,<guest__> jacob_ sorry   was thinking sda  not sdb   but you get the idea.   that will mount what ever is there...,15
+167,"<yanick_> yashi-, http://pastie.org/1098162",24
+168,<wildc4rd> evenin' all,29
+169,<jacob_> Im sorry but i dont understand where to start or stop copy pasting on that  =/,15
+170,"<yashi-> yanick_: looks ok, its practically the same here.",24
+171,<jacob_> Lol very novice ubuntuer,15
+172,"<yanick_> yashi-, ubuntu uses 2GB or RAM being idle??",24
+173,<guest__> jacob_   heh  the whole line execpt your nickname,15
+174,<guest__> jacob_   for q in sdb5 sdb4 sdb3 sdb2 sdb1 sdb ;do sudo mount /dev/$q /mnt ;done,15
+175,<rowan_> Guys i'm a noob i dont know how to view private messages in xchat,21
+176,"<ubuntufreak> hi everyone, after a recent update in my Ubuntu 10.04 the font rendering is really poor even after changing the rendering it looks bad, anyway to change it ?",30
+177,"<yanick_> yashi-, that's when I close everything that is running, if I have Chrome and Netbeans open, it jumps to 3.9GB used +1.1GB SWAP",24
+178,<rowan_> b5 sdb4 sdb3 sdb2 sdb1 sdb ;do sudo mount /dev/$q /mnt ;done,15
+179,<rowan_> * epure_ has quit (Quit: Leaving.),31
+180,<IdleOne> rowan_: you should have a tab at the bottom or maybe on the left side of the window the is named ubottu,21
+181,emc_ is now known as emc,32
+182,<IdleOne> s/the/that,21
+183,"<yashi-> yanick_: hmm afaik the linux ram management is different it isnt really using it, it just uses what it has (i read that somewhere...)",24
+184,<jacob_> i get this,15
+185,<jacob_> jacob@jacob-laptop:~$ for q in sda5 sda4 sda3 sda2 sda1 sdb ;do mount /dev/$q /mnt ;done,15
+186,<jacob_> mount: only root can do that,15
+187,<jacob_> mount: only root can do that,15
+188,"<FloodBot3> jacob_: Please don't flood, use http://paste.ubuntu.com to paste, don't use Enter as punctuation.",15
+189,"<Spaztic_One> Just throwing this out there, but with firefox, dwarf fortress, and several misceleanous windows and text documents open, I am sitting right at 1 GB of ram, and 0 bytes of swap.",24
+190,<yashi-> yanick_: http://pastie.org/1098165,24
+191,"<yanick_> yashi-, that's what everyone tell me, however why, then, my hard drive is ALWAYS, constently writing stuff?",24
+192,<rowan_> how to restore ubuntu to an earlier time?,33
+193,<jacob_> http://paste.ubuntu.com/479505/ this is what i get,15
+194,<yashi-> yanick_: well it is curious that it uses the swap partition :/ that shouldnt be unless its necessary,24
+195,<[R]> brasileiros ?,34
+196,<IdleOne> !br,34
+197,<ubottu> Entre em #ubuntu-br usando /join #ubuntu-br para ajuda em portugues. Obrigado.,34
+198,[R] is now known as Guest80688,35
+199,<OpenSourceCode> Ubuntu 10.10 Maverick Meerkat release date 10.10.10.,36
+200,"<yanick_> yashi-, yep. On stackoverflow.com, I have been suggested to do : ""sudo sysctl -w vm.swappiness=20"" and it seems to improve a little (the default value is 60), what do you think?",24
+201,<svm_invictvs-> How do I kill X?,37
+202,"<svm_invictvs-> Control+Alt+Backspace, right?",37
+203,<IdleOne> alt-sysrq-k,37
+204,<Pici> OpenSourceCode: Is there a question there?  Maverick discussion belongs in #ubuntu+1,36
+205,"<yanick_> svm_invictvs-, sudo service stop gdm ?",37
+206,<yashi-> yanick_: actually ive no clue :P i never had that problem,24
+207,<OpenSourceCode> I'm just saying.,36
+208,<guest__> ffr <<< for Q in sd{j..b}{8..1} sd{j..b} ;do sudo mount /dev/$Q /mnt ;done >>> mount what ever is there in the sd? range.,15
+209,<jacob_> can anyone help me with the problem?,15
+210,<yashi-> yanick_: but imo its a ugly solution..it doesnt solve the real problem ...ubuntu shouldnt touch the swap partition at all,24
+211,<younder> When running World of Warcraft (WoW)) under wine the sund intermittently cuts out. I get it back for a while if toggle between system default/default in the sound menu. Anyone know a fix for this?,38
+212,AK|offline is now known as Andorin,39
+213,<guest__> !wow,38
+214,<ubottu> Information about games on Ubuntu can be found at https://help.ubuntu.com/community/Games and http://www.icculus.org/lgfaq/gamelist.php,38
+215,<IdleOne> younder: ##winehq,38
+216,<younder> thx,38
+217,"<yanick_> yashi-, I chose Ubuntu especially so I don't have to hack my way around kernel issues (unlike other ""compile-yourself"" linux distros) so I have no idea how to find/solve this problem",24
+218,"<younder> yanick_, lol. good luck. Never been there myself",24
+219,"<blackMatrix_NY> hi everyone, is /home/blackMatrix_NY/.profile the place where you set command aliases and variables ?",40
+220,<jacob_> yashi- guest__ isnt responding could u help me again?,15
+221,"<yanick_> blackMatrix_NY, .bashrc",40
+222,<yashi-> yanick_: me neither. the point is your ram isnt even used 100% but linux is using the swap partition already strange,24
+223,<blackMatrix_NY> yanic_: what's the difference between .bashrc and .profile ?,40
+224,<blackMatrix_NY> yanick_: what's the difference between .bashrc and .profile ?,40
+225,"<yanick_> yashi-, or the RAM gets used really really fast, and I have to close everything to finally have some breathing room again",24
+226,<guest__> blackMatrix_NY or .bash_bashrc .bash_profile .bashrc .profile   or if you want system wide settings /etc/profile /etc/bash_bash*,40
+227,<juboba> BlackBinary: bashrc is called when opening a terminal,40
+228,<prince_jammys> blackMatrix_NY: the former gets sourced everytime you start an interactive shell. the latter only gets sourced on login.,40
+229,<juboba> profile only when you login,40
+230,<zerothis> Both x/ubuntu 10.04 freezes after splash. Low-graph mode freezes on its warning dialog. Early versions work fine,41
+231,<jacob_> Anyone going to help me?,15
+232,"<yanick_> blackMatrix_NY, .profile includes .bashrc.",40
+233,<juboba> jacob_: what's your problem?,15
+234,<svm_invictvs-> yanick_: How am I supposed to do that without a terminal?,37
+235,"<yanick_> svm_invictvs-, CTRL+T opens a terminal :)",37
+236,<svm_invictvs-> how do you switch to a terminal in Ubunto?,37
+237,<dewman> is there any good backup programs that can write to dds that has a simple install and a nice gui?,42
+238,<svm_invictvs-> yanick_: Fromt he login screen?,37
+239,"<yanick_> svm_invictvs-, CTRL+ALT+F1...F6 to select a terminal",37
+240,"<jacob_> i am trying to manually mount my external had drive , guest__ was previously helping me with it and we got to trying to put this command in but i got the error that appears http://paste.ubuntu.com/479505/",15
+241,"<juboba> svm_invictvs-: CTRL ALT FX , where X in 1...12",37
+242,<yanick_> CTRL+ALT+F7 to switch to a graphical one,37
+243,"<svm_invictvs-> Didn't work, weird.",37
+244,<svm_invictvs-> Okay,37
+245,<jacob_> the external hard drive wont mount itself,15
+246,<svm_invictvs-> well,37
+247,<guest__> ffr <<< for Q in sd{j..b}{8..1} sd{j..b} ;do sudo mount /dev/$Q /mnt ;done >>> mount what ever is there in the sd? range.   jacob_,15
+248,"<yanick_> svm_invictvs-, sorry, CTRL+ALT+T",37
+249,<guest__>                                  ^,15
+250,Guest34951 is now known as patster21,43
+251,ChaosR2 is now known as ChaosR,44
+252,"<guest__> jacob_ and the command ""mount"" will list what mounted.",15
+253,<jacob_> guest__ for that i i get this http://ubuntu.pastebin.com/4JHwYRHT,15
+254,jsurfer is now known as mdesales,45
+255,<yashi-> jacob_: http://ubuntuforums.org/showthread.php?t=283131,15
+256,<younder> what is thest way to get Unicode code-page 4 without stepping on any other program using unicode?,46
+257,<younder> need mathML and the math symbols,46
+258,<thune3> jacob_: mounting 7 drives on /mnt directory will succeed but won't function (only the last drive mounted on mountpoint /mnt will be visable,15
+259,<blackMatrix_NY> guest__. bash_bashrc .bash_profile .bashrc .profile ... are they all found in ubuntu or only .bashrc ?,40
+260,<guest__> jacob_ and mount shows what ?,15
+261,<prince_jammys> blackMatrix_NY: ''ls -a /etc/skel'',40
+262,<jacob_> moutn shows this http://ubuntu.pastebin.com/BzqVsAX7,15
+263,<abhijit> !mount | jacob_,15
+264,<ubottu> jacob_: mount is used to attach devices to directories. See also https://help.ubuntu.com/community/Mount,15
+265,<blackMatrix_NY> yanick_: thanks I see the call to .bashrc in .profile,40
+266,<yashi-> jacob_: could you paste youre sudo fdisk -l?,15
+267,<guest__> blackMatrix_NY they are all used by bash if found   none of them are self generated.   i.e.  only what a particular distro sets up in /etc/skel/ is put in the users home by default,40
+268,"<cached> Sorry if this is a stupid question, but what exactly does gnome *do*? Is there a good reason I can't get a decent graphical text editor on my server without installing at least hundreds of megs of other stuff (I'm looking at you, gnome,kde, and emacs)?",47
+269,<guest__> blackMatrix_NY so.  any one of them will work.   man bash for more info,40
+270,<jacob_> yashi- http://ubuntu.pastebin.com/EdwzsxMa,15
+271,"<blackMatrix_NY> ah, that clears up more dust. thanks prince_jammys: guest__: yanick_",40
+272,<iceroot> cached: emacs has a gui without using the x-server imo,47
+273,<iceroot> cached: and of course you dont want a gui or a gui text editor on a server,47
+274,<cached> iceroot: why not? for x forwarding?,47
+275,<iceroot> cached: not a text-editor,47
+276,<iceroot> cached: vimtutor,47
+277,<guest__> jacob_ line 16   sdb1 is mounted in /media   fuse,15
+278,<yashi-> jacob_: your external drive got a (working) partition ->sdb1,15
+279,"<cached> iceroot: as for emacs, sudo apt-get install emacs gives me this beaut: ""After this operation, 127MB of additional disk space will be used.""",47
+280,"<phillyj> i got a ""kernel panic: not syncing vfs"" message when I tried to boot into WUBI",48
+281,<jacob_> My external hard drive is only sdb i thought,15
+282,<guest__> yashi- working is questionable  but yes it's mounted.,15
+283,<iceroot> cached: sudo apt-get install vim,47
+284,<jacob_> it isnt partitioned is it?,15
+285,<phillyj> i had just installed some updates and restarted it,48
+286,"<guest__> jacob_ it is partitioned.  who did it, we don't know.",15
+287,<yashi-> guest__: (working) ;),15
+288,<phillyj> any ideas?,48
+289,<afro> join/##urbandictionary,49
+290,<guest__> yashi- heh   yeah working....    like i should be...,15
+291,<jacob_> So how can i mount it so i can use it on linux then?,15
+292,<Aiya> I have a server so How do I configure it and make shells and give it to people so they can install bnc eggdrop.Thanks,50
+293,<guest__> jacob_ open your file manager and navigate to  /media/A6BA8F35BA8F00D3,15
+294,"<cached> iceroot: i'm fully aware of and have used vim, nano, pico. heck, i even used ed for a while for fun. but i've switched back to using gedit on my desktop since something graphical is occasionally nice, and would have liked to do the same with my server.",47
+295,<jacob_> Done,15
+296,<jacob_> thats my windows partition,15
+297,"<mneptok> Aiya: if you don't know how SSH works, you should probably not be providing shell accounts to eggdrop users.",50
+298,<yashi-> guest__: thats sda1 not sdb1,15
+299,<Aiya> mneptok,50
+300,"<mneptok> Aiya: it's like saying ""I have a new jet aircraft. Can someone tell me where the door is so I can break the sound barrier?""",50
+301,<yashi-> jacob_: sudo mount /dev/sdb1 /home/jacob/usbdrive,15
+302,<DarkSector> uname -r gives me this 2.6.31-22-generic However my updates show that I need to install EXACTLY the same kernel ? can anyone please explain this ?,51
+303,<Aiya> mneptok  : Im willing to learn.I just need some tutorial to make it,50
+304,<mneptok> Aiya: learn *before* you give access.,50
+305,"<frefrejojo> hi,",52
+306,<yashi-> jacob_: that would mount it if you create the folder /home/jacob/usbdrive first,15
+307,<Physicsloser> guys could someone take me to a white board and help me witha physics packet,53
+308,<Aiya> mneptok  : How?,50
+309,<frefrejojo> i've an issue when installing gnuplot 4.4.0,54
+310,<jacob_> okay ill give it a shot,15
+311,<frefrejojo> during the make i've this error:,54
+312,<Physicsloser> jacob you will help me?,53
+313,"<frefrejojo> gcc  -g -O2  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/local/lib -o gnuplot_x11 gplt_x11.o gpexecute.o getcolor_x11.o -lX11  -lm",54
+314,<frefrejojo> /usr/bin/ld: i386 architecture of input file `getcolor_x11.o' is incompatible with i386:x86-64 output,54
+315,<jacob_> i really cant help u man lol,53
+316,<frefrejojo> it's weird seems like i've 32bits version of the lib x11,54
+317,<frefrejojo> can someone help me with this issue,54
+318,<Pici> frefrejojo: Is there a reason why you're installing gnuplot from source and not from the repositories?,54
+319,<yashi-> jacob_: did it work? to create the folder you can type: mkdir /home/jacob/usbdrive,15
+320,<jacob_> yahi- i get this http://ubuntu.pastebin.com/t4BTsFyY,15
+321,"<rickabillie> When I try to use the startup disk creator, it always fails on 47%. 4gig mem stick, edubuntu (md5checked) tried using the live dvd startup dik creater also, same result, anyone have an idea of what to try next?",55
+322,<DarkSector> uname -r gives me this 2.6.31-22-generic However my updates show that I need to install EXACTLY the same kernel ? can anyone please explain this ?,51
+323,"<frefrejojo> Pici yes i want the last version 4.4.0 (which have options for ploting ""types"" )",54
+324,<frefrejojo> and a manual install let you have the autocompletion also,54
+325,<frefrejojo> (with ./configure --with-readline=gnu for exemple),54
+326,<frefrejojo> so yeah i've a to install it manually,54
+327,"<jacob_> yashi- i know my external HDD is working perfectly aswell because it mounts on windows and i can save, delete, watch films and play music from it",15
+328,"<yashi-> jacob_: 1.) you created the folder /home/jacob/usbdrive? if yes. eventually mount cant handle ntfs on its own(not sure, dont have ntfs) 3. your partitiontable is screwed",15
+329,<yashi-> jacob_: do you use the save remove function in windows when you remove the drive?,15
+330,<jacob_> safe or save?,15
+331,<jacob_> safe - yes    save - i dont know what you mean,15
+332,<Professor_G> coffee!!!!!!!!!!!!!!!!!!!!!!!!!,56
+333,<yashi-> jacob_: ye safely remove,15
+334,<arifovic> Anyone help me to convert video file to 3gp?,57
+335,<arifovic> PV me.,57
+336,<jacob_> yes i do,15
+337,<DarkSector> uname -r gives me this 2.6.31-22-generic However my updates show that I need to install EXACTLY the same kernel ? can anyone please explain this ?,51
+338,<yashi-> jacob_: well all i can do now is searching the net. i found this sudo mount -t ntfs-3g /dev/sdb1 /home/jacob/usbdrive,15
+339,<jacob_> yashi- also on windows it shows that my external Hard drive doesnt have any partitions,15
+340,<Kjeldor> what are the best programs for UBUNTU out there?,58
+341,"<Ober7> DarkSector: could you clearify on ""my updates"" synaptic? update manager? apt-get?",51
+342,jsurfer is now known as marcello,59
+343,<Slart> !best | Kjeldor,58
+344,"<ubottu> Kjeldor: Usually, there is no single ""best"" application to perform a given task. It's up to you to choose, depending on your preferences, features you require, and other factors. Do NOT take polls in the channel. If you insist on getting people's opinions, ask BestBot in #ubuntu-bots.",58
+345,"<trism> DarkSector: kernels have a minor version that isn't reflected in uname, dpkg -l linux-image* will give you the full versions",51
+346,<Slart> Kjeldor: personally I think bash is pretty awesome,58
+347,"<DarkSector> Ober7, update manager, synaptic, apt-get everything shares the same",51
+348,<yashi-> jacob: if it doesnt have a partition you couldnt use it. your drive has one 500gb ntfs partition,15
+349,<arifovic> How to convert video files to 3gp?,57
+350,"<Kjeldor> Slart, what does BASH do?",58
+351,<jacob_> hmm,15
+352,<Slart> Kjeldor: it's the terminal enviroment.. the command line interface,58
+353,<munim> hey.. i just installed ubuntu 10.10 on my new laptop.. I can't change the LCD brightness using the fn+keys.. it shows the brightness change notification on the top right but the brightness doesn't actually change.. any ideas?,60
+354,"<DarkSector> trism, ok and how do I check which one is asking to be installed ?",51
+355,<Kjeldor> Slart: other than that?,58
+356,<Ober7> DarkSector: or you could right click on the package to be update> properties and check the version differences,51
+357,"<DarkSector> trism, considering even the installed one has variant",51
+358,<yashi-> jacob: you should try search for cant mount ntfs partition or something like that. im sure you will find a solution this way,15
+359,"<trism> DarkSector: update manager should tell you if you click on it, in the description (version something -> something else)",51
+360,<Slart> Kjeldor: huh?,58
+361,<Kjeldor> Slart: other than BASH..?,58
+362,"<DarkSector> trism, ah ok, lemme check",51
+363,"<Slart> Kjeldor: have a look at http://popcon.ubuntu.com , they have statistics of which packages people install.. the most common ones are probably pretty good",58
+364,<Kjeldor> cool!,58
+365,<OpenSourceCode> Anyone knows if you could play Call of Duty Black Ops on Ubuntu?,61
+366,<Slart> !appdb | OpenSourceCode,61
+367,<ubottu> OpenSourceCode: The Wine Application DB is a database of applications and help for !Windows programs that run under !WINE: http://appdb.winehq.org - Join #winehq for application help,61
+368,<minimec> arifovic: Try to use vlc and check the convert options.,57
+369,<llutz> Slart: 48 dash   vs   6055 zsh    :(,58
+370,"<DarkSector> trism, thanks for the info, the new version is being installed",51
+371,<gsp2009> hey folks... I am in a bit of a panic... is there a way to recover text from a temp dir if you edited a file in gedit and it corrupted?,62
+372,"<jacob_> ok ill give that a shot, thanks for all your help",15
+373,<aendruk> What is the zenity --listen switch used for?,63
+374,<abhijit> hey,64
+375,* abhijit waves,64
+376,"<DarkSector> Ober7, you too",51
+377,<Slart> llutz: I'm guessing you're a fan of zsh? =),58
+378,<llutz> :D,58
+379,"<prince_jammys> well, dash comes preinstalled, whereas you have to voluntarily install zsh.",58
+380,"<luist> can anyone help me with this: mic2 requires syslinux version >= 3.85, please update syslinux to 3.85",65
+381,<luist> i use ubunu 10.04,65
+382,<Slart> isn't sh symlinked to dash too? that should push up the usage count,58
+383,<prince_jammys> yep,58
+384,<prince_jammys> every init script is run by dash,58
+385,<trism> aendruk: check out http://muzso.hu/2009/05/26/zenity-gtk-dialogs-for-shell-scripts it describes one usage anyway,63
+386,"<Nikie> Ocean, thanks a lot for your help ! I'm online now....Am able to connect to wireless network now :)",66
+387,"<llutz> Slart: so not always: "" the most common ones are probably pretty good""",58
+388,<Slart> llutz: what do you mean.. debianutils isn't awesome? I'm shocked! =),58
+389,"<jgcampbell300> hello, I have spent about a week trying to get openchange server installed on ubuntu and I have been reading today about groupware ... the question i am coming up with is this ... what exactly is the difrence in something like an exchange server and something like Citadel or ""groupware"" ... from a glance it seems to be doing the same thing",67
+390,<Pupeno> How do I trigger the unnatended upgrades on Ubuntu (server),68
+391,"<abhijit> Pupeno, try in #ubuntu-server",68
+392,<aendruk> trism: Thanks!,63
+393,<nitze> hiz,69
+394,<KEROLiUKAS> Anyone here have ubuntu running on an Acer Aspire One 521?,70
+395,<jacks__> 10.04.1 today?,71
+396,<nitze> join #ubuntu,72
+397,<aeon-ltd> nitze: uhhh. your already here?,72
+398,"<KEROLiUKAS> i installed it, and it was working fine, today i updated the BIOS, and the keyboard/touchpad stops working in ubuntu. any ideas?",70
+399,"<seekwill> Hello. I'm trying to install Ubuntu off a USB disk. Installation seemed to have been going well, but now it's trying to retrieve some files. I'm guessing it's coming off the Internet. But it's going reallllly slow and our Internet is generally really fast. Just wondering if there is a tcpip problem, would the installer just timeout and go to the next file, or prompt with some error",73
+400,<aeon-ltd> seekwill: (suggestion not solution) why don't you use the full iso instead of the network iso?,73
+401,"<luist> can anyone help me with this: mic2 requires syslinux version >= 3.85, please update syslinux to 3.85... im using ubuntu 10.04",65
+402,"<Oer> seekwill, those last 3% depends on your internet speed",73
+403,<thune3> gsp2009: in Nautilus you can select View-> and check Show Hidden Files. The default setup of gedit keeps a previous version in filename~,62
+404,<djzn> how long until 10.04.1,71
+405,<LordDragon> hey all,74
+406,<gsp2009> thune: so in /home/username?,62
+407,<minimec> luist: I cannot find any mic2 package in the repository. --> Innofficial package? What is 'mic2'?,65
+408,<LordDragon> is maverick a beta or something? im assuming lucid is the latest official release?,75
+409,<thune3> gsp2009: it keeps the previous version in the same dir as you keep the original.,62
+410,"<jacob_> http://ubuntu.pastebin.com/8aMtsszG if anyone is out there that knows how to correct this, please help me lol",15
+411,"<gsp2009> thune3 ok well this may be a prob. It was saved on an external usb device, then it was unplugged by my 4 year old before unmounting cleanly... nothing on the device... :(",62
+412,<minimec> luist: This is the 10.04 version of Syslinux... http://packages.ubuntu.com/lucid/syslinux,65
+413,<llutz> jacob_: do you have a windows pc? check that drive from windows,15
+414,"<arifovic> KEROLiUKAS, try to not upgrade bios if not urgently.",70
+415,"<VCoolio> LordDragon: yes (maybe even alpha still) and yes, lucid is latest stable",75
+416,<LordDragon> ah ok,75
+417,"<KEROLiUKAS> arifovic, i know, but how do i roll back now?",70
+418,"<VCoolio> LordDragon: maverick will be 10.10, due for october (hence, .10)",75
+419,<KEROLiUKAS> i don't think they offer the original bios on the website,70
+420,<LordDragon> ahhh cool :),75
+421,<LordDragon> i only bring it up cuz it seems theres no easy way to install the latest vlc 1.1.2 in 10.04. only a much older version is available from the built in repos,75
+422,"<arifovic> KEROLiUKAS, I have experience about upgrade or downgrade bios. Sorry...",70
+423,"<VCoolio> LordDragon: check if launchpad.org has a repo, also the vlc site has instructions if I remember right",75
+424,"<arifovic> KEROLiUKAS, I have no experience about upgrade or downgrade bios. Sorry...",70
+425,"<LordDragon> VCoolio, all the vlc site says about latest vlc on 10.04 is ""it must be manually installed""",75
+426,<minimec> LordDragon: There is a vlc ppa. I am using 1.1.2.1 here,75
+427,"<LordDragon> VCoolio, i went to launchpad.org and into the /videolan dir and it only has packages for maverick",75
+428,"<medfly> I have issues with apt-get returning errors when trying to setup python-gmenu, is this a known issue? I keep getting this error in a lot of places: /usr/bin/python: relocation error: /usr/bin/python: symbol __realpath_chk, version GLIBC_2.4 not defined in file libc.so.6 with link time reference",76
+429,"<LordDragon> minimec, really? i been looking for one but been unsuccessful. dont suppose u have a link?",75
+430,Vampire0_ is now known as Vampire0,77
+431,<thune3> gsp2009: what do you mean nothing on the device? if you fsck the drive there is a very small chance that the /media/mntpoint/lost+found might still have some of the file.,62
+432,<arifovic> Why Iriverter not start after installed?,78
+433,"<medfly> I'd google, but this issue made firefox not work ;)",76
+434,<minimec> LordDragon: 'google' for ppa vlc korn,75
+435,"<seekwill> aeon-ltd: Hi. Well, I tried booting off a CD but that didn't seem to work for some reason. Got a bad PBR message. But luckily I had a USB disk that I used previously for a LiveCD stuff, so I tried installing from that",73
+436,"<gsp2009> thune3, thanks... I was doing that when you wrote... I am surprised I remembered... and JOY! I got it... just saved me a ton of work.. thanks for all your help.",62
+437,<minimec> LordDragon: http://ubuntu-tweak.com/source/c-korn-vlc/,75
+438,"<seekwill> Oer: Approx how much is it downloading at the last 3%? Our normal speed is 2+MB/second, and it's been going on for over 30 minutes",73
+439,"<Oer> seekwill, does your router give any sign downloaden ?",73
+440,<Gangrel> can someone help me set up wireless internet sharing from my desktop pc to my laptop?,79
+441,<Gangrel> !adhoc,79
+442,"<LordDragon> minimec, i tried that. when i go there with my browser i get this:",75
+443,<LordDragon> Not Found,75
+444,<LordDragon> The requested URL /c-korn/vlc/ was not found on this server.,75
+445,<Gangrel> !ad-hoc,79
+446,"<Oer> seekwill, if not, you may skip and do this after reboot.",73
+447,gsp2009 is now known as gsp2009_away,80
+448,<Gangrel> !wireless,79
+449,"<ubottu> Wireless documentation, including how-to guides and troubleshooting information, can be found at https://help.ubuntu.com/community/WifiDocs",79
+450,<minimec> LordDragon: See that now... Hmmm... The account is not available I gues...,75
+451,"<VCoolio> LordDragon: you could try this, but it will take some time http://ubuntuforums.org/showthread.php?t=1398119&highlight=vlc",75
+452,"<seekwill> Oer: Well, yes, but because I have other computers on the network I don't know who's who :)",73
+453,"<seekwill> Oer: Ok, thanks!",73
+454,<wng-> what is the fastest way to clone linux systems? I have 1 system i need to clone into 95 machines,81
+455,<charmer> hello all,82
+456,<Oer> !clone,81
+457,"<ubottu> To replicate your packages selection on another machine (or restore it if re-installing), you can type <unconvertable> aptitude  --display-format '%p' search '?installed!?automatic' > ~/my-packages <unconvertable> , move the file ""my-packages"" to the other machine, and there type <unconvertable> sudo xargs aptitude --schedule-only install < my-packages ; sudo aptitude install <unconvertable> - See also !automate",81
+458,"<wng-> no, i mean clone hard drives, not package selection",81
+459,<cdm10> wng-: http://ignatz.brinkster.net/cimages/cheader01.jpg,81
+460,<bzrk> wng-: dd,81
+461,"<Oer> wng-, use dd ?",81
+462,<wng-> i figured dd would be slow,81
+463,"<cdm10> wng-: but in more seriousness, there's dd, which can be kinda slow and ugly, but there's also partimage, which only copies the used parts of the drive.",81
+464,<bzrk> wng-: its not,81
+465,<bzrk> wng-: you can fiddle with the blocksizes and it will really go fast then,81
+466,<aeon-ltd> wng-: clonezilla?,81
+467,<abhijit> bye,83
+468,"<cdm10> wng-: partimage is filesystem-aware, as is, I believe, Clonezilla, so it'll only copy used blocks of the drive, rather than all the zeroes or randomness that fills the rest of the drive.",81
+469,<medfly> :((,76
+470,"<bzrk> wng-: with 95 machines its probably worth looking into something more elaborate and powerful, like fai or preseeding or puppet",81
+471,"<medfly> oh man, in trying to fix something myself, I think I've created a bigger problem :)",76
+472,Bridge| is now known as Bridge|A,84
+473,<minimec> LordDragon: All the Howto's I find on the Net are referring to the 'korn ppa'... I don't know why that one is down now...,75
+474,"<lukaszg> Hi! Is there any application in linux to check the ""Wear level"" parameter in notebooks?",85
+475,<lov255> hello,86
+476,<Gunni> how do i share a folder from one ubuntu server to another,87
+477,<Gunni> kinda like windows file sharing,87
+478,"<LordDragon> minimec, ahh bummer. like you, the c-korn has been the only source ive been able to find also. and its gone now it seems",75
+479,<aeon-ltd> Gunni: look up samba,87
+480,<Gunni> i have to use samba?,87
+481,<aeon-ltd> Gunni: you don't have to.,87
+482,<Gunni> i thought linux had their own folder sharing thingy,87
+483,"<bzrk> Gunni: there are tons of methods, if both machines are linux and you have an account sshfs is very simple",87
+484,<Gunni> ah sshfs ofcourse,87
+485,<medfly> anyone? :-/,76
+486,<Gunni> what medfly,76
+487,"<medfly> I have this recurring error with aptitude (as well as a couple of other things), and it also returns some errors :/",76
+488,"<medfly> /usr/bin/python: relocation error: /usr/bin/python: symbol __realpath_chk, version GLIBC_2.4 not defined in file libc.so.6 with link time reference",76
+489,IdleOne is now known as NattyOne,88
+490,<medfly> I would google it and see if other people managed to overcome the same issues but it also happens when I try to start firefox :o,76
+491,NattyOne is now known as IdleOne,89
+492,moayad_ is now known as moayad,90
+493,<_BEAST> medfly: what,76
+494,"<medfly> this error: /usr/bin/python: relocation error: /usr/bin/python: symbol __realpath_chk, version GLIBC_2.4 not defined in file libc.so.6 with link time reference",76
+495,<KomiaPoika> hi,91
+496,"<Fujoor> hey guys, is there anything like gnome-do for lxde?",92
+497,<jacob_> http://ubuntu.pastebin.com/0NhGHB5U Can someone tell me what to do next please to mount sdb1,15
+498,<VCoolio> Fujoor: try kupfer,92
+499,<KomiaPoika> what is the name of the package to get ubuntu driver for macbook airport? bcw43-fwcutter or something,93

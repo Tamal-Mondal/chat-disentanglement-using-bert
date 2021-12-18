@@ -1,0 +1,501 @@
+,line,cluster number
+0,<Stevie24> Hello,1
+1,"<Stevie24> Can anyone tell me how can I extract & delete from file1, the lines containing specific strings, and move them to a new file named file2 ? the string is dynamic; example : I'm interested to extract all lines containing DOG, 192168, IL. All 3 are separate patterns. Thanks in advance.",2
+2,mikespla_ is now known as mikesplain,3
+3,"<skrrp> Guest7100: install BSD. joking aside there are many small and big things you can do to secure your system. start with sshd_config. move the ssh port to a high number in the user range, disable root login. use nmap to scan your system for open ports (services). disable any you don't need. kill inetd if it's running. kill any insecure ftp programs. you might consider a firewall (shorewall) or...",4
+4,<skrrp> ...selinux. you could opt for just not having ports open rather than firewalls. read up on port knocking if you are truly paranoid,4
+5,<KarameL-> salut les blaireaux :),5
+6,<pavlos> !fr| KarameL-,5
+7,"<ubottu> KarameL-: Nous sommes desoles mais ce canal est en anglais uniquement. Si vous avez besoin d'aide ou voulez discuter en francais, veuillez taper /join #ubuntu-fr ou /join #ubuntu-qc. Merci.",5
+8,<KarameL-> ok thanks :),5
+9,<KarameL-> its nice to have french room :),5
+10,<jack> qc? ubuntu-quebec?,5
+11,<jack> wow,5
+12,<NGC982> ubuntu-quake.,5
+13,<histo> Stevie24: with sed,2
+14,"<krypto> how can we know the package which provides top command ,is there any similar command for yum provides?",6
+15,<histo> Stevie24: well grep  and sed,2
+16,<cfhowlett> !info top,6
+17,<ubottu> Package top does not exist in trusty,6
+18,<histo> !apt-file | krypto,6
+19,"<ubottu> krypto: apt-file is a program that can tell you which package(s) contain(s) a given filename. To install it and generate the database it needs, run ""sudo apt-get install apt-file && sudo apt-file update""",6
+20,<histo> Stevie24: you still around?,2
+21,ddgarion is now known as anuyens,7
+22,<leeyaa> hello,8
+23,<leeyaa> does anyone know why after i installed xen on 14.04 LTS i have no xenconsole ?,9
+24,<leeyaa> what could be the reason,9
+25,<cfhowlett> !info xenconsole,9
+26,<ubottu> Package xenconsole does not exist in trusty,9
+27,<cfhowlett> !info xen,9
+28,<ubottu> Package xen does not exist in trusty,9
+29,"<Stevie24> histo, sorry. I was on the phone.",2
+30,"<Stevie24> That means I will need a script, is that correct?",2
+31,<Stevie24> Just a sed command woudn't do it?,2
+32,<histo> Stevie24: you could one liner it with a ;,2
+33,"<Stevie24> ah, ok",2
+34,<histo> Stevie24: grep searchterm somefile > newfile ; sed -ie 's/searchterm//g' somefile,2
+35,"<Stevie24> But isn't that impossible, since I have 24 separate strings ?",2
+36,<Stevie24> That would mean 24 x grep + 24 x sed. Am I wrong?,2
+37,"<SpecialEd> Hello, I am looking for a real time cpu/ram/bandwidth monitor for 6 remote servers that will display on a single web page. Currently I have SSH sessions into my servers with htop and bwm-ng running. Does anyone know a good way to do this via the web? I have tried munin and nagios and I don't believe they really show real time (their real time is 1 min refresh)",10
+38,<histo> Stevie24: you can do multiple patterns,2
+39,<holstein> nagios is an industry standard,10
+40,"<SpecialEd> holstein: I agree, but is there a way to make it work so it shows like 1 second refresh ?",10
+41,<SpecialEd> for 6 servers?,10
+42,<SpecialEd> If so then Ill head over to #nagios,10
+43,"<holstein> Stevie24: im just saying, if nagios didnt do what i wanted, id rethink what i want.. probably not necessary to have a 1 second refresh",10
+44,<SpecialEd> holstein: servers run development operations and i'd like to be able to spot spikes,10
+45,daniel is now known as Guest10967,11
+46,<SpecialEd> holstein: therefore 1 minute refresh won't likely show spikes...,10
+47,<histo>  Stevie24 both grep and sed can use the -e for_pattern  so grep -i -e pattern1 -e pattern2 > somefile  sed -i -e 's/pattern1//g' -e 's/pattern2//g',2
+48,"<Stevie24> Great histo, thank you so much !!",2
+49,"<n1n0> hi. couldn't log into my user account on 13.10. changed it in the recovery mode, didn't help(couldn't even login as guest). reinstlled from live stick with the ""automatic login"" settings, and apps and docs are supposedly saved. couldn't login again (left the same username). changed the password again from within the recovery mode (the command line said it was successfully changed), yet...",12
+50,<n1n0> ...nothing again. can login as guest thoug,12
+51,<histo> Stevie24: np just becarefull and backup the original data first,2
+52,<n1n0> h,12
+53,"<Stevie24> yes, I will histo, thanks:)",2
+54,<cfhowlett> n1n0 did you reinstall???,12
+55,<n1n0> yes,12
+56,<histo> n1n0: what happens when you try to login as your user?,12
+57,<n1n0> the instalation that says to leave the old data on,12
+58,<cfhowlett> n1n0 boot into single user mode ...,12
+59,<holstein> !info cacti,10
+60,"<ubottu> cacti (source: cacti): web interface for graphing of monitoring systems. In component universe, is extra. Version 0.8.8b+dfsg-5 (trusty), package size 1615 kB, installed size 4900 kB",10
+61,<SpecialEd> holstein: I'll just try #nagios i guess,10
+62,<n1n0> cfhowlet how,12
+63,<n1n0> with or without live cd,12
+64,<n1n0> ?,12
+65,<cfhowlett> !singleuser,12
+66,<cfhowlett> n1n0 http://askubuntu.com/questions/132965/how-do-i-boot-into-single-user-mode-from-grub,12
+67,"<holstein> n1n0: looks like, the desktop session could have been crashing , and making you think the password was bad.. could you login via tty?",12
+68,<n1n0> holstein yes,12
+69,cassio is now known as Guest5757,13
+70,"<holstein> n1n0: then, its not a password problem",12
+71,Takumo is now known as Rob_Ford,14
+72,<n1n0> holstein than what to do?,12
+73,<n1n0> will retry the tty now when reinstalled,12
+74,"<holstein> n1n0: what i would do is, remove the offending config from the users /home.. you can literally move *all* the .hidden .config files out of the way",12
+75,<n1n0> holstein would if i knew how,12
+76,"<holstein> n1n0: new fresh default config files will be generated, then you can test login, and put back what you want/need",12
+77,"<holstein> n1n0: if you knew what, friend? what to move? im saying, literally *anything* in the users /home that is a .config.. hidden with a dot",12
+78,"<holstein> n1n0: you can elaborate as to what destkop you are using, and i could give more direct suggestions for specific hidden directories",12
+79,"<holstein> n1n0: you can make a new user to move/delete these.. you can use a live CD.. regardless, you should backup your important data.. then, you know that you can do a fresh install and *not* keep the user data in place with the errors, and be ok.. you konw that its not a password problem",12
+80,"<marscher> is there a way to let rsync only show those files, which will be transfered in a dry run?",15
+81,<jogger> helo,16
+82,"<marscher> have checked the manual, but didnt find something",15
+83,<histo> marscher: -n,15
+84,"<marscher> histo, -n is dry-run yes. But it shows all files from source (which is super large)",15
+85,"<marscher> I want only those files to be printed, which will be transfered (after application of exclude patterns)",15
+86,<n1n0> holstein thanx for the long info. some kind of link on how to do it would be very much appreciated,12
+87,"<holstein> n1n0: with *any* filemanager, friend",12
+88,<histo> marscher: why do you want to do that?,15
+89,"<marscher> histo, I have a backup, and want only to partially restore it. So I need a ""diff"" of files first",15
+90,"<holstein> n1n0: what desktop environment are you using? with more informaiton, i can help you pinpoint what might be more specifically causing the issues.. otherwise, literally anything with a dot in front of it in your users home.. which you can access from any filemanager",12
+91,<marscher> a diff of the file list ideally,15
+92,<histo> marscher: diff /directory1 /directory2,15
+93,"<marscher> histo, does this work recursively and for binary files?!",15
+94,<n1n0> holstein what is the command line in tty to tell you the desktop environment,12
+95,<n1n0> ?,12
+96,"<holstein> n1n0: what do you have installed, friend? main ubuntu? xubuntu? lubuntu? kubuntu?",12
+97,"<marscher> histo, a line by line comparision for 200k files would be total overkill, despite I only need to find out, which files has been deleted",15
+98,<prepangolin> Hello guys.,17
+99,<n1n0> ubuntu 13.10 holstein,12
+100,<n1n0> 32 bit,12
+101,"<holstein> n1n0: maybe you would find it easier to just fresh install 14.04 at this point.. you should back up your personal data regardless, since all hard drives fail.. then you would be up to date",12
+102,"<histo> marscher: I'm thinking about it. But i'm extremely tired, give me a few",15
+103,"<n1n0> holstein i usually do it, yet, didn't bookmarks, and it is the only thing i need from there",12
+104,<holstein> n1n0: http://www.webupd8.org/2012/10/how-to-reset-compiz-and-unity-in-ubuntu.html is what i suggest using to reset the unity configs in 13.10,12
+105,"<holstein> n1n0: *all* drives fail.. so, work out backing up what you need, regardless",12
+106,<holstein> n1n0: you can try the commands at the link above to help reset unity configs in your users /home,12
+107,"<marscher> histo, np, take your time ;)",15
+108,<n1n0> holstein thank you a lot for the help,12
+109,<holstein> !13.10,12
+110,<ubottu> Ubuntu 13.10 (Saucy Salamander) was the 19th release of Ubuntu. Download at http://releases.ubuntu.com/13.10 - Read the release notes at https://wiki.ubuntu.com/SaucySalamander/ReleaseNotes,12
+111,<histo> marscher: try diff -qr /dir1 /dir2,15
+112,"<holstein> n1n0: you can see that support for 13.10 is soon to end.. 14.04 is a long term support release,which you can use with support for 5 years..",12
+113,"<n1n0> but holstein, how to reset it from terminal, when cannot even access the terminal (except from the guest acc). you mean from the tty? (for the link you sent)?",12
+114,"<n1n0> 13.10 was around for very short, right?",12
+115,"<holstein> n1n0: the link i gave has only terminal commands listed, friend.. have you opened it? and referenced it?",12
+116,<histo> marscher: using that if a only in results in a directory then it won't recurse further because there is no point. e.g. only in /dir1: somedir   then it won't go into somedir,15
+117,"<holstein> n1n0: 13.10 *is* still supported, but you can reference the link i gave and see that the EOL is in july.. just next month",12
+118,<n1n0> holstein cannot access the terminal except from the guest,12
+119,<holstein> n1n0: you can login to your user account from tty,12
+120,<holstein> n1n0: there are recovery modes in the kernel as well..,12
+121,<holstein> https://wiki.ubuntu.com/RecoveryMode,12
+122,<delac> any way to hide applications from Dash? Using Alacarte doesn't seem to have effect.,18
+123,"<n1n0> did in tty, now it says n1n0(myusername which i cannot access)@lap (computer name",12
+124,<histo> marscher: also try with rsync -rnu dir1 dir2  should only show files that will be overwritten,15
+125,<n1n0> so that means the password is ok?,12
+126,<histo> marscher: -u is the key,15
+127,<holstein> n1n0: sure.. so run the commands *as* that user,12
+128,<n1n0> ok,12
+129,"<holstein> n1n0: though, i personally think your time will be well spent backing up your data with a live CD, and doing a fresh install of 14.04 where you *dont* keep the offending user data in place during install",12
+130,k-joseph_ is now known as k-joseph,19
+131,"<marscher> histo, thanks for all this information, but I currently noticed, that I cant perform any of them in my current environment, since I've mounted an btrfs image, which shares the same uuid like an already mounted volume....",15
+132,"<marscher> and it seems, there is no way around this.",15
+133,<marscher> so I guess I first have to transfer all files from the backup image to another filesystem (which is superstupid... :(),15
+134,<histo> marscher: can't you mount by label?,15
+135,"<marscher> histo, my research so far results, that the uuid is stored inherently in the filesystem(image)",15
+136,<marscher> and is not changeable,15
+137,<histo> marscher: how do you have matching uuid's what are you trying to do?,15
+138,<marscher> so how would a label change that?,15
+139,<marscher> trying to mount an image of my currently running system on a loopback device,15
+140,<histo> marscher: ahh,15
+141,"<marscher> but because those uuids are the same (image and source), the mounted image shows exactly the same contents like current",15
+142,<marscher> funy :D,15
+143,"<marscher> histo, https://unix.stackexchange.com/questions/104067/modifying-a-btrfs-filesystem-uuid",15
+144,<CREEEPEREXPLOSIV> hello,20
+145,nhandler is now known as Guest72940,21
+146,<histo> marscher: you can set the uuid with tune2fs,15
+147,<marscher> tune2fs for btrfs???,15
+148,<histo> marscher: nope just caught that you were using btrfs,15
+149,<k0nceast> marscher: tune2fs does not work on brtfs afaik,15
+150,<CREEEPEREXPLOSIV> hi,20
+151,"<marscher> k0nceast, yes that is what one would expect",15
+152,<k0nceast> marscher: i think everything should go through the btrfs or btrfsctl commands,15
+153,ubuntu is now known as Guest57366,22
+154,Guest57366 is now known as chikorita,23
+155,chikorita is now known as Guest19759,24
+156,* histo thinks no one should be using btrfs,15
+157,<k0nceast> the 'man btrfs' page might give you a better explanation (probability of man vs me being correct is far higher than 'might') and otherwise look into the btrfs-utils package,15
+158,"<Guest19759> Hey, I have an Ubuntu live USB booted. I've installed some things and am wondering if I can make a persistant overlay with what I currently have? I googled around, but all I can find is stuff on creating the overlay, not saving current stuff to it. I know there must be some way, but I'm kinda stuck.",25
+159,"<marscher> k0nceast, histo, there is no way documentated to perform this. So I will dump my files on another filesystem. Thank you both for your help/time!",15
+160,<histo> marscher: np,15
+161,<yyx> ?,26
+162,<k0nceast> Guest19759: not while you're booted,25
+163,<yyx> hello buddy,27
+164,"<Solution-X> anyone here do much with MAAS? I have a fresh install of 14.04 installed as MAAS controller that is being cranky and refuses to load the images. Installed OS, booted up, apt-upgrade, reboot, create MAAS user, login, click download images. Also tried ""sudo maas-import-pxe-files"" after as a backup and that completes but does not result in the webpage recognizing the images' existence",28
+165,"<dknezev_> can't seem to find an answer on the net and hoping someone here knows. using 12.04 google chrome, where are the flash files stored?",29
+166,<k0nceast> Guest19759: it's a boot-time kernel option iirc,25
+167,"<Guest19759> k0nceast: Yeah, but is there some way to just dump the changes to a file and then reboot from it?",25
+168,<k0nceast> depends on what you've changed,25
+169,<k0nceast> you could make a folder on your windrive and save all changed config files there,25
+170,<Pici> Solution-X: You may want to try asking in #ubuntu-server too,28
+171,"<Solution-X> Pici- good call, thanks",28
+172,"<k0nceast> (eg. the files and folders in your home folder that start with a . (dot), hidden by default",25
+173,<delac> any way to hide applications from Dash? Using Alacarte doesn't seem to have effect.,18
+174,"<pavlos> dknezev_, /opt/google/chrome/PepperFlash/libpepflashplayer.so",29
+175,<k0nceast> Guest19759: but that doesn't count for everything,25
+176,<k0nceast> eg. added apps,25
+177,"<Guest19759> k0nceast: Yeah, the apps are mainly what I want to save. I know I could just re-add Universe and reinstall the stuff I've gotten, but I wonder if there's a way to create the persistant file and dump everything that's changed since boot or something",25
+178,"<k0nceast> Guest19759: if you've added repo's for apps, then add the /etc/sources.list file and /etc/sources.d/ dir to the folder",25
+179,<k0nceast> w8,25
+180,<k0nceast> /etc/dpkg/sources.list and .d respectively,25
+181,<dknezev_> pavlos - not really sure what you mean by that. aren't .so library files,29
+182,"<k0nceast> and in the dpkg folder might also be a list with names of installed packages, which you could copy there as well",25
+183,<chicaros_> hi fo all,30
+184,<chicaros_> i need help,30
+185,<histo> !clone | Guest19759,25
+186,"<ubottu> Guest19759: To replicate your packages selection on another machine (or restore it if re-installing), you can use the !software package ""apt-clone"" - See also !automate",25
+187,"<k0nceast> Guest19759: and when installed, you could replace the content of the file in the install with the content of the files on your winpartition",25
+188,<k0nceast> histo: No way!!!,25
+189,<chicaros_> same one know redmine?,31
+190,"<pavlos> dknezev_, I run 12.04, have chrome, gave you the path of the flash lib. I dont know what you're looking for",29
+191,<k0nceast> that'd saved me hours if i'd known that some years earlier,25
+192,<sovereignentity> how do I get to ~/.local/share/applications/,32
+193,<chicaros_> i need help,31
+194,<chicaros_> redmine,31
+195,"<Guest19759> Ah ok. Would be a neet feature at some point though to be able to create a persistant file from what currently is. Thanks all for your help and suggestions, though.",25
+196,<histo> k0nceast: you could easily dpkg --get-selections > somefile,25
+197,<histo> k0nceast: nad --set-selections on the other side,25
+198,"<umonkey> Hello. Is there a way to contact paste.ubuntu.com admins? There was a patch that added replaygain to mocp, but it's now gone, perhaps expired. Apparently that was the only location of that patch. Maybe there's a way to extract it from backups, or something.",33
+199,<histo> k0nceast: and then you can install them.,25
+200,<k0nceast> im on arch nowadays,25
+201,<histo> k0nceast: same here,25
+202,WLM is now known as WLM|weg,34
+203,<dfgas> anyone know how to enable remote logins on 13.10?,35
+204,<k0nceast> i have Ubuntu for my SO and a few of my friends (I switched them),25
+205,"<k0nceast> people are a lot easier to switch nowadays, since android and iPhones",25
+206,"<dknezev_> pavlos, i'm looking for the cached files that must be stored locally which I'm hoping to copy for later viewing, thanks.",29
+207,<histo> dfgas: remote logins for what?,35
+208,<dfgas> to login to X remotely,35
+209,<dfgas> not vnc or teamviewer,35
+210,<k0nceast> maybe b/c people are known to the idea of finding alternative apps/workflows than Windows,25
+211,<histo> dfgas: Okay what client do you intend on using then?,35
+212,<dfgas> histo: xdmcp?,35
+213,<ActionParsnip> k0nceast: you'll probably find its because its lighter and fater and more works out of the box,25
+214,<histo> dfgas: https://wiki.ubuntu.com/xdmcp,35
+215,<histo> ActionParsnip: what's lighter and faster?,25
+216,ezhik`_ is now known as Guest85112,36
+217,<ActionParsnip> histo: ubuntu uses a lot fewer resources than windows in most cases,25
+218,"<n1n0> holstein tried the link you posted (the second step), without success",12
+219,<Jeroen_Mathon> histo: Mainly becouse ti does not have as much bloatware as windows,25
+220,* histo **cough **cough Amazon **cough **cough,25
+221,<Jeroen_Mathon> histo: Well we all disable that after a while right,25
+222,<holstein> !details > n1n0,12
+223,"<ubottu> n1n0, please see my private message",12
+224,Guest85112 is now known as ezhik_,37
+225,<Phlogistique> Hi,38
+226,"<Phlogistique> did anyone use upstart successfully in a chroot, when the host machine is _not_ using upstart?",39
+227,<Phlogistique> I cannot figure how to do it,39
+228,<n1n0> can the bookmarks from te default user account can be accessed from within the guest account on the same machine?,12
+229,<n1n0> ...be accessed,12
+230,Solution-X is now known as Solution-X|AFK,40
+231,<Jeroen_Mathon> n1n0: Depends on your browser,12
+232,<n1n0> firefox,12
+233,<Jeroen_Mathon> Not sure about that.,12
+234,<Jeroen_Mathon> Should not be accesable since it got its own home directory,12
+235,<Jeroen_Mathon> That users home directory got its own configuration of firefox,12
+236,"<welly> Hello all, I'm trying to ssh to account@localhost but keep getting roaming now allowed on server error. I've checked and set the permissions for my account user .ssh directory and the files under there (700 for .ssh and 600 for the contained files) but am having no luck. Anyone with any suggestions?",41
+237,<Jeroen_Mathon> So no they do not share bookmarks,12
+238,<ActionParsnip> welly: try:  ssh -vvv account@localhost,41
+239,<boolean> morning .. is iptables a 1st match style firewall?,42
+240,<histo> boolean: 1st match?,42
+241,"<ActionParsnip> histo: when a rule is matched, no others are processed",42
+242,<histo> ahh,42
+243,<boolean> ActionParsnip: beat me to it :) thanks,42
+244,"<ActionParsnip> boolean: usually traffic will only satisfy one rule, otherwise you should have a deny all rule at the bottom that the rest will hit and be denied",42
+245,"<welly> ActionParsnip, got the following: http://pastie.org/9302249 but mainly ""Roaming not allowed by server"" I suspect is the cause",41
+246,Solution-X|AFK is now known as Solution-X,43
+247,<histo> Phlogistique: afaik upstart doesn't work in a chroot,39
+248,<Phlogistique> histo: alright,39
+249,<sovereignentity> what does ~ mean in a path,44
+250,"<boolean> ActoinParsnip: therefore, if I have the following mid way through the chain: ACCEPT     all  --  anywhere             anywhere, the packet will pass and all other rules ignore, correct?",42
+251,"<dimitry7> Hi guys, does ubuntu server include graphical mode in live cd?",45
+252,<ActionParsnip> welly: check from line 92 down,41
+253,<histo> sovereignentity: /home/username,44
+254,<geirha> sovereignentity: home directory if it's at the start,44
+255,<welly> Oh hmm,41
+256,"<ActionParsnip> boolean: to my knowledge, yes",42
+257,<Jeroen_Mathon> dimitry7: Yes,45
+258,<histo> Jeroen_Mathon: ??,12
+259,"<dimitry7> Jeroen_Mathon, thank you!! :-)",45
+260,"<ActionParsnip> boolean: there is an iptables channel, may help",42
+261,<Jeroen_Mathon> No problem ^_^,45
+262,<boolean> ActionParsnip: ah kewl .. thanks,42
+263,"<welly> ActionParsnip, but why would it want a dsa public key when it's already been provided with an rsa public key?",41
+264,"<welly> I guess if it wants it, I should give it",41
+265,<WooWooWoo> Hi anyone good at using httrack?,46
+266,<sovereignentity> how do i get the home folder to show hidden files,47
+267,<WooWooWoo> ctr+h,47
+268,<Jeroen_Mathon> Yeah,46
+269,<histo> welly: why are you ssh'ng localhost?,41
+270,<histo> sovereignentity: ls -a,47
+271,"<welly> histo, it's more a test than anything. I'm setting up jenkins and don't have a remote server to test on",41
+272,<ptite_chloe> salut,48
+273,"<dknezev_> pavlos, ...",29
+274,<geirha> sovereignentity: In shell (terminal) or GUI?,47
+275,<boolean> ActionParsnip: ugh ... iptables doesnt list which interface ( ipytables -L ) the rules apply thus the all to all was for the local loopback,42
+276,* boolean sighs,42
+277,<welly> Ah ha. It was the formatting of my public key in authorized_keys,41
+278,<boolean> should have done iptable -i <interface> -L,42
+279,"<iron> hey, can I talk in here, do I need to auth first?",49
+280,iron is now known as Guest81914,50
+281,<histo> welly: use ssh-copy-id,41
+282,<cfhowlett> Guest81914 ask your ubuntu questions,49
+283,<histo> Guest81914: we see you,49
+284,"<welly> histo, yeah.. should have done that before",41
+285,"<Guest81914> ah great, I'm running Ubuntu 12.10, does it update to 14,04 automatically with the updater, or do I need to redownload the whole thing?",51
+286,<cfhowlett> !eolupgrade|Guest81914,51
+287,"<ubottu> Guest81914: End-Of-Life is the time when security updates and support for an Ubuntu release stop, see https://wiki.ubuntu.com/Releases for more information. Looking to upgrade from an EOL release? See https://help.ubuntu.com/community/EOLUpgrades",51
+288,"<iptable> boolean, can I help?",42
+289,"<iptable> boolean, it's iptables",42
+290,<chudszy> PL ?,52
+291,<cfhowlett> Guest81914 or you can download and clean install - which I recommend,51
+292,"<dimitry7> Kali Linux does not run live does it? is there any distro based on Ubuntu / Debian , intended for security that does run live ? Thanks!!",53
+293,"<iptable> chudszy, #ubuntu-pl I think",52
+294,<cfhowlett> !kali|dimitry7,53
+295,"<ubottu> dimitry7: Ubuntu channels can only provide support for Ubuntu itself, as other distributions and derivatives have repository and software changes. Please consult their websites for more information. Examples: gNewSense (support in #gnewsense), Linux Mint (see !mint), kali-linux (#kali-linux), CrunchBang (support in #crunchbang), BackTrack (support in #backtrack-linux)",53
+296,<Jeroen_Mathon> Dimitry7:It does run live,53
+297,"<Guest81914> I have nothing to lose atm on it, so I guess I'll do a clean install",51
+298,<histo> dimitry7: kali runs live,53
+299,<boolean> iptable: tis ok .. i figured it out .. been too long since i played with it,42
+300,"<dknezev_> anyone??? can't seem to find an answer on the net and hoping someone here knows. using 12.04 google chrome, where are the cached flash files stored?",29
+301,<Guest81914> is it apt sudo-get install ?,51
+302,"<dimitry7> Jeroen_Mathon, well, the options are install, etc. I will check again...",53
+303,<histo> !eol | Guest81914,51
+304,"<ubottu> Guest81914: End-Of-Life is the time when security updates and support for an Ubuntu release stop, see https://wiki.ubuntu.com/Releases for more information. Looking to upgrade from an EOL release? See https://help.ubuntu.com/community/EOLUpgrades",51
+305,<cfhowlett> Guest81914 torrent the ISO with transmission.  make a USB.  install,51
+306,<cfhowlett> and READ the eolupgrade link,51
+307,"<dimitry7> histo, Jeroen_Mathon yes you were right, but only Full ISO, i tried mini :p",53
+308,<dimitry7> mini does not run live,53
+309,<sovereignentity> No synaptic?,51
+310,"<varunendra> dimitry7, 'mini' of any distro doesn't run live, that's the whole purpose of making it 'mini' (only essential components)",53
+311,<ActionParsnip> sovereignentity: why? it's not installed by default.....,51
+312,"<dimitry7> varunendra, ooh okay, nice!",53
+313,<ActionParsnip> varunendra: you may be able to switch to other TTYs...,53
+314,<histo> dimitry7: mini is for a net install typically,53
+315,"<paulus68> I just bought a samsung S24D300 and want to use it as dual screen how do I do this, at the mm",54
+316,"<dimitry7> histo, yes, mostly!",53
+317,<paulus68> moment it's connected through hdmi but no signal from pc,54
+318,<histo> dimitry7: it's 25mb you though it would run live?  well it does technically just without any tools,53
+319,"<dimitry7> histo, and for example Ubuntu Remix... I booted with it and it gave me a shell $ instead of the GUI, problably my graphics but I runned it on a Power Edge 2950",53
+320,<ActionParsnip> paulus68: is it connected to a laptop?,54
+321,"<sydney> ok,i just installed gnome-fallback,and when i loged in,i only the background loaded.None of the keys i push work,and i cannot log back out. how to fix?",55
+322,<paulus68> ActionParsnip: desktop,54
+323,<histo> dimitry7: distrowatch.org,53
+324,"<ActionParsnip> paulus68: if you reboot with it attached, is it ok?",54
+325,"<ActionParsnip> paulus68: is the hdmi enabled in bios, if it is controlled there",54
+326,<cfhowlett> sydney ctrl alt F6 for a terminal.  sudo reboot,55
+327,"<dimitry7> histo, I know it... well I am downloading Ubuntu Server now.",53
+328,<dimitry7> burning indeed...,53
+329,<paulus68> no that's the problem or do I need to do a shutdown restart,54
+330,<paulus68> hdmi should be enabled in the bios,54
+331,<ActionParsnip> paulus68: should is a powerful word,54
+332,<paulus68> ActionParsnip: true,54
+333,<histo> dimitry7: why are you downloading server?,53
+334,"<sydney> cfhowlett: ok,i will be right back.",55
+335,<histo> dimitry7: it's not a live security distro,53
+336,"<dimitry7> histo, I know, but this server can't read DVDs, and there is no CD for Kali",53
+337,<paulus68> ActionParsnip: any Idea where to find that option in the bios just to be sure,54
+338,<histo> dimitry7: use usb,53
+339,"<dimitry7> histo, it can't boot from USB either :-S",53
+340,"<dimitry7> histo, I might try again though... first time it didn't",53
+341,<paulus68> ActionParsnip: it's an asus motherboard,54
+342,<histo> dimitry7: http://distrowatch.org/search.php?ostype=Linux&category=Security&origin=All&basedon=Ubuntu&notbasedon=None&desktop=All&architecture=All&status=Active,53
+343,"<dimitry7> histo, let me check",53
+344,<histo> dimitry7: and here is debian based. http://distrowatch.org/search.php?ostype=Linux&category=Security&origin=All&basedon=Debian&notbasedon=None&desktop=All&architecture=All&status=Active,53
+345,"<sydney> cfhowlett: i was able to do that,but still nothing shows except the background.",55
+346,<cfhowlett> sydney logout and choose unity.  then login --- test if your system is otherwise installed properly,55
+347,<paulus68> ActionParsnip: when clicking on detect display it does nothing,54
+348,"<dimitry7> histo, ooh very, good, thank you!! Will download one of those :-)",53
+349,"<sydney> cfhowlett: thats just it,i cannot log out,or do anything.",55
+350,<cfhowlett> sydney over my head.  sorry.  ask again in channel - someone with more experience than I should know,55
+351,"<sydney> Ok,I just did a fresh install of Ubuntu gnome,and i decided to install gnome-fallback.well,when i selected gnome fallback and logged back in,nothing loads except the desktop background.I can do ctrl+alt+f1,but thats it.",55
+352,<histo> sydney: do any of the other sessions work?,55
+353,<Locke2002> sydney: What if you right-click the desktop?,55
+354,"<sydney> Yes,but i cannot log back out.I Have tried that",55
+355,<sydney> i cannot even see the mouse,55
+356,<histo> sydney: do you have auto login enabled?,55
+357,<sydney> yes,55
+358,<sydney> otherwise this would be easy to fix. ;),55
+359,<paulus68> ActionParsnip: when changing the HDMI cable to first screen no signal only DVI cable selected,54
+360,<histo> sydney: sudo nano /etc/lightdm/lightdm.conf,55
+361,<histo> sydney: disable the autologin-user,55
+362,<sydney> Using that line?,55
+363,<sydney> thewres nothing else i have to do?,55
+364,jacekn_ is now known as jacekn,56
+365,"<sydney> ok,i will be right back",55
+366,"<Guest81914> I completed the download of 14.04 iso, do I put the .iso file on a usb, and reboot the pc?",51
+367,"<daftykins> Guest81914: you need to use a program to put it on there, what OS are you on?",51
+368,<Guest81914> 12.10 ubuntu,51
+369,"<Walex> Guest81914: yes, there is an install page too. Or you burn it to a CD.",51
+370,<daftykins> *DVD,51
+371,<kevin__> Alguno habla espa;ol?,57
+372,<varunendra> !usb | Guest81914,51
+373,"<ubottu> Guest81914: For information about installing Ubuntu from USB flash drives, see https://help.ubuntu.com/community/Installation/FromUSBStick - For a persistent live USB install, see: https://wiki.ubuntu.com/LiveUsbPendrivePersistent",51
+374,<daftykins> !es | kevin__,57
+375,"<ubottu> kevin__: En la mayoria de los canales de Ubuntu, se habla solo en ingles. Si busca ayuda en espanol entre al canal #ubuntu-es; escriba "" /join #ubuntu-es "" (sin comillas) y presione intro.",57
+376,<pavlos> !es| kevin__,57
+377,"<dimitry7> histo, wow, excellent the Debian distros! Thank you man! :-)",53
+378,<dimitry7> * debian-based,53
+379,<TiLAK> http://goo.gl/mSs3yj,58
+380,"<user123321> My Ubuntu hanged on boot for 2 consecutive times this morning (after hitting enter in Ubuntu @ boot menu), with only black screen and pressing caps lock key does not even trigger its light. Is there a way to check the boot details etc. any advice?",59
+381,"<sydney> Ok,thn what do i do?",55
+382,<user123321> latest LTS,59
+383,<daftykins> user123321: upgraded recently? tried an older kernel?,59
+384,"<user123321> daftykins, clean install.",59
+385,"<user123321> daftykins, and, no.",59
+386,<daftykins> have you upgraded it since said clean install?,59
+387,"<Symphonym> About to do a fresh (re) install of Ubuntu but I always seem to forget what the commands were to boot a liveUSB from the grub2 command line, any help?",60
+388,"<user123321> daftykins, just clean install, didn't do major changes intentionally, other than software update and some software installs.",59
+389,<TiLAK> Check this http://goo.gl/mSs3yj,58
+390,"<user123321> daftykins, no. I installed the latest version.",59
+391,<daftykins> user123321: so due to said software update (== upgrade) you may have another kernel on,59
+392,<daftykins> user123321: either look for another or run memtest i'd say,59
+393,<sydney> How do i disable automatic login from ctrl+alt+f7?,55
+394,<paulus68> ActionParsnip: ?,54
+395,"<user123321> daftykins, I see. But Ubuntu asks me to update right? hmm.",59
+396,"<user123321> daftykins, I'd do memtest?",59
+397,<daftykins> user123321: what do you mean asks you to update?,59
+398,"<user123321> daftykins, Ubuntu shows ""new updates are available""",59
+399,<daftykins> but you said it's not booting...,59
+400,"<user123321> daftykins, I make sure things are up to date.",59
+401,"<pavlos> sydney, you could go System settings | users and groups and edit that user NOT to autologin",55
+402,<sydney> pavlos: In terminal*,55
+403,"<user123321> daftykins, It didn't this morning for 2 consecutive times, but I booted successfully after. This is what freaking me out :/",59
+404,"<daftykins> user123321: oh... i misunderstood, by hang you mean it just takes a lot longer",59
+405,"<user123321> daftykins, I had to turn off manually.",59
+406,<histo> sydney: I told you edi thte lightdm.conf,55
+407,"<daftykins> oh, you got in on the third go? :)",59
+408,"<pavlos> sydney, well, someone said to comment out a line in lightdm.conf",55
+409,"<sydney> histo: but,what do i type?",55
+410,<daftykins> user123321: yeah straight to memtest then. i don't diagnose anything until that's clean,59
+411,<histo> sydney: sudo nano /etc/lightdm/lightdm.conf and disable the autologin-user,55
+412,"<user123321> daftykins, Yes, I went to ubuntu recovery, it booted. Then did a restsrt, worked. But I'm scared because I don't know hy it happened, what if it happens again o.O",59
+413,"<user123321> daftykins, Oh ok.",59
+414,<sydney> histo: what do i have to type to tell it to disable it?,55
+415,"<sydney> histo: im in the editor,but i dont know what to type. :(",55
+416,"<varunendra> sydney, the line ""autologin-user="" is just that in my system (no auto login). So I guess just remove the user name in that line",55
+417,<histo> sydney: remove your user name or add a # in the front of that line then save the file,55
+418,"<sydney> You guys are confusing. i dont see any words on the screen except the editor. is there supposed to be ""autologin""somewhere?",55
+419,"<sydney> i just have the editor,and a white blinking cursor",55
+420,<daftykins> sounds like you typo'd the file name,55
+421,"<pavlos> sydney, there should be 4 lines ... change the autologin-user=sydney to autologin-user=    save, exit.",55
+422,<sydney> There is nothing there.,55
+423,"<varunendra> sydney, does ""cat /etc/lightdm/lightdm.conf"" show any lines? You must exit the editor to run this command.",55
+424,<sydney> Are you forgetting that im using ubuntu gnomes login manager? OR IS THERE NO DIFFERENCE?,55
+425,<daftykins> don't use caps.,55
+426,"<sydney> sorry,i bumped it.",55
+427,"<ActionParsnip> sydney: if you switched to gdm, you'll need the gdm.conf file",55
+428,<sydney> ok,55
+429,"<varunendra> sydney, to see which one you have - ""locate lightdm.conf gdm.conf""",55
+430,<eric_tux> hello,61
+431,"<eric_tux> I need help to correct a malfunction on a MacBook 5,1 with 14.04 installed",62
+432,<eric_tux> Please you can read a bug report here,62
+433,<eric_tux> https://bugs.launchpad.net/bugs/1331360,62
+434,"<ubottu> Ubuntu bug 1331360 in xorg (Ubuntu) ""Touchpad does not work correctlyafter suspend/resume"" [Undecided,New]",62
+435,<nick0R0> Hi,63
+436,"<eric_tux> can someone help me, because this causes a real problem when I work for my job",62
+437,turtle_ is now known as izm24snlp,64
+438,<sydney> sudo nano /ext/gdm/gdm.conf?,55
+439,<daftykins> /etc/,55
+440,"<varunendra> sydney, is the file there? Check its contents with 'cat' first.",55
+441,<paulus68> ActionParsnip: could you help?,54
+442,<nick0R0> So...,65
+443,"<varunendra> eric_tux, have you tried reloading the driver?",62
+444,<daftykins> paulus68: no need to hound one user,54
+445,"<sydney> No,that didnt show as anytrhing",55
+446,<eric_tux> varunendra: how to do?,62
+447,<paulus68> daftykins:not my intention,54
+448,james is now known as Guest12085,66
+449,"<varunendra> eric_tux, just guessing here - the driver should be ""psmouse"", so the commands should be - ""sudo modprobe -rv psmouse"" ... then ... ""sudo modprobe -v psmouse"". The first one will disable it, the 2nd one should re-enable it, hopefully properly.",62
+450,<sydney> i wil dink around with it later. :),55
+451,<paulus68> daftykins: just trying to find a solution that's all and I think Actionparsnip is old enough to tell me that he can't help me,54
+452,"<nick0R0> ...How do you remove Ubuntu One (And the service ""goodbye"" message)??",67
+453,<daftykins> paulus68: asking a question to the whole channel might be more effective,54
+454,"<pavlos> sydney, travel the /etc/gdm/ path and look for a conf file (in my case I have custom.conf) if you find it, edit using nano and disable the autologin",55
+455,<paulus68> daftykins: already did that actionparsnip started to reply then left which is not his normal behaviour,54
+456,<sireorion> hi all.. how do i terminate a program.... i cant shutdown wine,68
+457,james_ is now known as Guest47660,69
+458,"<eric_tux> varunendra: nop, kernel does not uses psmouse",62
+459,"<varunendra> eric_tux, how did you check? lsmod?",62
+460,<eric_tux> the first -rv command does nothing,62
+461,Guest5757 is now known as cassio3,70
+462,"<eric_tux> then I -v , got insmod psmouse",62
+463,<eric_tux> -rv got rmmod psmouse,62
+464,<eric_tux> so I guess the psmouse wasn't loaded the first time,62
+465,"<varunendra> eric_tux, I would like to see the outputs of (pastebin links of) ""xinput"" and ""lsmod""",62
+466,"<paulus68> I just bought a samsung S24D300 and want to use it as dual screen how do I do this, at the mm",54
+467,<paulus68> moment it's connected through hdmi but no signal from pc,54
+468,<eric_tux> varunendra: http://paste.ubuntu.com/7664317/,62
+469,"<varunendra> eric_tux, apparently it is ""BCM5974"". You may try replacing 'psmouse' with 'bcm5974' in the modprobe commands. But I have no experience with it, so can't say if it may cause any troubles forcing you to reboot.",62
+470,<eric_tux> is bcm5974 linked with the wifi card? I think that wifi or network is part of the problem,62
+471,"<varunendra> eric_tux, it is touchpad driver, not wifi",62
+472,<eric_tux> ok fine I'll test next time I have the problem and we append a comment to my bug report,62
+473,<eric_tux> s /we/will/,62
+474,<eric_tux> verunendra thanks,62
+475,"<varunendra> eric_tux, you may also try 'xinput float bcm5974' command combo, which is a bit safer. (xinput float bcm5974.... then .... xinput reattach bcm5974 Virtual core pointer)",62
+476,<eric_tux> ok,62
+477,<jhutchins> ubuntu.org is expired and awaiting renewal?,71
+478,<jhutchins> !download,71
+479,"<ubottu> Ubuntu installation CDs can be downloaded from http://releases.ubuntu.com - Mirrors can be found at http://wiki.ubuntu.com/Mirrors - PLEASE use the !torrents to download !Trusty, and help keeping the servers' load low!",71
+480,"<varunendra> eric_tux, a correction - the ""Virtual core pointer"" must be in single or double quotes, since it has spaces in the name. :)",62
+481,"<eric_tux> On my laptop I have 8Go RAM installed, is it normal to find more than 6Go used reported by top (when this problem arrives), swap is totally free?",62
+482,"<varunendra> eric_tux, totally normal. The used RAM is used for buffers",62
+483,whirlpool is now known as croft,72
+484,croft is now known as marque,73
+485,<nick0R0> So...,67
+486,"<nick0R0> ...How do you remove Ubuntu One (And the service ""goodbye"" message)??",67
+487,<eric_tux> ok chrome eats a *lot* of memory,62
+488,dfgas is now known as dfgas_off,74
+489,"<pavlos> nick0R0, http://askubuntu.com/questions/309122/removing-ubuntu-one",67
+490,<jhutchins> nick0R0: Format the drive?  What do you really want to do?,67
+491,marque is now known as leeve,75
+492,"<varunendra> jhutchins, they want to remove just the service, not Ubuntu OS itself :)",67
+493,"<Slappy> ok, I been using Linux as my primary desktop os for a couple of years now but I have a problem",76
+494,"<Slappy> EVERY SINGLE TIME I install a distro, it is buggy at best, problematic at worst & after only a few months, gets so damn buggy that I have to reinstall it",76
+495,"<pavlos> Slappy, no reason for caps",76
+496,<Slappy> Is there ANY Linux distro that I can just install & have work without issue?,76
+497,<kittykitty> anyone know much about HDD noises? :P,77
+498,"<caser555> Yes.  When it makes a noise, throw it away and get a new one.",77
+499,<caser555> :),77

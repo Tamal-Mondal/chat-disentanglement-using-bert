@@ -1,0 +1,501 @@
+,line,cluster number
+0,<motaka2> k1l_: Yes,1
+1,"<k1l_> motaka2: go to the systemsettings -> software and updates.   then there is a drop-down menu, choose ""main server"" there",1
+2,sina is now known as Guest23274,2
+3,"<wellick> cd /bin  This command changes the directory to bin right? But what does the ""/"" do?",3
+4,<k1l_> wellick: / is the first instance in the system. do a cd / and see yourself,3
+5,<cfedde> wellick: / separate the parts of a path.  with a leading / like that means start from the root of the file system.,3
+6,<motaka2> k1l_: http://paste.ubuntu.com/15171813/,1
+7,<cfedde> without the / the shell will look for a bin in your current working directory.,3
+8,<k1l_> motaka2: sudo apt-get update && apt-cache policy nodejs,1
+9,<wellick> by root of a file system you mean C:\,3
+10,<cfedde> similar but in linux/unix semantics rather than dos/windows,3
+11,<wellick> I see. Thank you.,3
+12,<motaka2> k1l_: https://gist.github.com/anonymous/71c838d3dc4cffd314a0,1
+13,<k1l_> wellick: c:\ is the windows term for that,3
+14,"<cfedde> in dos we have ""drive"" as a part of the path while in linux we have mountpoints that can be anywere in the file system.",3
+15,<cfedde> s/drive/drive letter/,3
+16,"<k1l_> motaka2: ok. go back to that systemsettings you just were. make sure main, universe restricted and multiverse are checked.",1
+17,<wellick> First day using Linux and first day using the terminal. It will all make sense eventually :),3
+18,<motaka2> k1l_: All are checked https://gist.github.com/anonymous/5f1def2145d718f2d355,1
+19,"<MonkeyDust> wellick  like windows started making sense, eventuually",3
+20,"<k1l_> motaka2: ""cat /etc/apt/sources.list""",1
+21,<motaka2> k1l_: https://gist.github.com/anonymous/958bf8d3e76215a5d63d,1
+22,<k1l_> wellick: some bits are different than on windows. but if you keep using your head it will make sense :),3
+23,<yppo> Is there a hash of the ubuntu server 14.04 version avalible somwhere on a secure website?,4
+24,<k1l_> motaka2: is iran blocking the internet?,1
+25,<k1l_> !hashes | yppo,4
+26,<ubottu> yppo: See https://help.ubuntu.com/community/UbuntuHashes for the md5sums of all downloadable Ubuntu releases,4
+27,<yppo> ty,4
+28,"<motaka2> k1l_: It does to some extent, but what website is seem to be blocked?",1
+29,<yppo> k1l_: The website is unsecure tho,4
+30,<yppo> ...,4
+31,<Silenced> Guys ? How to install mongodb in 15.10 ?,5
+32,<k1l_> motaka2: in this case its block the connection to the ubuntu main servers. so on the same settings try to choose a mirror on the drop down menu,1
+33,<MonkeyDust> !find mongodb,5
+34,"<ubottu> Found: juju-mongodb, jmeter-mongodb, libcatmandu-store-mongodb-perl, libmongodb-java, libmongodb-perl, libmongodbx-class-perl, mongodb, mongodb-clients, mongodb-server, shinken-mod-logstore-mongodb (and 16 others) http://packages.ubuntu.com/search?keywords=mongodb&searchon=names&suite=wily&section=all",5
+35,<wellick> MonkeyDust: actually my first OS was MacOS in... 1995 i think ;),3
+36,<Pici> yppo: unsecure how?,4
+37,<yppo> k1l_: If someone is intercepting and giving me a false image they might as well change the hash in this website?!,4
+38,<wellick> it took me 20 years to try linux lol,3
+39,<yppo> Pici: none https,4
+40,<Silenced> The regular way of installation doesn't work,5
+41,<Silenced> MonkeyDust: ^,5
+42,<MonkeyDust> Silenced  define 'doesnt work',5
+43,<yppo> I dont really care too much but expected ubuntu to provide a secure download,4
+44,<yppo> :/,4
+45,"<motaka2> k1l_: what is this?  E:GPG error: http://dl.google.com stable InRelease: Clearsigned file isn't valid, got 'NODATA' (does the network require authentication?)",1
+46,<k1l_> motaka2: your internet is partially blocked and that is an error because of blocking the google servers,1
+47,<yppo> motaka2: If you download ubuntu your goverment might also include backdoors,1
+48,"<mcphail> yppo: the hashes are GPG signed. The attacker cannot generate a correct GPG signature, even if he changed the hashes",4
+49,<yppo> ok sry,4
+50,<yppo> ty,4
+51,<Silenced> MonkeyDust: Server doesn't starts,5
+52,<yppo> mcphail: ty:),4
+53,<k1l_> yppo: enough FUD.,1
+54,"<motaka2> k1l_: I think it is google that is blocked iran, what elese can I do ?",1
+55,<yppo> k1l_: sry:(,1
+56,"<Silenced> MonkeyDust: ""Failed to start mongod.service: Unit mongod.service failed to load: No such file or directory."" This is what i get",5
+57,"<motaka2> k1l_: I excluded google, and it seems updating",1
+58,"<agile_prg> I need to make a self extracting multizip archive for windows, anyone know how I can do that?",6
+59,<MonkeyDust> Silenced  is this useful http://www.mongodbspain.com/en/2014/08/30/install-mongodb-on-ubuntu-14-04/,5
+60,"<motaka2> k1l_: now I can install nodejs, the only problem might be not getting updates for chrome",1
+61,<k1l_> motaka2: yes,1
+62,<Silenced> MonkeyDust: It works fine in 14.04. Mine is 15.10,5
+63,"<motaka2> k1l_: Thank u for your care, you are awesome",1
+64,"<thms> I'm using ubuntu server, 15.04, which did libapache-mod-fastcgi disappear ? Only fcgid is left",7
+65,<xangua> thms: please install a supported release,7
+66,<k1l_> thms: 15.04 doesnt get any updates anymore. so its really unsecure now. update to 15.10 quick.,7
+67,"<wellick> What's the shell that comes with ubuntu, the bourne shell? or all of them?",8
+68,<xangua> wellick: Unity,8
+69,<k1l_> wellick: its bash.,8
+70,<MonkeyDust> Silenced  is that a server?,5
+71,"<tsapii> wellick: ubuntu comes with bash by default, but you can get more shells from the repositories",8
+72,<thms> k1l_: ok thanks,7
+73,<xangua> Oh :-P,8
+74,"<wellick> but wikipedia says bash is basically the FS version of the bourne shell so the commands are the same, right?",8
+75,<k1l_> wellick: for simple commands all shells are nearly the same.,8
+76,<wellick> thanks,8
+77,<Silenced> MonkeyDust: DB always run as a server,5
+78,"<tsapii> wellick: bash has some features that the bourne shell did not have, but basic usage is the same",8
+79,"<MonkeyDust> Silenced  ok, then i wonder why you didnt stick with 14.04",5
+80,<Silenced> MonkeyDust: I had problems with my GPU. 15.10 Fixed it for me,5
+81,<tinyalpha> what are you guys doing,9
+82,<MonkeyDust> Silenced  i guess !hwe could have done that too,5
+83,<HackerII> waiting for the moon to turn to cheese,9
+84,<rattking> the default sh in ubuntu is dash IIRC,8
+85,<k1l_> rattking: for scripts. for user interaction like the gnome terminal etc its bash,8
+86,<Silenced> MonkeyDust: What does that mean ?,5
+87,<rattking> ahh yes thats true.,8
+88,<MonkeyDust> !hwe | Silenced,5
+89,"<ubottu> Silenced: The Ubuntu LTS enablement stacks provide newer kernel and X support for existing LTS releases, see https://wiki.ubuntu.com/Kernel/LTSEnablementStack",5
+90,<guilberplays> oii pesoal,10
+91,<guilberplays> pessoal,11
+92,"<gnomo> hello there, how do i check my gnome version using terminal? tnx",12
+93,<niko__> hi,13
+94,<hwpplayer1> hi niko_,13
+95,<hwpplayer1> hi niko__ :,13
+96,"<gews2323> I have one user who is routing through tun0 but I don't want to route through that interface, How can I have two routes for both interfaces? (route) http://pastebin.com/dBdyp0NJ",14
+97,<thms> Why does 15.10 doesnt have fastcgi anymore ?,15
+98,<aa_Gaurav> hi all i have no networking idea how to connect companies remote website. server located on remote area and i setup manual ip subnet and dns but i cant connrct website,16
+99,<MonkeyDust> !find fastcgi | thms,15
+100,"<ubottu> thms: Found: libapache2-mod-fastcgi, libmojo-server-fastcgi-perl, liburweb-fastcgi0, mono-fastcgi-server, mono-fastcgi-server2",15
+101,<aa_Gaurav> i am windows user and ubuntu is new for me,16
+102,<aa_Gaurav> please help me friends,16
+103,<aa_Gaurav> i install ubuntu 15.10,16
+104,<MBach> hi,17
+105,<gews2323> aa_Gaurav: What is wrong?,16
+106,<aa_Gaurav> i cant open companys online website evan i manual set ip subnet and dns. i have 30 pc for convert windows to ubuntu,16
+107,<MonkeyDust> aa_Gaurav  what is your own language,16
+108,<aa_Gaurav> hindi,16
+109,<sancho_panza> Hi! how can i list my devices connected with alsa on my terminal?,18
+110,<aa_Gaurav> from india,16
+111,<MonkeyDust> !india,16
+112,<ubottu> #ubuntu-in is the channel for Ubuntu in India,16
+113,"<EriC^^> sancho_panza: aplay -l , maybe?",18
+114,<sancho_panza> i try! ty,18
+115,<sancho_panza> it shows my usb sound card listed!,18
+116,"<sancho_panza> scheda 2: CODEC [USB Audio CODEC], dispositivo 0: USB Audio [USB Audio]",18
+117,<sancho_panza> how can i connect this with qasmixer?,18
+118,ubuntu is now known as Guest71999,19
+119,<sancho_panza> i know it works with audio software like ardour,18
+120,<EriC^^> sancho_panza: did you try pavucontrol?,18
+121,<EriC^^> or alsamixer?,18
+122,"<sancho_panza> i'll try later, i'm contacting you in private.. thanks!",18
+123,<aa_Gaurav> thanks friends,16
+124,<aa_Gaurav> no one replaying in #Ubuntu-in,16
+125,"<SunyataZero> Hi all, i am going to purchase a new laptop computer and am looking at different models, but i'm worried that the wireless network card will not work when i install ubuntu (or lubuntu). I know there's a list of hardward compatible with ubuntu but it doesn't contain the laptops i'm considering, what's the best way you can recommend for finding out if the wifi will work when i run ubuntu? (And how certain can i be that it will work",20
+126,<EriC^^> SunyataZero: maybe get one with a known good chipset that works? just guessing,20
+127,<xangua> SunyataZero: consider a Linux pre-installed laptop? https://help.ubuntu.com/community/UbuntuPre-installed,20
+128,<thms> Why does 15.10 doesnt have fastcgi anymore ?,15
+129,"<thms> SOrry, answer is up ^",15
+130,"<ioria> SunyataZero, bring with you a usb with a live ubuntu on it and test it .... : <unconvertable>",20
+131,fat is now known as Guest70327,21
+132,<mohamed> hey,22
+133,<mohamed> some germans here,23
+134,<mohamed> hey,22
+135,<BluesKaj> !de | mohamed,23
+136,"<ubottu> mohamed: In den meisten Ubuntu-Kanalen wird nur Englisch gesprochen. Fur deutschsprachige Hilfe besuche bitte #ubuntu-de, #kubuntu-de, #edubuntu-de oder #ubuntu-at. Einfach ""/join #ubuntu-de"" eingeben. Danke fur Dein Verstandnis!",23
+137,"<SunyataZero> ioria: thank you, i will try to do this! (also grateful for the responses from EriC^^ and xangua, now i have several ways to approach this problem)",20
+138,"<ioria> SunyataZero, good ...",20
+139,<aa_Gaurav> no one is answering in #ubuntu-in,16
+140,<netameta> when i do sudo su i become admin - how can i go back to the user i was before ?,24
+141,<sancho_panza> i don't have pulseaudio and i want my usb sound card to work with alsa,18
+142,<sancho_panza> i need to switch my predefinite sound card,18
+143,"<monsieur_h> netameta: ""logout""",24
+144,<sancho_panza> can you help me?,18
+145,<monsieur_h> or CTRL-D,24
+146,"<EriC^^> netameta: exit, also use sudo -i instead of sudo su",24
+147,"<netameta> EriC^^, How so ?",24
+148,<EriC^^> netameta: it sets up the environment properly,24
+149,dreamon_ is now known as dreamon,25
+150,<r_rios> Hello. Is there some recent guide on how to downgrade to a previous version of Ubuntu?,26
+151,"<EriC^^> r_rios: no, why do you want to downgrade?",26
+152,<xangua> r_rios: you don't downgrade,26
+153,<xangua> That's your guide :-),26
+154,<r_rios> I might need to downgrade,26
+155,<r_rios> :(,26
+156,<sancho_panza> someone has experience with external usb sound cards and alsa?,18
+157,<jushur> sancho_panza: http://www.alsa-project.org/main/index.php/Asoundrc,18
+158,"<AtomicStryker> is there a way to strip the ""efi"" flag off an existing partition without wiping the data",27
+159,"<EriC^^> AtomicStryker: yeah, sudo cgdisk /dev/sdX , then change the type",27
+160,"<AtomicStryker> thanks, gonna try",27
+161,"<jushur> sancho_panza: do a ""aplay -l"" , to find you card.",18
+162,<isaac_> hi everybody,28
+163,<jushur> sancho_panza: some cards have issues if your onboard soundcard is enabled at the same time. and you may need to block modules to stop it from loading.,18
+164,<isaac_> someone is in mwc at @bcn ?,29
+165,<sancho_panza> my card works fine with audacity,18
+166,<sancho_panza> also works on KX Studio with cadence,18
+167,<jushur> sancho_panza: create the ~/.asoundrc and set your card as default then.,18
+168,"<[[thufir]]> which do you install first, postfix or mail-stack-delivery?  this guide: https://help.ubuntu.com/lts/serverguide/postfix.html  says first postfix, then mail-stack-delivery.  However, I'm running 15.10, wily.  Where is the guide for version 15.10 relating to these packages?",30
+169,"<AtomicStryker> oh, uh, when i unflagged it ""boot"" it autoflagged as msftdata",27
+170,"<jushur> sancho_panza: im away now, you can write stuff to me but ill not be answering for about 4h.",18
+171,<AtomicStryker> which flags is a windows os partition supposed to have,27
+172,<sancho_panza> .asoundrc is a file?,18
+173,<sancho_panza> ok ty,18
+174,<jushur> sancho_panza: read the url i pasted to you.,18
+175,<EriC^^> AtomicStryker: i think that's fine,27
+176,"<mfilipe> is it possible to configuring two monitors and each one uses its own workspace? for example: monitor1 has two workspaces and monitor2 has one workspace, so I can switch independently the workspaces in each monitor",31
+177,"<AtomicStryker> merciful christ the bootloader detects my system again, so close",27
+178,<AtomicStryker> YESSSS IT BOOTED,27
+179,<EriC^^> nice,27
+180,<AtomicStryker> and it only took 6 hours and two decades of my life expectanc,27
+181,"<AtomicStryker> thank you, you have been a great help",27
+182,<PIEROFISA> lIST!,32
+183,<AtomicStryker> and now i have win and a ubuntu on proper seperate disks with their own respective bootloaders,27
+184,"<AtomicStryker> i guess thats a bonus, time to install that ksp again",27
+185,<EriC^^> sancho_panza: did you fix your sound card issue yet?,18
+186,"<Guy1524_> hey guys, so I the libglfw package in the offical ubuntu repository is an old version, do you know of a ppa I could add for an update version w/ vulkan support?",33
+187,john is now known as Guest39971,34
+188,"<Guy1524_> hey guys, so I the libglfw package in the offical ubuntu repository is an old version, do you know of a ppa I could add for an update version w/ vulkan support?",33
+189,<reisio> Guy1524_: which version added vulkan support,33
+190,<Guy1524_> I don't know ):,33
+191,<Guy1524_> I looked into the current github glfw3.h which had vulkan functions but my glfw3.h doesn't have them,33
+192,<Guy1524_> but I heard it was added a while ago,33
+193,<nick420> hello?,35
+194,<reisio> nick420: 'lo,35
+195,"<MonkeyDust> Guy1524_  ppa's are not supported here, i guess you're on your own",33
+196,<reisio> Guy1524_: should find out what version added it,33
+197,<reisio> Guy1524_: then you'll know what your choices are,33
+198,<Guy1524_> ok,33
+199,<nick420> ive never done this so its new to me but i need some help,36
+200,<reisio> nick420: this is a place for help,36
+201,<nick420> im having trouble with getting/installing java,36
+202,<reisio> what do you want java for,36
+203,<Guy1524_> it is nowhere in the changelog http://www.glfw.org/changelog.html,33
+204,<reisio> Guy1524_: you can find it in the git history,33
+205,<Guy1524_> ok,33
+206,<nick420> a friend switched my computer to ubuntu and put minecraft but it doesnt work,36
+207,<Guy1524_> is there a way to see what commit a function was added,33
+208,<reisio> nick420: what's it say when you run it?,36
+209,<silvian> Hi nick420: What is your java issue?,36
+210,<Guy1524_> sudo apt-add-repository ppa:webup8team/java && sudo apt-get update && sudo apt-get install java8-installer,36
+211,<silvian> which JRE/JDK are you trying to install?,36
+212,"<reisio> Guy1524_: git bisect, though it might be more than you want to learn just now",33
+213,<Guy1524_> sudo apt-add-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install java8-installer,36
+214,<Guy1524_> sorry,36
+215,<Guy1524_> I accidentally pasted it again,36
+216,<nick420> it says i need java runtime enviorment,36
+217,"<Guy1524_> nick420: just run the command I sent you, it should install it",36
+218,<silvian> yes you need to download java as Guy1524_ recommended,36
+219,"<Guy1524_> basically there are two versions of java, the open source, somewhat slower version, and the oracle provided version, I sent you the oracle way since its faster",36
+220,<nick420> Cannot add PPA: 'ppa:webup8team/java'. Please check that the PPA name or format is correct.,36
+221,<Guy1524_> that was a type,36
+222,<Guy1524_> *typo,36
+223,<Guy1524_> sudo apt-add-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install java8-installer,36
+224,<Guy1524_> try that one,36
+225,<Guy1524_> I forgot the d in update lol,36
+226,"<r_rios> I'm running precise and am trying to update to trusty, but...: https://paste.ubuntu.com/15173117/",26
+227,<r_rios> It finds no updates[,26
+228,george__ is now known as Emlin,37
+229,"<Guy1524_> nick420: I got to go, good luck",36
+230,<nick420> thanx..,36
+231,<nick420> hope it works,36
+232,<franendar_> how can I install a specific glibc version?,38
+233,<EriC^^> r_rios: paste grep Prompt /etc/update-manager/release-upgrades,26
+234,<franendar_> im getting this: sudo apt-get install build-essential,38
+235,<r_rios> EriC^^: empty,26
+236,"<MonkeyDust> many glibc questions these days, i wonder how come",38
+237,<franendar_> **im getting this:  version `GLIBCXX_3.4.21' not found,38
+238,<EriC^^> r_rios: cat /etc/update-manager/release-upgrades,26
+239,<nick420>  Unable to locate package java8-installer,36
+240,<r_rios> EriC^^: prompt=never,26
+241,"<r_rios> So, prompt=lts?",26
+242,<EriC^^> yeah,26
+243,<r_rios> Thanks,26
+244,jan is now known as Guest91351,39
+245,"<r_rios> Why is it like that, though?",26
+246,<EriC^^> np,26
+247,"<EriC^^> r_rios: it's usually set in software center, might have changed it at some point or a bug maybe",26
+248,<r_rios> I've probably marked some checkbox,26
+249,<r_rios> Many thanks,26
+250,<silvian> @nick420: try the following,36
+251,<silvian> sudo apt-get install openjdk-7-jre,36
+252,<nick420> does anybody else have any suggestions for my java issue,36
+253,<EriC^^> no problem,26
+254,<silvian> and then try installing jdk as well,36
+255,<silvian> sudo apt-get install openjdk-7-jdk,36
+256,<silvian> which ubuntu version have you got installed?,36
+257,<nick420> 14.04 i think,36
+258,<nick420> im very new to it,36
+259,<silvian> ok did that work?,36
+260,<patarr> hello. Why is it that when I have a txt file with packages (line by line) it does not work with sudo apt-get install $(cat packages.txt) ?,40
+261,<nick420> well it seems to download everything properly but it still promts me the same thing when i try to open the game,36
+262,<franendar_> any idea how to get a specific glibc version?,38
+263,<nick420> could it be the game?,36
+264,"<patarr> It gives me an error E: Unable to locate package x for lots of packages that I know exist. I can even just install them manually with install ""package""",40
+265,<EriC^^> patarr: what does it say?,40
+266,<silvian> what is teh verion of minecraft you're running?,36
+267,<EriC^^> can you paste the file?,40
+268,<silvian> it probably requires java 8,36
+269,<silvian> version,36
+270,<silvian> i can't spell today it seems :P,36
+271,"<patarr> EriC^^, it's libreoffice, build-essential, tmux, vim on separate lines.",40
+272,<nick420> im not even sure. i cant open it and my friend put it on here,36
+273,<wellick> I opened Vi on Ubuntu but it doesn't let me type...,41
+274,"<EriC^^> patarr: oh, it won't work on separate lines, try xargs -a /file sudo apt-get install instead",40
+275,<silvian> right lets try installing oracle's java 8,36
+276,<Pici> wellick: do you know how to use vi?,41
+277,<silvian> it might help...,36
+278,<nick420> thanx for ur patience,36
+279,<maho> How do I go about using GNU make?,42
+280,"<patarr> EriC^^, this SO answer says it should work both ways :( I also tried the xargs command in there. I will try yours as well http://askubuntu.com/questions/541781/install-list-of-packages-using-apt-get",40
+281,<silvian> rung the following furst,36
+282,<silvian> first,36
+283,<silvian> sudo add-apt-repository ppa:webupd8team/java,36
+284,<silvian> does it add it successfully?,36
+285,"<patarr> EriC^^, same issue with your command :(",40
+286,<wellick> Pici: I just want to write some simple code and exit. it might as well be notepad.,41
+287,<EriC^^> patarr: something else is wrong,40
+288,"<nick420> Important!!! For now, you should continue to use Java 8 because Oracle Java 9 is available as an early access release (it should be released in 2016)! You should only use Oracle Java 9 if you explicitly need it, because it may contain bugs and it might not include the latest security patches!",36
+289,<reisio> icedtea should really work,36
+290,"<EriC^^> patarr: btw i think they meant $(cat pkglist) only works if you have them side by side, and xargs for the other",40
+291,<Pici> wellick: you may want to use nano instead.  vi/vim require reading some tutorial (or going through vimtutor) prior to editing.,41
+292,<silvian> yeah i gave you the ppa for java 8,36
+293,<silvian> :),36
+294,<silvian> has it added it to the ppa list?,36
+295,<nick420> ok. seems good,36
+296,<silvian> ok,36
+297,"<patarr> EriC^^, I tried both - but I think I found the issue. Line endings. I made the file on windows. Wrote the file again in vim on the OS, and it seems to work.",40
+298,<silvian> now do,36
+299,<silvian> sudo apt-get update,36
+300,<patarr> Damn line endings.,40
+301,<EriC^^> oh,40
+302,<silvian> to refresh your ppa library,36
+303,<nick420> ok done,36
+304,<silvian> good now run,36
+305,<silvian> sudo apt-get install oracle-java8-installer,36
+306,"<wellick> Pici: ok, thanks",41
+307,<nick420> going to take a few minutes,36
+308,"<travisthenavi> I recently changed my OS to Xubuntu Linux (14.04 LTS). I want to download the LAMP stack for web development. Should I install PHP and MySQL seperately, or just install the whole stack as one package?",43
+309,<silvian> @nick420: sure... sounds like you're the right track anyway,36
+310,<silvian> after that's finished doing everything,36
+311,<silvian> run java --version,36
+312,<Hakon> hello. I'm trying to figure out a problem with idmapd where it takes quite a while for it to resolve username and group for folders over nfs4. If i just signed into the machine then the folders have 4294967294 for 3-4 minutes or so before changing to the correct value. has anyone experienced this?,44
+313,<silvian> to confirm you got java 1.8 installed :),36
+314,<MonkeyDust> travisthenavi  the MP means Mysql and PHP,43
+315,"<travisthenavi> Yeah, I also will need Apache. I forgot.",43
+316,<SchrodingersScat> travisthenavi: is there even a virtual package for 'lamp'?,43
+317,<tsapii> you could find it using `which`,36
+318,<tgm4883> nick420: you're just trying to play minecraft? How did you install java?,36
+319,"<tsapii> e.g. for me, `which java` produces /usr/bin/java",36
+320,<tgm4883> silvian: tell me to go away if you've got this covered :),36
+321,"<tsapii> which is a symlink to /etc/alternatives/java, which in turn is a symlink to /usr/lib/jvm/java-8-openjdk-i386/jre/bin/java",36
+322,<nick420> not that i see anywhere no,36
+323,<datamancer_> Hi all. How can I update Ubuntu Server 14.04.3 to 14.04.4?,45
+324,<silvian> no worries :) your help is appreciated,36
+325,<silvian> yeah try typing which java,36
+326,<tgm4883> datamancer_: you get it via regular apt updates,45
+327,<silvian> it might installed somewhere else,36
+328,<silvian> usually its /usr/lib,36
+329,<tsapii> readlink -f `which java` should reveal its path,36
+330,"<datamancer_> tgm4883: Right, thanks, but I'm a bit confused as to which command to run to do it. Is it apt-get upgrade?",45
+331,dearn_ is now known as dearn,46
+332,<tgm4883> datamancer_: yes,45
+333,<datamancer_> tgm4883: tyvm :),45
+334,"<Bashing-om> datamancer_: "" sudo apt update ; sudo apt upgrade ; sudo apt full-upgrade "" should be all there is to it .",45
+335,"<latenite_> Hi folks, how can I determine when the latest firefox update was available for update?",47
+336,"<dragonbite> If all you are doing is Minecraft, openjdk-7-jre also works and it is in the repos.",36
+337,<sethj> when it *was* or when it *will be*?,47
+338,<silvian> @nick420: try typing this,36
+339,<silvian> readlink -f `which java`,36
+340,"<Andocromn> i'm working on an Ubuntu Remix live cd, i have it mostly working except on bootup i get a number of authentication failure messages and no console or login prompt.  does anyone know how to fix this?",48
+341,<silvian> it should reveal exact path as tsapii suggested,36
+342,<silvian> so we can add it to your java home,36
+343,<debug0x1> http://www.meetup.com/HackerNestNYC/events/227143576/,49
+344,<tgm4883> nick420: How did you install java? And is this openjdk? All I needed to do was install openjdk-8-jre and then run the jar,36
+345,"<tgm4883> (although technically, I run it through multimc since I like lots of mods)",36
+346,<silvian> no its oracle's. We had no luck getting minecraft working with open jdk,36
+347,<xangua> latenite_: check Firefox releases notes? Wikipedia history release?,47
+348,"<dragonbite> can run using ""java -jar <path to>/Minecraft.jar",36
+349,<nick420> silvian gave me a walk through and all seemed to work but the game will still not open,36
+350,<silvian> had to install oracle jdk for him,36
+351,"<dragonbite> sorry, ""java -jar <path to>/Minecraft.jar"" (without quotes)",36
+352,"<latenite_> xangua, I mean when it made its way to ubuntu.",47
+353,<tgm4883> silvian: was there an error? What version of minecraft? It should work fine with openjdk,36
+354,<silvian> yeah that's what i though... no nick420 didn't specify the error,36
+355,"<latenite_> xangua, I want to compare the release dates of the offical sites of firefox to the dates of some distros",47
+356,<silvian> anyway should be there configuring this... we just need to set $JAVA_HOME environment variable,36
+357,<silvian> so I've asked nick420 to run: readlink -f `which java`,36
+358,<silvian> to find out what the install path is,36
+359,<dragonbite> silvian: what about trying to uninstall it and then install openjdk or oracle java again?,36
+360,* tgm4883 wonders if it's not a java issue...,36
+361,<silvian> its installed fine i think its just a matter of configuring JAVA_HOME now,36
+362,<nick420> it says this /usr/lib/jvm/java-8-oracle/jre/bin/java,36
+363,<silvian> good ok now copy that exactly into your clipboard,36
+364,<silvian> and now run export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java,36
+365,<latenite_> anyone? I don't use ubuntu and could really use some help here :D,47
+366,<nick420> clipboard..? lol,36
+367,<silvian> whatever... ctrl +C,36
+368,<silvian> :P,36
+369,<Bashing-om> latenite_: Then there is a need for you to run ubuntu .,47
+370,<silvian> just paste this and run it,36
+371,<silvian> export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java,36
+372,<tgm4883> latenite_: why?,47
+373,"<latenite_> Bashing-om, I was hoping to find the data I need online in the repos or some git...",47
+374,"<nick420> i pasted ""export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java"" and nothing happend",36
+375,"<latenite_> tgm4883, so I can compare how fast/slow software updates get into the different distros.",47
+376,<dragonbite> latenite: have you looked at http://packages.ubuntu.com ?  It doesn't give you the date but gives you the version,47
+377,<tsapii> nick420: you specified the java binary as JAVA_HOME,36
+378,"<tsapii> remove the ""bin/java"" part",36
+379,"<Bashing-om> latenite_: You can always ask, if it is not ubuntu related we can redirect so you get the help you need . Ask your question .",47
+380,<silvian> that's fine,36
+381,<silvian> it gives you no output back,36
+382,"<latenite_> Bashing-om, tgm4883 xangua on gentoo it was easy for firefox https://gitweb.gentoo.org/repo/gentoo.git/commit/www-client/firefox/firefox-44.0.2.ebuild?id=2b761e9d635fee7a8c3ab20dfa54e20c0c1d737c",47
+383,<silvian> just hit return key,36
+384,<latenite_> 3 days,47
+385,<tgm4883> latenite_: you'd need to go through the mailing list to get the upload dates I believe,47
+386,<silvian> then close down your terminal,36
+387,<silvian> and open it again,36
+388,<silvian> then try running minecraft,36
+389,<silvian> it should be set now,36
+390,<tsapii> ...is it fine to specify it to the binary path? could've sworn that it had to be left out,36
+391,<ks3> latenite_: If you're looking in the repos why couldn't you use the timestamp of the package?,47
+392,"<latenite_> tgm4883, there is no logging or git? When it comes to ubuntu repos?",47
+393,<tgm4883> latenite_: what ks3 said. That seems to be the best solution http://security.ubuntu.com/ubuntu/pool/main/f/firefox/,47
+394,"<latenite_> ks3, I found this file http://us.archive.ubuntu.com/ubuntu/dists/wily/main/binary-amd64/",47
+395,<latenite_> but there are not time stamps,47
+396,<tgm4883> latenite_: look at the link I posted,47
+397,<nick420> negative. says the same thing :(,36
+398,<nick420> should i give up lol,36
+399,<tgm4883> silvian: closing and reopening the terminal wipes the export,36
+400,<tsapii> yeah,36
+401,<tsapii> should add it to .bashrc,36
+402,"<tgm4883> well, should export it first and see if it works",36
+403,<tgm4883> only add it to .bashrc if it works,36
+404,<tsapii> true,36
+405,<silvian> yeah repeat the export task again in bash terminal,36
+406,"<tgm4883> silvian: also, you set his java_home wrong",36
+407,"<latenite_> tgm4883, so http://security.ubuntu.com/ubuntu/pool/main/f/firefox/firefox-dbg_44.0.2+build1-0ubuntu0.15.10.1_amd64.deb is from 11-Feb-2016 20:39",47
+408,<nick420> export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java   ??,36
+409,<tgm4883> nick420: no,36
+410,"<latenite_> tgm4883, I wonder if there is a TIME on the offical release by mozilla?!",47
+411,"<tgm4883> nick420: ""export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre""",36
+412,<tgm4883> latenite_: what exactly are you trying to accomplish here? Because it doesn't really seem like a support issue,47
+413,"<latenite_> tgm4883, it's about getting to know how much time passed from mozillas offical release until available in ubuntu15",47
+414,<tgm4883> latenite_: but why,47
+415,al2o3-cr is now known as Guest15322,50
+416,<nick420> ok i did that tmg4883. nothing happend,36
+417,<nick420> blank line now,36
+418,"<tgm4883> nick420: ok, now do",36
+419,<tgm4883> nick420: 'java -jar <path to minecraft.jar file>,36
+420,"<latenite_> tgm4883, to compare to other distros. There seem to be big differences in time...",47
+421,<tgm4883> I'm assuming it's just minecraft.jar,36
+422,<nick420> ok..another blank line,36
+423,<tgm4883> latenite_: which is worthless IMO and doesn't make me want to drop what I'm doing to help you,47
+424,<tgm4883> nick420: can you do 'ls -l' then pastebin what you've done in the terminal so far?,36
+425,"<nick420> nick@enterprise:~$ export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java nick@enterprise:~$ export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre"" > 'java -jar <path to minecraft.jar file> > 'ls -l'",36
+426,"<tgm4883> latenite_: honestly though, what's your end game here?",47
+427,<tgm4883> nick420: do 'ctrl+c',36
+428,"<latenite_> tgm4883, it sparked a discussion in our LUG ... So I am investigating on it. The whole idea started with this: http://segfault.linuxmint.com/2013/11/answering-controversy-stability-vs-security-is-something-you-configure/",47
+429,<nick420> ok,36
+430,al2o3-cr1 is now known as al2o3-cr,51
+431,AndyTechGuy is now known as _atg,52
+432,"<tgm4883> latenite_: yea, that's about what I figured started this....",47
+433,"<tgm4883> nick420: ok, now do ""export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre"" but remember to remove both quotes",36
+434,"<latenite_> tgm4883, our members wonder what the real difference is, when it comes to time and updates",47
+435,jwheare_local___ is now known as jwheare_local,53
+436,"<tgm4883> latenite_: ok, so I would probably forget about the timestamp then and just focus on the date",47
+437,<nick420> ok i did that,36
+438,<silvian> still no luck guys with java home?,36
+439,"<tgm4883> latenite_: 1) because you're talking times, but unsure about what timezone the server is in",47
+440,"<latenite_> true , good point",47
+441,"<tgm4883> latenite_: and 2) we're talking hours here, which is meaningless",47
+442,"<tgm4883> nick420: ok, now do this",36
+443,<tgm4883> nick420: 'java -jar minecraft.jar',36
+444,"<Pici> latenite_: I missed part of the conversation here, but are you looking for something like this? https://launchpad.net/ubuntu/+source/firefox/+publishinghistory",47
+445,<nick420> with the quotes?,36
+446,<tgm4883> latenite_: ^^,47
+447,"<tgm4883> nick420: no, remove the quotes",36
+448,<silvian> no quotes,36
+449,"<tgm4883> Pici: that is perfect, exactly what he's looking for",47
+450,<tgm4883> and way better than what I gave him,47
+451,<nick420> Error: Unable to access jarfile minecraft.jar,36
+452,"<latenite_> Pici, great",47
+453,<Pici> :),47
+454,"<latenite_> tgm4883, so its UTC :D",47
+455,"<tgm4883> nick420: ok, can you pastebin this command 'ls -l'",36
+456,<latenite_> we can start being picky about hours now :D,47
+457,<nick420> im gonna lay a steamer on this thing soon,36
+458,<tgm4883> nick420: we're getting close I think,36
+459,<silvian> :),36
+460,<nick420> ok i did that,36
+461,<tgm4883> nick420: what's the output?,36
+462,<tgm4883> !pastebin | nick420,36
+463,"<ubottu> nick420: For posting multi-line texts into the channel, please use http://paste.ubuntu.com | To post !screenshots use http://imgur.com/ !pastebinit to paste directly from command line | Make sure you give us the URL for your paste - see also the channel topic.",36
+464,<nick420> nick@enterprise:~$ ls -l total 3132 drwxr-xr-x 2 nick nick    4096 Feb 21 23:47 Desktop drwxr-xr-x 2 nick nick    4096 Feb 20 22:11 Documents drwxr-xr-x 8 nick nick    4096 Feb 22 14:01 Downloads -rw-r--r-- 1 nick nick    8980 Feb 20 21:49 examples.desktop -rw-rw-r-- 1 nick nick 3154815 Feb 21 13:39 Firefox_wallpaper.png drwxr-xr-x 5 nick nick    4096 Feb 21 12:29 kdenlive drwxr-xr-x 2 nick nick    4096 Feb 20 22:11 Music drwxr-xr-,36
+465,<nick420> oops sorry guys,36
+466,"<tgm4883> nick420: ok, where is your minecraft jar file?",36
+467,<nick420> that seems like a really valid question..,36
+468,<nick420> and suggestions lol,36
+469,<tgm4883> nick420: my assumption is it's still in your Downloads folder,36
+470,<nick420> yes it is,36
+471,* tgm4883 is seriously doubting the openjdk issue now,36
+472,<tgm4883> nick420: ok do this,36
+473,<tgm4883> nick420: 'cd Downloads',36
+474,<tgm4883> nick420: without the quotes,36
+475,"<tgm4883> also, this is possibly the most difficult way we could do this, but I digress",36
+476,<nick420> check,36
+477,"<tgm4883> nick420: ok, now do",36
+478,<tgm4883> nick420: 'java -jar minecraft.jar',36
+479,<tgm4883> nick420: no quotes,36
+480,* tgm4883 shoots silvian an evil eye,36
+481,<nick420> ok,36
+482,"<Ian_Corne> what's the ""good"" way to get fingerprint readers in ubuntu?",54
+483,<silvian> have you found the minecraft.jar file?,36
+484,<tgm4883> nick420: ok what happened?,36
+485,"<Ian_Corne> some program i need to install, or is it already preinstalled and I just need to set it up?",54
+486,<silvian> thanks for jumping in tgm4883,36
+487,<silvian> :),36
+488,<tgm4883> silvian: it's supposedly in Downloads/,36
+489,<tgm4883> although I didn't verify filename/case :/,36
+490,<silvian> I think nick420 is playing right now ;),36
+491,<nick420> nick@enterprise:~$ cd Downloads nick@enterprise:~/Downloads$ java -jar minecraft.jar Error: Unable to access jarfile minecraft.jar nick@enterprise:~/Downloads$,36
+492,<silvian> oh permissions,36
+493,<nick420> i wish silvian. i really do,36
+494,<tsapii> wasn't it Minecraft.jar just before?,36
+495,<silvian> do ls -lrt,36
+496,<tgm4883> tsapii: yea it is,36
+497,<silvian> inside Downloads,36
+498,<tgm4883> nick420: 'java -jar Minecraft.jar',36
+499,<silvian> paste the output,36

@@ -1,0 +1,501 @@
+,line,cluster number
+0,<Acidfried> anyone know a decent dc++ client other than linux dc,1
+1,"<vee_> danbhfive: I am at the point Guided, but which one ; entire disk / entire disk and set up LVM / entire disk and set up encrypted LVM? then theres the first- resize (which is prolly what i dont want) and manual",2
+2,<thor> ToddEDM2: but if you want to let it go we can do that too.,3
+3,reconnect is now known as recon0,4
+4,<thor> ToddEDM2: bookmark the howto so you can find it tomorrow,3
+5,<thor> ToddEDM2: when you access swat you will see what I meant...it makes samba SO easy,3
+6,"<blkthndr> I have a folder that windows reads as hidden, is there any way i can change this using ubuntu?",5
+7,"<danbhfive> vee_ dont you want the first?  I don't know, I always have chosen manual  :(",2
+8,"<ToddEDM2> thor.. i got the file made, how do i save it ?",6
+9,<thor> ToddEDM2: are you using nano?,6
+10,<ToddEDM2> yup,6
+11,"<danbhfive> vee_ if you choose manual, all you need to do is have at least one partition marked as /",2
+12,<thor> ToddEDM2: just hit control-X and it will prmpt if you want to save. Say yes and it will ask for the filename,6
+13,<thor> ToddEDM2: no..it already knows the filename <smile>,6
+14,"<craigbass1976> I've just read https://bugs.launchpad.net/ubuntu/+source/wxwidgets2.8/+bug/68792 about amue crashing all the time when updating.  What's the eta on a solution, anyone know?",7
+15,<vee_> danbhfive choosing manual,2
+16,<thor> ToddEDM2: then 'sudo /usr/sbin/xinetd restart',6
+17,<TigranG> Whats an alternative network manager than network-manager?,8
+18,<thor> ToddEDM2: then open the browser on the desktop and type 'localhost:901' for the url,6
+19,"<djezer> robdig yeah, but some themes i installed crashed the window manager gnome and kde",9
+20,<Baumer> So Apparently I don't have the 3D accelerator or something installed correctly on ubuntu... how would I go about installing that for a integrated intel graphics card?,10
+21,<ToddEDM2> :),6
+22,<thor> ToddEDM2: did you get it?,6
+23,<djezer> i neede to find a way to open my themes settings from a command,9
+24,<vee_> danbhfive: now i see Guided / Help partioneg below that are two SATA drives - one has a submenu,2
+25,<craigbass1976> Is there another file sharing app that installs easily in Ubuntu?,7
+26,<vee_> danbhfive # 1 primary and #5 logical,2
+27,<djezer> anyone know the program name so i can launch the themes manager in ubuntu,9
+28,<ToddEDM2> yes thor,6
+29,<thor> ToddEDM2: on the printers tab....,6
+30,<ToddEDM2> no im logged into some samba page,6
+31,<thor> ToddEDM2: there is a drop down for Choose Printer,6
+32,<ToddEDM2> ohh ok,6
+33,"<danbhfive> vee_ mmk, are they partitioned?",2
+34,<danbhfive> vee_ how much do you know about partitioning?,2
+35,<vee_> when it comes to linux - 0,2
+36,<ToddEDM2> you want me back in cups?,6
+37,<danbhfive> vee_ how about in windows? ie not linux?,2
+38,<thor> ToddEDM2: no...we need to define the printer in samba first,6
+39,<ToddEDM2> ok,6
+40,<vee_> windows an d mac - yes,2
+41,<user_> i want to backup /home/user  is this correct use this command: tar -czf user_backup.tar.gz /home/user,11
+42,<vee_> danbhfive: win and mac yes,2
+43,<thor> ToddEDM2: in swat you should see eight icons at the top...if not then you didn't log in as an administrator,6
+44,<danbhfive> vee_ how would you partition in those cases,2
+45,"<danbhfive> user_ probably not, i dont think that works",11
+46,<thor> ToddEDM2: there should be Home-globals-shares-printers-etc,6
+47,"<ToddEDM2> ok i didnt , i see 4",6
+48,"<user_> danbhfive, what is the correct one?",11
+49,"<thor> ToddEDM2: then close the page, open it again, and log in as an adminstrator",6
+50,"<blkthndr> I have a folder that windows reads as hidden, is there any way i can change this using ubuntu?",12
+51,"<danbhfive> vee_ i mean, im not sure if I know what you need, you could just format them both to ext3, set one to mount as / and the other to something like /media/other",2
+52,"<vee_> danbhfive most of the available space would go to data, if I have two or more drives I drop my data from one HD to another",2
+53,"<ToddEDM2> o i closed it, tried the other login/pass no go",6
+54,<ToddEDM2> whats the administrators login/pass????,6
+55,<danbhfive> user_ why are you backing up /home?,11
+56,<ztomic> blkthndr: why are you trying to do that?,12
+57,<Assid> man,13
+58,<Amendt> any ubuntu laptops in Canada?,14
+59,<Assid> this final release of ubuntu is messed up,13
+60,<thor> ToddEDM2: in ubuntu the admin is the first user you define...who was first when you installed on the desktop?,6
+61,"<user_> danbhfive, i want to backup /home/user , not /home",11
+62,<Assid> i dont get anything while the machine starts,13
+63,<blkthndr> its for my mp3 player,12
+64,<Assid> no loader or anything,13
+65,<vee_> danbhfive: system then two partitions (equal in size but way bigger than system) for data,2
+66,"<user_> danbhfive, i want to re-install my ubuntu",11
+67,"<user_> danbhfive, upgrade it to 7.10",11
+68,<ztomic> blkthndr: this is a foldaer that should not be hidden?,12
+69,"<user_> danbhfive, because right now i use 7.04",11
+70,"<PsyDeViL> hmm. can anyone suggest me what ubuntu version i should stick with.  i have tried gutsy , feisty , on my desktop and they install by using safe graphics mode.  However when i try to use edgy eft i can not boot into install.  The system crashes and i hear a beep and screen goes black. (if any1 could shed some light on boot options to use with f6).  The reason i am doing this is because my ati AGP card is not supported in fesity and gutsy.",15
+71,<blkthndr> yes it should not be hidden,12
+72,"<ToddEDM2> thor, i did that... gave me only 4 icons",6
+73,<Assid> err.. did someone screw up on the release?,13
+74,<ztomic> blkthndr: is it hidden in windows?,12
+75,<Assid> the loader is just dead,13
+76,"<blkthndr> yes its hidden in windows, i dont have windows to change the status though",12
+77,"<danbhfive> vee_ well, if you mount one drive as /, basically everything will go there",2
+78,<thor> ToddEDM2: then open a terminal....type 'passwd root' and give a password for root...I always do that when I first install for just these reasons,6
+79,<vee_> danbhfive: I will be placing my Mac and Windows files on the data partitions as well,2
+80,"<Taa5i> Hello.  I'm attempting to install using a Xircom rbem56g cardbus ethernet adapter and network autoconfiguration will not assign it an IP.  I know it is a functional card, I've used it before in other distros.  ANy idea why it wouldn't work please?  I really can't install without getting this working.  :/",16
+81,<thor> ToddEDM2: then log in with the user id 'root' and the password you just defined,6
+82,<pike_> PsyDeViL: well.. if youre going to go with an older version have you considered dapper? its the long term support version,15
+83,<danbhfive> vee_ are you dual booting? or try booting?,2
+84,<thor> ToddEDM2: I have about five hours of notes about things to tell you....we need to continue this at another time <smile> (or via email),6
+85,<thor> ToddEDM2: let me know when you are logged into swat as root,6
+86,<pike_> PsyDeViL: id suggest you maybe just ebay the ati card though and buy a dirt cheap nvidia :),15
+87,<ToddEDM2> k,6
+88,"<blkthndr> the problem is that because it is a windows hidden file, my mp3 player cannot read it.",12
+89,<danbhfive> user_ do you want to be able to restore the files?,11
+90,"<vee_> danbhfive: I would like one drive with a good size partition for system and apps, plus a much bigger portion for M and W data backup, while the other drive I want to store just M and W data",2
+91,<thor> ToddEDM2: you have eight icons now?,6
+92,<ToddEDM2> yup,6
+93,<thor> ToddEDM2: the printers icon....,6
+94,<ToddEDM2> k,6
+95,<vee_> danbhfive: i dont want to ever have a chance of messing up the system (ha),2
+96,<thor> ToddEDM2: check the drop down list for Choose Printer and see if one is defined,6
+97,"<danbhfive> vee_ but are you dual booting?  i didnt think you were, are you talking about when you actually setup the ftp?",2
+98,<thor> ToddEDM2: is there anything besides 'printers'?,6
+99,<cry0k1n3t1c> Anybody know how to configure an ad hoc connection in gutsy?,17
+100,<ztomic> blkthndr: that dont make sense. Does your mp3 player work with Linux/Ubuntu?,12
+101,"<slvmchn> i'm having a lot of trouble with this, i had hda/sda1 = windows, hda/sda2 = storage, and hda/sda5 = linux partition... i installed XP over the vista partition, but now grub doesn't load at all",18
+102,"<vee_> danbhfive: at this point no, in the future i will purchase a separate drive for that",2
+103,<slvmchn> before i was using grub to dual boot,18
+104,"<ToddEDM2> no just printers, and mine is listed",6
+105,<blkthndr> yes it works fine,12
+106,<danbhfive> user_  sudo rsync -aS /home/<user>/. /<backup location>/.,11
+107,"<slvmchn> if i change the boot partition i can't get linux to load at all, and i can't get grub to set up right using a live cd",18
+108,"<cry0k1n3t1c> slvmchn: When you install XP, it overwrites the MBR",18
+109,<vee_> danbhfive: i really want this machine to be a server (another ha),2
+110,<slvmchn> cry0k1n3t1c: i am aware of this,18
+111,<slvmchn> cry0k1n3t1c: how do i reset it,18
+112,<thor> ToddEDM2: what do yo mean yours is listed? Is there a printer there in the list? If so ....highlight it and click Choose Printer,6
+113,"<danbhfive> vee_ then dont bother with partitioning much, you want to use ALL the space for linux",2
+114,<cry0k1n3t1c> slvchn: Did you try to reinstall GRUB from the live CD?,18
+115,matthew_ is now known as person,19
+116,<ToddEDM2> ok i did that thor,6
+117,"<blkthndr> i use rockbox firmware on my mp3 player, when i boot the mp3 players original firmware it makes the music folder hidden, rockbox cannot find the hidden music folder",12
+118,<ztomic> blkthndr: and copying the folder is unacceptable?,12
+119,<slvmchn> cry0k1n3t1c: yes but it gave me problems,18
+120,<thor> OK...the important ones....,6
+121,<blkthndr> I could copy the folder but its a huge folder,12
+122,<thor> ToddEDM2: path = /var/spool/samba,6
+123,"<danbhfive> vee_ linux will be holding the files for other OS's, in fact, at this point, it doesnt matter",2
+124,<thor> ToddEDM2: guest = ok,6
+125,<blkthndr> and the problem will create itself again in the future,12
+126,<thor> ToddEDM2: printable=yes,6
+127,<ztomic> blkthndr: I understand but it should be visible.,12
+128,<thor> ToddEDM2: printer name (write that down!),6
+129,<danbhfive> o crap,20
+130,<danbhfive> is there an admin?,20
+131,<thor> ToddEDM2: browseable = yes,6
+132,"<cry0k1n3t1c> So, is it even possible to set up an Ad Hoc connection between 2 ubuntu computers?",17
+133,<WorkingOnWise> any ideas y update manager cant fetch any repositories. eveythin comes back with a 404 error. I have a good network connection.,21
+134,"<danbhfive> last time, i got banned from IRC for this",20
+135,<thor> ToddEDM2: available=yes,6
+136,"<vee_> danbhfive: ok, so should i click on each and partition the entire device",2
+137,<danbhfive> i think i may log off,20
+138,<thor> ToddEDM2: that's it,6
+139,<thor> ToddEDM2: what is the printer name?,6
+140,<ToddEDM2> can i change the printer name?,6
+141,<thor> ToddEDM2: yup...if you want to,6
+142,"<blkthndr> its visible to linux and ubuntu and a mac, rockbox does not see it becaues it is a windows hidden file.  when i had windows i could just unhide it, i can't do this using ubuntu because its not hidden to it",12
+143,"<slvmchn> cry0k1n3t1c: i found some forum posts that showed how to set grub back up, by looking for stage1 boot whatever, and then when i do setup hd(0,0) or whatever the command is it starts to work but then says Errorr 22",18
+144,<ToddEDM2> psc_1200_series is what it is,6
+145,<thor> ToddEDM2: make it whatever you like,6
+146,"<danbhfive> vee_ yeah, just one big partition for now",2
+147,<thor> ToddEDM2: then click Commit Changes at the top (near the drop down list),6
+148,<pike_> cry0k1n3t1c: https://help.ubuntu.com/community/WifiDocs/Adhoc,17
+149,<vee_> danbhfive: creating new partition tables for each right now,2
+150,<danbhfive> vee_ you should just get things up and running as close as you can to how you want,2
+151,<ToddEDM2> ok done,6
+152,<danbhfive> vee_ you can worry about more fancy partitioning later,2
+153,<thor> ToddEDM2: now you should be able to define that printer in cups on the laptop,6
+154,<vee_> danbhfive kewl,2
+155,<ToddEDM2> ok,6
+156,<thor> ToddEDM2: you do remember the printer name I hope <smile>,6
+157,<ztomic> blkthndr: that's a predicament.,12
+158,<Taa5i> Why doesn't the ubuntu install cd come with ping??  It's really hard to try to diagnose network issues without it and/or traceroute....,22
+159,<Kubala> hello word,23
+160,"<blkthndr> there are ways around it so i can access my music, but i just want to know if the problem can be fixed",12
+161,<Kubala> hihi;],23
+162,<Kubala> sleep now,23
+163,<Kubala> ; ],23
+164,"<ToddEDM2> now i add printers , in cups on the laptop",6
+165,<ToddEDM2> ?,6
+166,<Kubala> people; ],23
+167,<thor> ToddEDM2: yup...you can add that printer in cups on the laptop,6
+168,<thor> ToddEDM2: smb://ipaddress/name,6
+169,<curfmans> anyone know how to put tibia on ubuntu,24
+170,<Taa5i> Also could someone point me towards a pcmcia ethernet card that's known to work with the installer?  I'm using a xircom_cb one which fails.,25
+171,<ztomic> blkthndr: maybe you can be more specific. it does sound like a hardware issue that is solvable.,12
+172,<PsyDeViL> thanks pike just downloading dapper now,15
+173,<PsyDeViL> will give it a shot,15
+174,<thor> ToddEDM2: and use the same printer driver you are using in the desktop. If you don't remember it you can access cups on the desktop and look...just don't change it on the desktop as it is working,6
+175,<Assid> err.. wtf is wrong with the default live cd installation of ubuntu?,13
+176,"<vee_> danbhfive ok both say under there sub menus: pri/log 500.1 GB FREE SPACE, im clcking FINISH partitioning and write changes to disk",2
+177,<Assid> i dont see the loading progress bar,13
+178,<Assid> just a blank black while ubuntu loads,13
+179,<PsyDeViL> its just that i downloaded edgy livecd and it wont install. - the reason i am going to old version is so i can use my gfx card.,15
+180,<ztomic> but I'm at a loss as to why someone would hide a music folder.,12
+181,<Shadow147> hey I need to get into just the command prompt,26
+182,"<blkthndr> Its not a hardware issue.  I'm just trying to change the hidden status of a folder, the problem is its a windows hidden folder and not a linux hidden folder",12
+183,<thor> Shadow147: just open a terminal,26
+184,<Taa5i> bloody useless channel..,25
+185,<qwerty121> Hi all! Which download manager is the best in Ubuntu?,27
+186,<Shadow147> thor I need to stop gnome,26
+187,<thor> Shadow147: or press Alt-Ctrl-F2,26
+188,<ztomic> blkthndr: there-in lies the problem,12
+189,<ToddEDM2> lets hope this works.. wifey is home now,6
+190,<thor> Shadow147: A-C-F2 thru F6,26
+191,<user_> why some people suggest me to compress a folder with tar.gz (tar -czvf backup.tar.gz /var/www) insted using gzip /var/www so it return www.gz  ??,28
+192,<thor> ToddEDM2: keep the faith...everything is set...if it doesn't work it is a missing checkmark or some such...a very minor thing,6
+193,<user_> what is the benefit using .tar insted gz ?,28
+194,<ToddEDM2> didnt work ... i will try again later,6
+195,"<Viper> I think .tar is just an archive, no compression.",28
+196,<thor> ToddEDM2: truly! I can't imagine why. Sorry,6
+197,<Viper> .tar.gz is compressed... I think that's how it works.,28
+198,<Chronosphear> is missing/broken gnome applets a common issue when dist-upgrading to gutsy?,29
+199,<thor> ToddEDM2: I am looking at mine as we work on this...it is set up just like mine,6
+200,<dude> .,30
+201,<erisco> I have a few .vcd's.. I know I looked up in the past of how to make these into iso's... I forget =\ anyone know?,31
+202,"<user_> Viper,  so why not we just use .gz than .tar.gz  ?",28
+203,<blkthndr> so there is no way I can change its hidden status without using windows?,12
+204,<thor> ToddEDM2: and it works...sort of <smile>,6
+205,<ztomic> blkthndr: perhaps linux would be able to read AMIGA floppy disks as well? Nope. aint gonna happen.,12
+206,<thor> ToddEDM2: spnye@yahoo.com if you want to follow up on this and other stuff,6
+207,"<danbhfive> user_ gz is just compression, for a single file, tar binds several files together",28
+208,<thor> ToddEDM2: tell wifey you worked REAL hard,6
+209,<erisco> I have a few .vcd's.. I know I looked up in the past of how to make these into iso's... I forget =\ anyone know?,31
+210,<danbhfive> user_ i think you use them both to create an archive,28
+211,monkey_ is now known as monTree,32
+212,<ztomic> slightly different problem but none-the-less... it aint gonna happen.,12
+213,<danbhfive> user_ but you should use the command I have you for /home,28
+214,"<user_> danbhfive, so can not to gzip /var/www   is that what you mean?",28
+215,"<user_> danbhfive, so i must tar it first",28
+216,<danbhfive> user_ i think thats the case,28
+217,"<user_> danbhfive, then compress it, example use gz",28
+218,<qwerty121> hi all! which download manager is best for Ubuntu?,27
+219,"<user_> danbhfive, ok thanks",28
+220,"<danbhfive> user_ tar can gzip it for you, just add a z directive, i believe",28
+221,"<Viper> qwerty: I use firefox's built-in one, or flashget...",27
+222,<qwerty121> Viper: does flashget support resume?,27
+223,"<Viper> qwerty: yup, as long as the server does.",27
+224,<Chronosphear> is missing/broken gnome applets a common issue when dist-upgrading to gutsy?,29
+225,<ztomic> blkthndr: try googling it.,12
+226,<Viper> user_: tar -xzf /path/to/directory/to/compress,28
+227,<dude> why hasnt everyone just switched to *bsd yet?,33
+228,<dude> :P,33
+229,<WorkingOnWise> any ideas y update manager cant fetch any repositories. eveything comes back with a 404 error. I have a good network connection.,21
+230,<user_> yes.. thanks,28
+231,<Viper> tar -z tells the tar application to use a foreign compression app.,28
+232,<ztomic> dude: huh?,33
+233,"<danbhfive> Chronosphear, i have broken applets for a similar upgrade",29
+234,"<user_> Viper, x is for extract",28
+235,<qwerty121> Viper: thanks,27
+236,"<Chronosphear> some work, most don't?",29
+237,<Viper> oh... same diff... lol   tar -cz then,28
+238,"<user_> Viper, i think it should tar czvf",28
+239,"<blkthndr> i've tried googling with no help for a couple days, as well as trying the support forums and irc of rockbox",12
+240,"<user_> Viper,  yes.. or the simple one is cz",28
+241,"<ztomic> dude: I can think of 12 reasons right now, and I could probably think of more.",33
+242,"<Viper> I rarely find myself compressing files, decompressing is much more common for me...",28
+243,<danbhfive> Chronosphear did you use the update manager? or did you use the cli?,29
+244,<Chronosphear> update manager and then the cli because update manager only did half tho job,29
+245,<Chronosphear> the*,29
+246,"<danbhfive> heh, that sucks",29
+247,<Viper> Has anyone experience with an add-on PCI SATA raid card in Ubuntu?>,34
+248,"<Chronosphear> danbhfive, yeah, i rebooted thinking it was sorted and logged into a bash prompt with no window manager",29
+249,"<danbhfive> in the past, cli doesn't fully work, i don't think",29
+250,<CGI074> yes Viper,34
+251,<ztomic> 20 reasons not to switch to BSD:,33
+252,<danbhfive> you have to re-run the upgrade commands several times,29
+253,CGI074 is now known as r3wt1nth3b0x,35
+254,<ztomic> 1) you like Windows or linux.,33
+255,"<Chronosphear> danbhfive, i'll give that a go then",29
+256,"<Viper> rwrandomnessb0x: Any luck, and if so, which make/model?",34
+257,<ztomic> 2) you play games that were made for Windows.,33
+258,<ztomic> 3) BSD is hard to install,33
+259,"<Chronosphear> danbhfive, ah nah, it's convinced there's nothing to do now",29
+260,"<r3wt1nth3b0x> Viper, it was a adaptec i think.",34
+261,<r3wt1nth3b0x> Works great.,34
+262,"<danbhfive> Chronosphear i can give you some suggestions, to check it",29
+263,"<Chronosphear> danbhfive, sure",29
+264,<danbhfive> sudo apt-get install -f,29
+265,<WorkingOnWise> are the repos down?,21
+266,<Powaqqatsi> does anyone know how to edit the hotkeys for compiz effects?,36
+267,<scguy318> ztomic: there's been some progress in porting Wine to FreeBSD me thinks,33
+268,<scguy318> ztomic: and really it depends on your OS taste,33
+269,<Viper> r3w: And you didn't have any issues with MDADM?,34
+270,<ztomic> 4) Wine is pain in the arse,33
+271,<danbhfive> sudo apt-get install ubuntu-desktop^,29
+272,"<Chronosphear> danbhfive, 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.",29
+273,<scguy318> ztomic: ditto for Wine on Linux :P,33
+274,<Chronosphear> hrmm,29
+275,<Chronosphear> that is probably it,29
+276,<Viper> @ztomic: wine is about the best linux has for playing win32 games/apps :(,33
+277,<Chronosphear> when i got the bash window and no wm i just installed metacity and gnome,29
+278,<danbhfive> carrot is not a spelling mistake,29
+279,"<vee_> danbhfive ok both say under there sub menus: pri/log 500.1 GB FREE SPACE, im clcking FINISH partitioning and write changes to disk, now when I go to finish it says no /root found",2
+280,<r3wt1nth3b0x> No Viper...,34
+281,<Powaqqatsi> does anyone know the hotkey for scale?,36
+282,"<Chronosphear> oh, meta package",29
+283,<ztomic> 5) You work with Windows at work and don't care about BSD.,33
+284,<danbhfive> vee_ did you set one of the partitions to /  ?,2
+285,<r3wt1nth3b0x> Viper why would you be using MDADM with hardware RAID?,34
+286,"<danbhfive> no, its a directive actually, i think",29
+287,<alimoe> hi,37
+288,<cryptnix> bsd is hard to install?,33
+289,<cryptnix> uhh,33
+290,<alimoe> i think opera is great,38
+291,<erisco> I have a data disk that is in VCD format. How can I change this to an ISO format so I can burn it into a CD?,31
+292,<Chronosphear> The following packages have unmet dependencies.  firefox: Conflicts: libnss3 but 2:1.firefox2.0.0.10+1nobinonly-0ubuntu1 is to be installed E: Broken packages,29
+293,<Viper> None of the other sata cards' RAID has been detected by linux...,34
+294,<Chronosphear> can't see it being that tho,29
+295,<ztomic> 6) You have tried BSD in the past and you don't want to make that mistake again. But you tried OpenBSD just to be sure.,33
+296,<r3wt1nth3b0x> Viper brb,34
+297,<danbhfive> try sudo apt-get dist-upgrade,29
+298,<Chronosphear> nothing to do,29
+299,<vee_> danbhfive shoudl one be logical and one be primary?,2
+300,<WorkingOnWise> are the gutsy repos down?,21
+301,"<vladc> Ubuntu 7.10 causes my iMac G3 to restart very early in the boot process (3 seconds after yaboot). Passing ""video=ofonly"" kernel param didn't work, but the latest debian boots with no problem. Any ideas?",39
+302,<danbhfive> vee_ nah,2
+303,<danbhfive> vee_ thats only if you are breaking up the harddrives into several partitions,2
+304,<erisco> I have a data disk that is in VCD format. How can I change this to an ISO format so I can burn it into a CD?,31
+305,<vee_> danbhfive im clearing them again (thanx for baring with me),2
+306,<alimoe> if its was for microsft i wuld have used NERO burner,31
+307,<ztomic> 7) you heard Unix is different than LInux and you wanted to try a REAL OS but you were not smart enough.,33
+308,"<cry0k1n3t1c> Can anybody help me, I am trying to use this computer as a hub to connect my other computers to the internet",17
+309,"<r00tintheb0x> okay Viper, what card are you using?",34
+310,<Viper> can K3B handle VCD's?,31
+311,<Impiety> so amarok works as root but doesn't work u sing my normal account,40
+312,<Impiety> what might cause this,40
+313,<danbhfive> Chronosphear how about sudo apt-get autoremove,29
+314,<r00tintheb0x> permissions Impiety,40
+315,<Impiety> hrm,40
+316,"<vee_> danbhfive both say FREE SPACE under them, now what",2
+317,<Impiety> all of the libs look good,40
+318,<Impiety> permissionwise,40
+319,"<Viper> r00t: I'm not sure off the top of my head, it was a cheapy pseude-raid controller...",34
+320,"<danbhfive> vee_  wait, did you informat them?",2
+321,<Cyntek> Should Alsa automatically pickup Realtek onboard sound devices?,41
+322,<Chronosphear> you mean autoclean?,29
+323,<danbhfive> autoremove,29
+324,<Chronosphear> did nothing,29
+325,<vee_> danbhfive i clciked manual under the partitioning menu,2
+326,"<ztomic> 8) you heard that windows applications can run on it but when you tried to get help, none was available so you ditched it.",33
+327,_vector_ is now known as _vector_afk,42
+328,"<danbhfive> ok, i would use synaptic then, and resolve those broken dependencies",2
+329,<ztomic> 9) never heard of it.,33
+330,<vee_> danbhfive then i hit <enter> with each drive selected,2
+331,<danbhfive> uninstall any package that doesnt have a valid source,2
+332,<r00tintheb0x> Viper i need the model to find the correct module to load.,34
+333,<ztomic> 10) it's great but how do I...?,33
+334,<danbhfive> vee_ are the drives formatted at this point?,2
+335,<vee_> danbhfive it then asked me whether or not to create new empty partition table,2
+336,<gaoxla_> mp3melayu,43
+337,<Chronosphear> how do i get a list of packages that don't have a valid source?,2
+338,<ztomic> 11) I work in Windows.,33
+339,<vee_> danbhfive i said yes to both,2
+340,"<Baumer> If i get the error ""Could not initialize graphics system.  Make sure that your video card and driver are compatible with direct draw""  Whwat should I be looking at?",44
+341,<vee_> danbhfive dioes that mena they are formatted?,2
+342,<kitche> ztomic: do you like spamming?,33
+343,"<Viper> r00t: One sec, I'll get the model#",34
+344,<danbhfive> vee_ i dont know,2
+345,"<danbhfive> vee_ its graphical isnt it?  if it says ""free space"" then its not formated",2
+346,<r00tintheb0x> ok Viper,34
+347,<ztomic> kitche: proving a point... 12) I like to prove my point.,33
+348,<danbhfive> Chronosphear look under Installed (local or obsolete),2
+349,"<danbhfive> get rid of those, unless its something that you personally put there",2
+350,"<Chronosphear> danbhfive, ah, thanks",2
+351,<cry0k1n3t1c> is it even possible to connect two computers in ubuntu via ad hoc?,17
+352,<Viper> r00t: Syba SD-SATA-4P    PCI Sata Controller,34
+353,"<WorkingOnWise> I do apt-get update and every repo is said to be not available, giving a 404 error, but I can ping the ip address that apt-get is trying to pull from. whats wrong?",21
+354,<burke> hey,45
+355,"<Chronosphear> WorkingOnWise, 404 is file not found",21
+356,<danbhfive> vee_ you lost me at some point,2
+357,"<mEck0> Hi! when I try to install kdm-kde4, I got this message: ""E: kdm-kde4: subprocess post-installation script returned error exit status 1"", whats wrong and how do I solve it",46
+358,"<Chronosphear> WorkingOnWise, try a different repo",21
+359,"<me> danbhfive, no, I'm still here.",2
+360,"<danbhfive> vee_ you should format the drive, AND set the mount point",2
+361,"<vee_> danbhfive if I select a dirve then hit <enter> I see a menu for Create a new Partition, Auto part. the free space, or Show Cylinder/head/Sector Info",2
+362,<vee_> danbhfive does that sound familiar?,2
+363,<rooly> i'm having a bit of trouble with my sata drive. it decides to shut-off for no reason after i do high amounts of i/o (aka bittorrent) on the drive,47
+364,<danbhfive> is it all freespace right now?,2
+365,<vee_> yes,2
+366,"<Viper> r00t, I don't think you'll have any luck finding out why I didn't have any luck with the card, posts on newegg say it doesn't like Ubuntu...",34
+367,<vee_> both drives,2
+368,"<danbhfive> vee_ ok, yes, click create a new drive button, where ever that is",2
+369,<WorkingOnWise> Chronosphear: i get that error for every repo..ann 112 of them,21
+370,"<danbhfive> vee_ then select ext3, and then look for a place to set the mount point",2
+371,<danbhfive> vee_ set the mount point to /,2
+372,"<Chronosphear> WorkingOnWise, are you set to use a proxy?",21
+373,<ztomic> 13) I got my point across and now I'de like to list 20 reasons that DOS is better than Windows.,33
+374,<vee_> danbhfive ok but first i have to select logical or primary to get to that menu,2
+375,<vee_> danbhfive which one?,2
+376,<danbhfive> primary,2
+377,<HalflingRogue> I'm getting a CPU overload and big networking problems. Can anybody help?,48
+378,<HalflingRogue> http://ubuntuforums.org/showthread.php?p=3865216#post3865216,48
+379,<ztomic> 14.. 15 16 17 18 19 20... ok,33
+380,"<danbhfive> logical is if you are creating more than 4 partitions, and you are only making one",2
+381,<WorkingOnWise> Chronosphear: no. the only change I am aware of is last night I manually deleted the apt cache.,21
+382,haka2 is now known as ce_bth_co_fs,49
+383,<NH|Computer|Geek> wow 1000peeps,50
+384,"<Donne_Fashion> ciao a tutti, io ho una scheda video Intel GMA X3100 e ho installato xgl invece di aiglx. Come installo aiglx?",51
+385,"<Chronosphear> WorkingOnWise, might have helped to mention that before",21
+386,<danbhfive> !repos > WorkingOnWise maybe you need to check your repositories,21
+387,<danbhfive> vee_ did it work?,2
+388,<Ashfire908> what's the difference between the powerpc kernel and the cell kernel,52
+389,"<vee_> danbhfive  ok I have this set for the first drive.... Use as= Ext3 journaling file sys. Mount point=  /home,  Mount options= defaults, Label= None, reserved Blocks= 5%, Typical usage= standard, bootable flag= off",2
+390,<scguy318> !it | Donne_Fashion,51
+391,"<ubotu> Donne_Fashion: Vai su #ubuntu-it o su #kubuntu-it se vuoi parlare in italiano, in questo canale usiamo solo l'inglese. Grazie!",51
+392,<vee_> danbhfive  hows that?,2
+393,<scguy318> Ashfire908: the latter lets you use the Cell processors of the PS3,52
+394,"<Viper> well, I'm glad at least the bot speaks Italian...",51
+395,<Ashfire908> nice,52
+396,<danbhfive> vee_ the mount point should be just /,2
+397,<r00tintheb0x> Viper you get that number?,34
+398,<vee_> danbhfive  ok,2
+399,"<Ashfire908> scguy318, nice. too bad i have no ps3 lol",52
+400,<WorkingOnWise> Chronosphear: sorry...it just came to mind that it could be related.,21
+401,<Assid> okay someone screwed up on this release,13
+402,"<Viper> The card was mady by Syba, model SD-SATA-4P",34
+403,<Assid> my progress/loader bar that suppopsed to indicate ubuntu is loading is all messed up,13
+404,"<scguy318> Assid: try sticking vga=xxx boot option, too tired to clarify",13
+405,<r00tintheb0x> ok hold Viper,34
+406,"<Chronosphear> danbhfive, the applets are still broken. any other ideas?",2
+407,Trevor_ is now known as Trevor_0017,53
+408,<Assid> and if i press CTRL ALT F1 - to get a console login.. i get fonts which look messed up,13
+409,<Assid> scguy318: that will fix it ?,13
+410,* Viper feels sorry for navandres: ....dial.adsl.anteldata...,54
+411,<danbhfive> vee_ Chronospear did you successfully run sudo apt-get install ubuntu-desktop^ ?,2
+412,<danbhfive> Chronospear did you successfully run sudo apt-get install ubuntu-desktop^ ?,2
+413,<Assid>  scguy318: shouldnt it fix it on its own,13
+414,"<Chronosphear> no, it keeps getting stock on libnss and firefox",2
+415,<scguy318> Assid: it might,13
+416,<Chronosphear> stuck*,2
+417,<scguy318> Assid: its a possible solution,13
+418,"<scguy318> Assid: the xxx are values you have to fill in, google for them im too tired",13
+419,<mihai_> I just installed Chimera on kubuntu and don't know how to run it..,55
+420,<mihai_> does anyone know the command?,55
+421,<Chronosphear> hrmm that's weird,2
+422,<r00tintheb0x> Viper so this is just a SATA PCI card... not a hardware raid card?,34
+423,<vee_> danbhfive  what should I set the second drive to  logical or primary? then i can get to the menu to set the other options,2
+424,<vee_> or just leave it as free space,2
+425,"<danbhfive> Chronospear well, I dont know about the applets, but you still dont yet have a full ubuntu install",2
+426,<r00tintheb0x> Viper http://ubuntuforums.org/search.php?searchid=32247698,34
+427,me is now known as root_bar,56
+428,"<danbhfive> vee_ do it the same as the first, with a different mount point",2
+429,"<Chronosphear> danbhfive, when i do apt-get autoremove it says there is nothing to uninstall BUT when i got to install libnss it says:",2
+430,<Chronosphear> The following packages were automatically installed and are no longer required:,2
+431,<Chronosphear>   planner ekiga libgsf-gnome-1-114 libpth20 libgoffice-0-common abiword-gnome dia-libs gstreamer0.10-plugins-ugly rhythmbox abiword-common,2
+432,<Chronosphear>   seahorse gnumeric-common gnome-themes-extras fast-user-switch-applet dia-gnome gnome-backgrounds libgoffice-0-4 libopal-2.2 libdvdread3,2
+433,<Chronosphear>   libsidplay1 dia-common gnumeric libgpgme11 inkscape libmpeg2-4 liba52-0.7.4,2
+434,<Chronosphear> Use 'apt-get autoremove' to remove them.,2
+435,<Chronosphear> The following packages will be REMOVED,2
+436,"<Chronosphear> oops, sorry",2
+437,<Trevor_0017> plop,57
+438,<ztomic> 20 reasons DOS is better than Windows:,33
+439,"<IamReck> I am running CompizConfig on Ubuntu 7.10 Gutsy Gibbon... I am using the Cube option for my wokspaces, how do I make more workspaces?",58
+440,<Trevor_0017> Where is cyntek,59
+441,<danbhfive> vee_ /media/<whatever you want>,2
+442,"<Cyntek> Im here, bitch",59
+443,"<Trevor_0017> lol, hey",59
+444,"<danbhfive> Chronospear just do it, and run the install desktop command before you reboot",2
+445,"<Trevor_0017> now, lets get my audio wokring",60
+446,"<Viper> r00t: That card had pseudo-raid.... it said it didn't, but you get raid once you boot it up....",34
+447,<Spudster> Has anyone here tried using Openmosix with Gutsy?,61
+448,"<Chronosphear> danbhfive, do what? manually uninstall?",2
+449,<danbhfive> install the libnss?,2
+450,<Chronosphear> autoremove does nothing,2
+451,<vee_> danbhfive  /can/this/be/like/this,2
+452,<danbhfive> did you remove all the local packages?,2
+453,"<Trevor_0017> cyntek, can't do pm because not registered",60
+454,"<r00tintheb0x> viper that card does not have raid, its a SATA card...",34
+455,<Chronosphear> oh right ok,2
+456,<r00tintheb0x> LINUX is giving you SOFTWARE raid.,34
+457,<vee_> danbhfive  or must i start off /home/something/else,2
+458,<grazz> did anybody try the last ati catalyst driver under ubuntu gutsy?,62
+459,"<Viper> No, the card is trying to emulate raid!",34
+460,<grazz> sorry for my english.,62
+461,"<danbhfive> vee_ it can, heh, but dont confuse yourself",2
+462,<Viper> It even has a RAID bios installed......,34
+463,<danbhfive> vee_ it should be under /media,2
+464,"<r00tintheb0x> Viper on boot, does the card have any kind of menu you can go in?",34
+465,<Chronosphear> ooook,2
+466,<Viper> yup,34
+467,"<IamReck> I am running CompizConfig on Ubuntu 7.10 Gutsy Gibbon... I am using the Cube option for my wokspaces, how do I make more workspaces?",58
+468,<r00tintheb0x> hmm,34
+469,<Chronosphear> it's uninstalling gnome,2
+470,<Pir8> Has anyone been able to get logitech orbit cam working in ubuntu?,63
+471,<ztomic> grazz: I tried the restricted driver on 9550 and it sucked.,62
+472,<vee_> danbhfive ok media/myStuff,2
+473,"<Viper> The box doesn't say a bit of thing about raid, nor does the site, nor does anything else... but the damn thing had it... :(",34
+474,"<Trevor_0017> Ok, I've got a question, that I need answered. My audio isn't working. I've tried just about everything, me and cyntek has, someone help, please and thanks.",60
+475,<Assid> scguy318: didnt work,13
+476,"<r00tintheb0x> okay Viper, what kind of array are you trying to create?",34
+477,"<IamReck> Trevor_0017,  double click on the volume item",60
+478,<vee_> danbhfive doesnt give me media in the list so i entered it manually,2
+479,"<danbhfive> vee_ /home is good for reinstalling linux, but that can come when you are more familiar with this stuff",2
+480,"<Trevor_0017> kk, it's loading",60
+481,<danbhfive> vee_ thats fine,2
+482,<Viper> raid-1,34
+483,<vee_> danbhfive kewl,2
+484,<Viper> Just looking for redundancy on 2 drives.,34
+485,<vee_> danbhfive thanx for the patience,2
+486,<IamReck> it shouldn't have to load... but w.e..... make sure non of those items are muted,60
+487,<r00tintheb0x> RAID1 then.,34
+488,<danbhfive> np,2
+489,<NemesisD> anyone know of the boot option for ubuntu to have it not check floppy drives? i'm setting up a persistent install of ubuntu on a USB drive and it works fine on this computer but i get a bunch of fd0 i/o errors on a computer without a floppy drive,64
+490,<IamReck> and turn the volume all the way up on all of them,60
+491,<r00tintheb0x> So you're building the RAID1 VIA teh BIOS on the card?,34
+492,<Assid> this sucks,13
+493,"<grazz> ztomic, yeah, im having a lot of problems too",62
+494,"<reportingsjr> How can I use more resolutions with my monitor? I tried changing the type but that ended up screwing it up. I've tried this monitor with a seperate computer and know I can get much larger resolutions, and the g card supports up to 2048 x 1536. Right now the highest is 1024x768 (ugh). Anyone have any clue what's wrong here?",65
+495,<Assid> i cant see the damn screen while it boots.. and it takes longer cause of that,13
+496,"<danbhfive> Chronosphear, can I pm you?",2
+497,root_bar is now known as I,66
+498,<ztomic> grazz: I have no problems with xorg driver and I get ogl fine in gutsy.,62
+499,"<Chronosphear> danbhfive, sure",2

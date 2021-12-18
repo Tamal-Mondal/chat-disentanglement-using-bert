@@ -1,0 +1,501 @@
+,line,cluster number
+0,"<SixtyFold> but other sites with flash ive been using chromium current edition with it's built in flash and it runs fine too, havent tried youtube in that",1
+1,"<SixtyFold> vp18 - also, what are your specs out of curiousity?",2
+2,<vp18> on my laptop?,2
+3,"<SixtyFold> hardware wise, yes",2
+4,<zykotick9> vp18: chrome using it's own flash...  try in a different browser.,3
+5,<vp18> AMD A6 Quad core processor,2
+6,<LeinardoSmith_> could someone help me set up cups to serve drivers to windows?,4
+7,<SixtyFold> A6 has integrated graphics right?,2
+8,<vp18> i think yes,2
+9,"<SixtyFold> yah, i might be talking out my ass, so someone call me on it, but i believe that could be a glitch too",2
+10,<SixtyFold> amd cards dont work the best with linux,2
+11,satellit is now known as satellit_TS,5
+12,<vp18> but i had this for over a year no problem,2
+13,<SixtyFold> when did you start having issues with flash?,2
+14,<wiak> http://cdimage.ubuntu.com/releases/12.04.3/release/ ese,6
+15,"<SixtyFold> i went through like 5 distros and multiple derivatives before i got an acer with an amd c-60 and amd 6250 dedicated graphics card netbook working with linux and youtube without constant glitching and stutters, *shrugs*",2
+16,<vp18> just now,2
+17,<vp18> i even uninstall the plugin,2
+18,<coccinelle> s,7
+19,<vp18> maybe i need to try chronium,2
+20,<SixtyFold> chromium is chrome for linux,2
+21,<SixtyFold> youre using it already,2
+22,<vp18> no just pure google chrome,2
+23,<coccinelle> je parle francais,8
+24,<SixtyFold> how are you doing that?,2
+25,<lotuspsychje> !fr | coccinelle,8
+26,"<ubottu> coccinelle: Nous sommes desoles mais ce canal est en anglais uniquement. Si vous avez besoin d'aide ou voulez discuter en francais, veuillez taper /join #ubuntu-fr ou /join #ubuntu-qc. Merci.",8
+27,<vp18> google.com,2
+28,"<SixtyFold> yah, try chromium man or firefox with the old 11.2 flash, should work, idk why it wouldnt",2
+29,<vp18> they have chrome for linux,2
+30,"<zykotick9> SixtyFold: chromium is NOT chrome, they are different.",2
+31,<lotuspsychje> !info google-chrome | vp18,2
+32,<ubottu> vp18: Package google-chrome does not exist in raring,2
+33,<SixtyFold> just sudo apt-get install chromium-browser then,2
+34,<SixtyFold> and try that,2
+35,<vp18> im already downloading,2
+36,"<SixtyFold> zykotick9 - i thought chromium was the only google browser available for linux, i thought chrome was just for mac/windows, my bad",2
+37,<xmetal> chrome is chromium with flash built in and google branding,2
+38,<SixtyFold> chromium is the open source version of chrome yah?,2
+39,<xmetal> if i am not mistaken,2
+40,<zykotick9> SixtyFold: yes.,2
+41,<xmetal> other google added stuff too i am sure,2
+42,<xmetal> yeah,2
+43,"<ese> hi, is there a way i can force ubuntu 12.10 x64 to install in legacy mode?",9
+44,<lotuspsychje> xmetal: hows your e17 working out for you?,10
+45,"<xmetal> since i (i am not going on a rant about that) dont use anything google now, if i was going to use one (I dont like either, but thats my opinion) ... i'd go with Chromium",2
+46,<xmetal> basically because that is what Google Chrome is based on anyway .. and its open source (lol ... i think),2
+47,<lotuspsychje> ese: whats your issue exactly?,9
+48,"<zykotick9> ese: what is ""legacy mode"", if you mean 32bit - the answer is no.",9
+49,<xmetal> just fine :) .. never heard of it before you mentioned it ... i go from DE to DE ... basically trying them all out,10
+50,<hanasaki> n931732  go away,11
+51,<lotuspsychje> xmetal: try using the tab for nick autofill,12
+52,<hanasaki> ummm refur1975  go away..,11
+53,"<improvised> I dated a guy named ubuntu once.  He was black as the night and used to ""play the bongos"" on my ass.",13
+54,"<improvised> I dated a guy named ubuntu once.  He was black as the night and used to ""play the bongos"" on my ass.",13
+55,<lotuspsychje> hanasaki: you can report spammer in #ubuntu-ops,11
+56,<hanasaki> what would cause thunderbird to just show the account names but not the folders?   if I make a new profile and setup the account again it is fine,14
+57,"<xmetal> something ""wrong"" with the profile folder ?",14
+58,<xmetal> (where the mail is locally stored),14
+59,<SixtyFold> what's e17?,10
+60,"<wilee-nilee> SixtyFold, a desktop",10
+61,<hanasaki> xmetal:  all the perms aer fine,14
+62,<lotuspsychje> !info e17 | SixtyFold,10
+63,"<ubottu> SixtyFold: e17 (source: e17): Enlightenment DR17 Window Manager. In component universe, is optional. Version 0.16.999.70492-2 (raring), package size 2455 kB, installed size 6280 kB",10
+64,<xmetal> (just a guess),14
+65,"<xmetal> sorry for the fragmented posts too, lol",14
+66,<SixtyFold> is it lighter weight than LXDE?,10
+67,<hanasaki> lotuspsychje:  thanks,11
+68,"<kostkon> SixtyFold, naah",10
+69,<lotuspsychje> SixtyFold: remember oldskool enlightment?,10
+70,"<wilee-nilee> hanasaki, The info was in >config",14
+71,<wilee-nilee> .config,14
+72,"<SixtyFold> lotus - naw, never seen that one before",10
+73,"<SixtyFold> will have to give it a try though, see what it's like",10
+74,<xmetal> i wanted to try lxde ande e17 on my old laptop but i am having issues,10
+75,<hanasaki> wilee-nilee:  huh?,14
+76,<xmetal> (think the laptop's hardware is dying),10
+77,"<lotuspsychje> SixtyFold: you should try it, i think lubuntu remains the lightest one",10
+78,"<zykotick9> kostkon: i'd think e17 and lxde would be ""close"" in resource usage...",10
+79,<xmetal> i think those two DE's would do good on that system,10
+80,"<wilee-nilee> hanasaki, Thought was worng sorry",14
+81,<legend321> Hi there. How do i backup every setting in ubnutu 12.04 without backing up any personal files just in case i mess up anything and may not be able to boot anymore or correct a setting?,15
+82,<hanasaki> wilee-nilee:  what is in config?>,14
+83,"<kostkon> zykotick9, i think lxde is lighter, with less graphical effects. i think now e17 is opengl based or smthing. at least it uses a lot of compositing",10
+84,<hayer> since #rtorrent is dead.. what happens if I delete a rtorrent session file?,16
+85,"<xmetal> i have to use a crt with it since the LCD lamp is out (not worth fixing that on a ""2001/2002"" laptop, in my opinion) ... and even just booting the liveUSB, everything seems to be starting fine and then the CRT goes out and doesn't come back on",10
+86,"<lotuspsychje> hayer: try transmission aswell, pretty neat package",16
+87,"<xmetal> i mean booting up ... its like it shuts off and stays ""off"" .. the CRT itself is fine",10
+88,<hayer> lotuspsychje: no. im using rtorrent + rutorrent,16
+89,<xmetal> no lose cables either,10
+90,<zykotick9> kostkon: e17 is actually very light... i've only used it myself in it's 16.999 version (almost 17) but it's very light actually (i'd find opengl/composting hard to believe actually - i found it too buggy at the time),10
+91,"<xmetal> my newer laptops is fine with almost all of the DE's (it doesn't 'need"" e17 .. but i do like E17, myself)",10
+92,"<kostkon> zykotick9, right, i believe you. youve actually tried it, unlike myself, so yeah :D",10
+93,"<wilee-nilee> hanasaki, It's .config in home unhide the folders and take a look it is many setups for your regular and added apps.",14
+94,<lotuspsychje> for recent computers E17 will run fine with low resources,10
+95,<hanasaki> wilee-nilee:  thanks... nothing on thunderbird there,14
+96,"<wilee-nilee> hanasaki, Yeah I saw that I thought there would be.",14
+97,<wilee-nilee> its all in the .thunderbird folder,14
+98,<hanasaki> wilee-nilee: looks like the easy way is to make a new profile and setup all the accounts again :(,14
+99,"<wilee-nilee> hanasaki, were you setting up an encrypt?",14
+100,<hanasaki> wilee-nilee:  nope  why/,14
+101,"<zykotick9> kostkon: FYI i see ""!info e17"" shows ubuntu is using the 16.999 version of e17 (ie NOT the e17 final)",10
+102,"<wilee-nilee> hanasaki, JUst thought that might have been a cause, just a guess, someone was on earlier doing that.",14
+103,"<kostkon> zykotick9, true. e17 (0.16.999.70492-2)",10
+104,"<zykotick9> kostkon: well, i tried e17 0.17.3, it was a 30MB download!  BUT, it's segfaulting in my VM (possibly due to lack of 3d support?  which this VM doesn't have.  or perhaps because it's still buggy ;)  but i can't verify if it needs 3d or not...",10
+105,"<kostkon> zykotick9, it could be. i still think it requires opengl capable graphics drivers :P",10
+106,"<zykotick9> kostkon: by way of comparison, lxde is a 270MB download!",10
+107,"<kostkon> zykotick9, hmm weird",10
+108,<zykotick9> kostkon: e17 is CRAZY light man...,10
+109,"<kostkon> zykotick9, lol",10
+110,<TScum> looking for some cute gay geek under 18,17
+111,<TScum> (INAPPROPRIATE CONTENT),17
+112,<Dr_Willis> I rember back ages ago when E was heavy. ;) but that was when a Pent 100 was high end. ;P,10
+113,<TScum> pm me if interested,17
+114,<lotuspsychje> Dr_Willis: true :p,10
+115,<tim> Any one that can help me with LibreOffice Writer macros?,18
+116,<xmetal> i remember when i thought @500mhz was blazing fast,10
+117,<xmetal> how times change,10
+118,"<kostkon> zykotick9, hmm 270 v 30. it's a lot. dont know where is coming from. maybe because lubuntu-desktop has a long list of deps. however, just the lxde package alone depends on much fewer packages.",10
+119,<zykotick9> kostkon: that 270 is just the lxde package(s) ;)  it's ALMOST finished installing.,10
+120,"<wilee-nilee> tim, Just tell the channel the problem for help. ;)",18
+121,"<kostkon> zykotick9, oh ok",10
+122,"<mosh> xmetal; now I think my 2.7ghz Dual Core is slow, lol.",10
+123,<ghgh555> hello,19
+124,<raphael> algum brasileiro por ai?,20
+125,<wilee-nilee> !br | raphael,20
+126,"<ubottu> raphael: Por favor, use #ubuntu-br para ajuda em portugues. Para entrar no canal por favor faca ""/join #ubuntu-br"" sem as aspas. Para a comunidade local portuguesa, use #ubuntu-pt. Obrigada.",20
+127,<adrimirc> join ubuntu-es,20
+128,<raphael> ok valew,20
+129,<raphael> alguem meche com pentets?,20
+130,"<tim> Hello, I am having trouble figuring out macros. Specifically SetRowHeight in libreoffice writer. I used the record macro but this is the only setting that didn't get recorded. I'm positive it is a simple quick fix in the script. What to do?",18
+131,"<wilee-nilee> raphael, english here.",20
+132,"<zykotick9> tim: i'm 95% sure there is a libreoffice channel (either on freenode or oftc), i'd suggest trying to find it (on freenode try alis, ""/msg ubottu alis"" for details)",18
+133,<xmetal> hmm there a open/libre office channel ?? ..that may be a better place to look,18
+134,"<adrimirc> Hi I need help, when I click in the System Configuration icon the cursor starts to load but the System Configuration menu dont open",21
+135,<wilee-nilee> several closet seemed to be #libreoffice-devs,18
+136,<adrimirc> Can someone help me?,21
+137,<tim> zykotick9: no one is replying so I am trying here...,18
+138,<tim> I feel like any one who know BASIC could help here.,18
+139,kevin_ is now known as kevin,22
+140,"<wilee-nilee> tim, ##linux maybe",18
+141,"<osolus> Not sure what to try next, I can only get two monitors to work in windows. In linux my system crashes and I am afraid to try again, this problem has occurred with different drivers and on different distributions.",23
+142,<CountryfiedLinux> Where can I get the Ubuntu boot screen and login screen and how do I apply them so they can be used? Thanks in advance.,24
+143,"<wilee-nilee> CountryfiedLinux, Can you give the back on why they are missing?",24
+144,"<zykotick9> kostkon: lxde ends up pulling in, quite a bit of gnome (i guess understandably), which explains it's MUCH larger size than e17.  BUT... e17 failed on my VM, lxde works OOTB!  so my scorecard: e17 = 0 vs lxde = 1 (there is a clear winner from where i sit ;)  thanks for reminding me that e17 exists, and that it's still isn't up to ""my"" quality standards ;)  [i enjoyed the ""test"" though :) ]",10
+145,"<kostkon> zykotick9, :)",10
+146,<ianananan> I'm trying to figure out why I can't download boot-repair to a linux livecd.,25
+147,<Ben66> ianananan: dylan: https://help.ubuntu.com/community/Boot-Repair,25
+148,g_byers is now known as gbyers[Away],26
+149,"<ianananan> I'm running 11.04 (narwhal) and using ""sudo add-apt-repository ppa:yannubuntu""",25
+150,<ianananan> but no dice.,25
+151,<Ben66> uh... 11.04 is not supported,25
+152,"<wilee-nilee> ianananan, I doubt there is a 11.04 release there, its not supported.",25
+153,<ianananan> mk,25
+154,<zykotick9> !11.04 | ianananan,25
+155,"<ubottu> ianananan: Ubuntu 11.04 (Natty Narwhal) was the fourteenth release of Ubuntu. Desktop support ended on October 28, 2012. See !upgrade, !lts and !eol for more details.",25
+156,"<kostkon> ianananan, 11.04 is eol",25
+157,<ianananan> it's a bit of a dated cd anyway :3,25
+158,<ianananan> kostkon: eol?,25
+159,<Ben66> hasn't been supported since october 2012,25
+160,<kostkon> !eol | ianananan,25
+161,"<ubottu> ianananan: End-Of-Life is the time when security updates and support for an Ubuntu release stop, see https://wiki.ubuntu.com/Releases for more information. Looking to upgrade from an EOL release? See https://help.ubuntu.com/community/EOLUpgrades",25
+162,"<wilee-nilee> ianananan, this a 11.04 install or just the disc?",25
+163,<ianananan> wilee-nilee: just a livecd,25
+164,"<ianananan> Ugh, I haven't got anything recent laying around.",25
+165,"<wilee-nilee> ianananan, you can run this for the script to pastebin. http://bootinfoscript.sourceforge.net/",25
+166,<ianananan> Would it be possible to use boot-repair from an archlinux livecd?,25
+167,<mini> is Linux Mint good? better than Ubuntu 13.04?,27
+168,<wilee-nilee> that is the bootinfo summary on boot repair,25
+169,<wilee-nilee> !mint,27
+170,<ubottu> Linux Mint is not a supported derivative of Ubuntu. Please seek support in #linuxmint-help on irc.spotchat.org,27
+171,<kostkon> !poll | mini,27
+172,"<ubottu> mini: Usually, there is no single ""best"" application to perform a given task. It's up to you to choose, depending on your preferences, features you require, and other factors. Do NOT take polls in the channel. If you insist on getting people's opinions, ask BestBot in #ubuntu-bots.",27
+173,<mini> ok i relly have not any problems with this 13.04,27
+174,<ianananan> wilee-nilee: Hm. Can I run that script from 11.04?,25
+175,"<wilee-nilee> ianananan, yep",25
+176,<raphael> --installgrub .... /dev/sda,25
+177,slide23 is now known as slide[LSU],28
+178,<raphael> of livecd,25
+179,"<wilee-nilee> raphael, could be a uefi, lets see the script",25
+180,<raphael> ok,25
+181,<wilee-nilee> and that needs a chroot or mount of the partition,25
+182,"<mini> i have 13.04 and have a small usb as wifi, is there a way it can reconnect automatically without me having to click ""connect"" multiple times?",29
+183,"<wilee-nilee> mini, There is auto connect in the network manager, are you asked for a password on the wifi?",29
+184,<mini> yes,29
+185,FreezingCold is now known as xv,30
+186,<mini> and it is set and i just have to click connect,29
+187,<mini> but multiple times,29
+188,"<wilee-nilee> mini, That popup I believe has a auto connect box",29
+189,<xmetal> :| i can not comment on that since i have used ubuntu since 10.10,27
+190,<merdam> (INAPPROPRIATE CONTENT),31
+191,<ianananan> raphael: i'm afraid i don't follow,25
+192,<xmetal> (which one is better),27
+193,<merdam> (INAPPROPRIATE CONTENT),31
+194,<wilee-nilee> !ops | merdam,31
+195,"<ubottu> merdam: Help! Channel emergency! (ONLY use this trigger in emergencies) - elky, Madpilot, tritium, Nalioth, tonyyarusso, PriceChild, Amaranth, jrib, Myrtti, mneptok, Pici,  jpds,  gnomefreak, bazhang,  Flannel, ikonia, maco, h00k, IdleOne, bkerensa, nhandler, Jordan_U, DJones or k1l!",31
+196,xv is now known as a,32
+197,<xmetal> aww that windows channel guy is in here now,31
+198,<xmetal> lol,31
+199,a is now known as FreezingCold,33
+200,"<wilee-nilee> mini, THis on the install desktop or one you have added?",29
+201,<raphael> goodnight,34
+202,<mini> i only have 1,29
+203,<LeinardoSmith_> no one knows how to resolve this? NT_STATUS_ACCESS_DENIED,35
+204,"<wilee-nilee> mini, Cool, I believe when that password popup pops up it has a auto box",29
+205,<LeinardoSmith_> I am using this command: net -S localhost -U root rpc rights grant root SePrintOperatorPrivalege,35
+206,<mini> ok i will check next time,29
+207,"<wilee-nilee> mini, Or it's in the network manager",29
+208,<LeinardoSmith_> anyone know what to do?,35
+209,<mini> no it comes on a pop up window,29
+210,<wilee-nilee> cool,29
+211,<max64> my laptop work with ubuntu 13.4 .. it alwayes get frozen and i have to unplug the electricity .. what is solution?,36
+212,<xmetal> thats NOT good,36
+213,<xmetal> try a different DE,36
+214,<xmetal> !DE,36
+215,"<ubottu> In den meisten Ubuntu-Kanalen wird nur Englisch gesprochen. Fur deutschsprachige Hilfe besuche bitte #ubuntu-de, #kubuntu-de, #edubuntu-de oder #ubuntu-at. Einfach ""/join #ubuntu-de"" eingeben. Danke fur Dein Verstandnis!",36
+216,<xmetal> (i am not even sure thats the right command),36
+217,<sam113101> hahaha,36
+218,<xmetal> oops,36
+219,<sam113101> it's not,36
+220,<xmetal> lol nope,36
+221,<xmetal> i can see that now,36
+222,<sam113101> it's de for Deutsch,36
+223,<xmetal> !Desktop,36
+224,"<ubottu> A desktop environment is what ""puts the pieces of a !GUI together"". The available desktop environments in Ubuntu are !GNOME (ubuntu-desktop), !KDE (kubuntu-desktop), !Xfce (xubuntu-desktop), !LXDE (lubuntu-desktop), IceWM, !Fluxbox, WindowMaker (wmaker), FVWM and others - See also !Flavors",36
+225,<xmetal> thats it,36
+226,<ianananan> wilee-nilee: thanks for all the help. I'm gonna get back at this tmrw.,25
+227,"<wilee-nilee> ianananan, no problem.",25
+228,<zykotick9> max64: 1) it's 13.04 2) do you have ANY other details?  did it always happen?  does it happen when you are doing something in specific?  are you using nvidia/ati/other non-free graphics drivers?,36
+229,<LeinardoSmith_> can anyone help me with my problem?,35
+230,"<wilee-nilee> max64, WE need details to help, hardware might be a good start, and what you have done so far.",36
+231,"<wilee-nilee> LeinardoSmith_, If someone knows they answer generally",35
+232,<LeinardoSmith_> I am using cupsaddsmb,35
+233,"<max64> zyko,wille:it was doing well tell 3 months ago .. now it hangs after about 20 min .. i use intel graphic card in HP compac 6730s machine",36
+234,<LeinardoSmith_> and I get this error: Unable to copy Windows 2000 printer driver files (1).,35
+235,<zykotick9> !tab | max64,36
+236,"<ubottu> max64: You can use your <tab> key for autocompletion of nicknames in IRC, as well as for completion of filenames and programs on the command line.",36
+237,"<wilee-nilee> max64, HOw many times have you unplugged it?",36
+238,<max64> wilee-nilee:i alwayes unplug electricity after hanging,36
+239,<hexacode> anyone know anything about a virtual network based computer or is that virtual machine such as xen? i want to hook like 3 rasberry pie-like devices together and have them function as one computer tasking proccesses distributively,37
+240,"<wilee-nilee> max64, That can damage a OS alone, how many times?",36
+241,<xmetal> i agree with wilee-nilee,36
+242,<max64> when i start the laptop it get hanged after about 20 min then i have to unplug,36
+243,<max64> i did it now about 3 times,36
+244,<xmetal> when is it hanging?,36
+245,"<zykotick9> hexacode: what you are looking for is called ""clustering"", and that's NOT what xen does (xen is for virtualization, the opposite).  fyi, clustering is pretty complicated...  best of luck.",37
+246,<max64> xmetal:when i open programs,36
+247,"<wilee-nilee> max64, I would make another user and see if this happens there, this is a knock out the variables situation, could be any number of possibilities from hardware to software",36
+248,<xmetal> i'd look at what is starting when linux starts ... and remove anything i dont need (also a useful tip to solve issues in other OSs too),36
+249,<xmetal> thats another way to solve it (@ what willie said,36
+250,<xmetal> oops,36
+251,<xmetal> wilee,36
+252,<xmetal> lol,36
+253,<ironfoot495> Hello is there someone who understands how to run OOP scripts?,38
+254,"<julian-delphiki> ironfoot495, you mean object oriented scripts? you run them just like any other script.",38
+255,<ironfoot495> julian-delphiki: Well lamp doesn't seem to do it even with pear installed.,38
+256,"<julian-delphiki> ironfoot495, oh, so you're talking php?",38
+257,<ironfoot495> yes,38
+258,<max64> wilee-nilee:http://www.picpaste.com/Screenshot_from_2013-09-01_05_24_02-WPLPUKX4.png,36
+259,<ironfoot495> julian-delphiki: Do you have any Ideas???,38
+260,"<zykotick9> hexacode: sidenote - if you happen to compile a lot of gcc code, look into distcc (that i had a lot of success with, back in the day).  but other then that, i did have some kernel based linux clustering support back-in-the-day as well, but i forget what is was called open<insert3lettershereiforgetnow>.  hope it's easier now a days.",37
+261,<ironfoot495> julian-delphiki: I've googled myself sick and have still not got the answer!,38
+262,"<wilee-nilee> max64, Why the picture?",36
+263,<xmetal> there a scripting channel?,38
+264,<max64> wilee-nilee:i think the processor fan suddenly go aloud voice,36
+265,<max64> wilee-nilee:the picture show the programs working and the CPU power,36
+266,"<xmetal> i would either do what i said (obvously :P ) or what wilee suggested ... create another user and see if ithat hangs too or on the ""hanging"" profile/user ... look at how many things is starting",36
+267,"<xmetal> and remove things (uncheck them ""auto starting"")  you dont need at bootup",36
+268,"<wilee-nilee> max64, its gone now and really not an answer to making a new user.",36
+269,<xmetal> i had the distro i use do that ... i was downloading as much as i could on high speed and that distro was crippled on bootup .. i found all my installing (packages) added a ton of startup items ... i unchecked those and it was back tonormal again,36
+270,<xmetal> to normal *,36
+271,"<wilee-nilee> max64, Install lm-sensors and check the temperatures maybe, I can't really go through every possibility for one.",36
+272,<max64> wilee-nilee:i just added a new account,36
+273,<xmetal> :) @ though old ... i just picked up a (non-wireless) router from linksys for $1 at yard sale,36
+274,<xmetal> working perfectly,36
+275,<max64> wilee-nilee:how top open lm-sensors?   i installed it,36
+276,"<conathan> Greetings.  I was looking for some help with apt-get on 13.10.  To install a 32bit package on a 64bit os, I thought you could use apt-get install libsdl2-dev:i386, or libsdl2-dev:amd64.  I get package not found when I attempt to do that.  (Using a debootstrap created chroot of 13.10)",39
+277,<wilee-nilee> lm-sensors | max64,36
+278,<wilee-nilee> ! lm-sensors | max64,36
+279,"<ubottu> max64: To access CPU temperature sensors and detect fan speeds, install the lm-sensors package. See https://help.ubuntu.com/community/SensorInstallHowto for installation and usage instructions.",36
+280,<max64> ubottu:i opened link .. ty ^_^,36
+281,"<ubottu> max64: I am only a bot, please don't think I'm intelligent :)",36
+282,<lotuspsychje> !13.10 | conathan,39
+283,<ubottu> conathan: Ubuntu 13.10 (Saucy Salamander) will be the 19th release of Ubuntu. Announcement: http://www.markshuttleworth.com/archives/1252 - Discussion and support in #ubuntu+1,39
+284,"<conathan> Thanks, (also not sure if it's specific to ubuntu 13.10 or not)",39
+285,"<conathan> yeah, confirmed.  Something to do with my debootstrap environment that acts differently then ubuntu",39
+286,<Jacnoc> (INAPPROPRIATE CONTENT),40
+287,"<mre> I have a barebones install of precise (via docker) that gets a permission denied when 'sysctl -w fs.file-max=262144' while the host 'full' install of 13.04 does not. What would prevent the changing on particular sysctle settings? Apparmor's not running, limits.conf has none set, ...",41
+288,"<wilee-nilee> Jacnoc, https://twitter.com/joshuaacasey",40
+289,"<SomeoneWeird> hey guys, wondering if anyone can help, i've recently upgraded to saucy and my unity search has stopped working, i think it may be the cause of some of the plugins have been uninstalled/disabled but i'm not sure -> http://i.imgur.com/cWBRFpX.jpg",42
+290,"<conathan> lotuspsychje: Got it fixed, just needed a dpkg--add-foreign-architectures=i386",39
+291,<wilee-nilee> !13.10 | SomeoneWeird,42
+292,<ubottu> SomeoneWeird: Ubuntu 13.10 (Saucy Salamander) will be the 19th release of Ubuntu. Announcement: http://www.markshuttleworth.com/archives/1252 - Discussion and support in #ubuntu+1,42
+293,"<SomeoneWeird> wilee-nilee, I know, I was just wondering if anybody had any suggestions.",42
+294,"<SomeoneWeird> i can live without it, I know it's in development :)",42
+295,"<wilee-nilee> SomeoneWeird, Use the correct channel is all. ;)",42
+296,<SomeoneWeird> ohh,42
+297,"<SomeoneWeird> right, thanks :)",42
+298,"<conathan> lotuspsychje: oh sorry, meant --add-architecture",39
+299,<jonatanbs> Boa noite,43
+300,"<cfhowlett> !english|jonatanbs,",43
+301,"<ubottu> jonatanbs,: The #ubuntu, #kubuntu and #xubuntu channels are English only. For a complete list of channels in other languages, please visit https://wiki.ubuntu.com/IRC/ChannelList",43
+302,"<zerocom> hi, I'm using ubuntu 12.04 on an inspiron 14z and having problems wuth my usb ports. sometimes it works sometime doesn't works. can someone help me?",44
+303,"<cfhowlett> zerocom, you sure it's the ports?  usb sticks do fail ...",44
+304,"<zerocom> the usb pendrives and discs are ok, the ports are ok too because I tested with other OS. when I said ports I wish to say the problem is in ubuntu. sorry",44
+305,"<cfhowlett> zerocom, what's the behavior that makes you suspicious.  details ...",44
+306,"<sethj> grahamsavage, did your issue ever get resolved?",45
+307,"<sethj> cfhowlett, perhaps you know?",45
+308,"<zerocom> ok, sometimes when I connect pendrives or my external discs nothing happens. Then I try again and again.",44
+309,<zerocom> is an intermittent behaviour,44
+310,<zerocom> I have usbmount installed,44
+311,"<wilee-nilee> zerocom, you install that due to problem?",44
+312,"<zerocom> yes, reading a tutorial in the web, but I know  its doesn't work becausa before install the problem was the same",44
+313,"<wilee-nilee> zerocom, Any fat or ntfs partitions that may need a chkdsk?",44
+314,"<zykotick9> zerocom: the next time that ""stuff"" happens, open a terminal, and type ""dmesg"" it'll scroll a lot of stuff past you, but read the end stuff (that you can still see).  look for stuff dealing with sdXY.  when you unplug/replug the USB, try running dmesg in between and looking for changes (on that same last screen, that you can actually see when you run dmesg ;)",44
+315,<hongker> exi,46
+316,"<zerocom> zykotick9, I tried that, but don't remember the results, I will try again.",44
+317,"<zerocom> wilee-nilee, my pendrive and discs works fine on another OS and in my smartTV",44
+318,"<wilee-nilee> zerocom, What other OS?",44
+319,"* zykotick9 is unignoring wilee-nilee, although he recommeds using non-free software on a regular bases...",47
+320,<zerocom> Win XP,44
+321,<zerocom> in my works there is a Win XP machine,44
+322,"<wilee-nilee> zerocom, Linux is picky if the partitions are corrupted is all, XP working not a comparison.",44
+323,<zerocom> ok,44
+324,<zerocom> what do u recommend?,44
+325,"<conathan> Working with multiarch,  how would you install the 32bit and 64bit versions of libpng12-dev?  apt-get install libpng12-dev:i386 libpng12-dev:amd64 conflicts.",39
+326,"<wilee-nilee> zerocom, if those are MS formatted partitions I would consider checking them in computer with a right click or running a chkdfsk /f/r on them",44
+327,<wilee-nilee> chkdsk /f/r that is,44
+328,<zykotick9> conathan: not all packages are multiarch capable... some do conflict... good luck.,39
+329,<conathan> ah.,39
+330,"* zykotick9 is re-ignoring wilee-nilee, because he supports non-free software on a regular bases...  [OPs: i know annoucing ignores is frowned upon, it's only because i annouced the unignore, that i'm doing this]",47
+331,"<conathan> zykotick9: I think the lucked helped,  been working on this half the day, and just realized why it's conflicting.  I'm installing the dev packages, while it's the i386 libraries I wanted to install",39
+332,<zykotick9> conathan: ;)  glad you figured it out man!,39
+333,* xmetal wonders if anyone really cares,47
+334,<xmetal> lol,47
+335,* conathan has an interest,47
+336,<tomas_> Hi,48
+337,<tomas_> I need use a web browser without the X server,49
+338,<bookmage> links or lynx from command line,49
+339,"<Dr_Willis> or w3m, or search the repos for others we cant rember",49
+340,<Dr_Willis> ;),49
+341,"<zykotick9> tomas_: use elinks if you want to get to any ""modern"" sites (most STILL don't work, more a lot more the links2 or lynx)",49
+342,<zykotick9> s/more a lot/but a lot/,49
+343,<bookmage> do u really need a browser and not jsut wget to dl a file?,49
+344,<zykotick9> bookmage: wget & rsync FTW,49
+345,<tomas_> zykotick9: Ok :D,49
+346,"<osolus> is there a shortcut to get the dashboard thingy on the right hand side of my screen to show up, for some reason in VNC it doesn't want to respond to my mouse on the edge",50
+347,"<wilee-nilee> osolus, have you checked the sensitivity?",50
+348,<Dr_Willis> tap the windows key,50
+349,<Dr_Willis> or click on the top left button.  but err..the dash is on the left.,50
+350,<Dr_Willis> Unity over VNC may be problematic and sluggish,50
+351,"<bouma> ive googled, but there is so much noise; im looking for a net meter",51
+352,<bouma> one that keeps records of data transfered,51
+353,"<bouma> system monitor is ok, but it resets the count every boot",51
+354,<Dr_Willis> bouma:  askubuntu.com has a list of indicator applets that might have one that does what you want,51
+355,<Dr_Willis> I was thinkin conky did it for me with my conky theme.setup. but it Might reset after boot,51
+356,"<bouma> im looking for something that will just install and that has a gui, dont want to setup rc and cron",51
+357,<MacMan2020> <unconvertable> <unconvertable> <unconvertable> <unconvertable> <unconvertable> <unconvertable>,52
+358,River_Rat is now known as RiverRat,53
+359,<lotuspsychje> !arabic,52
+360,"<ubottu> For Arabic language support, please : /join #ubuntu-arabic : <unconvertable> <unconvertable> <unconvertable> <unconvertable> <unconvertable>",52
+361,"<osolus> I can't send the super key combination shortcuts over vnc, how can I make the dash show up?",50
+362,deamonologist is now known as pal,54
+363,<Dr_Willis> hmmm,55
+364,<oicory> hmmm,55
+365,<wilee-nilee> oh now a hmmm caused earth quake,55
+366,<wilee-nilee> no*,55
+367,<oicory> tis quiet in here. I came here to watch silently... But its too silent.,55
+368,<oicory> I'll go break my ubuntu server and brb so I can ask questions.,55
+369,<wilee-nilee> Heh,55
+370,"<xtriz> wilee-nilee, you there ?",56
+371,<xtriz> is anyone over here using cinnamon ?,57
+372,<wilee-nilee> I'm here I don't use cinnamon though,56
+373,<Dr_Willis> !dfind cinnamon,57
+374,<Dr_Willis> !ffind cinnamon,57
+375,<Dr_Willis> !find cinnamon,57
+376,"<ubottu> Found: cinnamon, cinnamon-common, cinnamon-dbg",57
+377,<wilee-nilee> in 13.04,56
+378,"<xtriz> wilee-nilee, yesterday i stumble upon your http://ubuntuforums.org/showthread.php?t=2002028&page=8",56
+379,<Dr_Willis> its even in the official repos now. ;),57
+380,<xtriz> this proved quite useful for me :D,56
+381,<pero> i've been trying to find a way to enable the unity gmail webapp for an hour with no luck? how/where can I do this?,58
+382,"<xtriz> Dr_Willis, in official repos it is 1.6 and current version is 1.8 so i was trying to get 1.8 version.",57
+383,<Dr_Willis> then you would want to find a PPA.,57
+384,"<xtriz> what i wanted to ask is, if multiple DE are installed they will interfere with each other and offer obstacles in proper functioning ?",57
+385,<Dr_Willis> pero:  i thought when you went to the gmail site it should just ask to enable the webapp thing. but i really find the whole webapp 'feature' a bit useless,58
+386,<pero> no it doesn't do that - i'm using chromium and on 13.10,58
+387,"<wilee-nilee> xtriz, I remember that thread that took awhile to get them cleaned up took a chroot. ;)",56
+388,<Dr_Willis> I thought webapps only worked with firefox.,58
+389,<Dr_Willis> but i could be wrong,58
+390,<pero> i'm finding my tabs a little cluttered these days so I wouldn't mind leaving trying it out in the unity panel,58
+391,<xmetal> no,57
+392,<pero> it's supposed to be chromium and firefox,58
+393,"<xtriz> i have installed using the ppa, everything works, but only issue i am facing is slight lag, when i drag my windows it get's bit blurred during the motion .",57
+394,<Dr_Willis> my unity panel is to cluttered. ;),58
+395,"<xmetal> i run Linux Mint with a number of DE's and they do not ""harm"" each other",57
+396,"<xtriz> xmetal, they work absolutely fine without any prob ?",57
+397,<Dr_Willis> xmetal:  ive definatly seen people break things by trying some de's :) that dont like others.. like trying to put gnome2 on with gnome3 and so forth. ;),57
+398,<Dr_Willis> xtriz:  there may be some effects settigns you can disable.,57
+399,"<xtriz> because right now i have xfce, unity, cinnamon and elementary :P",57
+400,<xmetal> well 2 versions of the same DE in a sence,57
+401,<xmetal> i could see issues then,57
+402,<Dr_Willis> try getting gnome2 going with gnome-shell ;) and you will see pain.,57
+403,"<xmetal> i have mate, Cinn, xfce, lxde, e17 (enlightenmint)  all behave fine",57
+404,<oicory> I just use bash shell and links. I need to upgrade to this decade.,57
+405,"<chaos_> May someone help me?How to solve the problem ""warning: ft_render: skipping missing glyph for character""?",59
+406,<xmetal> i have noticed that cinn in mint 15 in lagging though in 14 on the same machine it was fine,57
+407,<xmetal> i think cin 1.8 (for mint 15) and cinn 1.6 (??) for mint 14,57
+408,"<xtriz> xmetal, yeah correct",57
+409,<xmetal>  i am not sayings its impossible .. but if you stick with the repos ... you should be ok (as in not having DE's conflict),57
+410,"<xmetal> i have not experienced any issues with having ""too many DE's""",57
+411,"<xtriz> xmetal, good :)",57
+412,<xtriz> so i can move forward experimenting things.,57
+413,<Dr_Willis> ages and ages ago.. if you had kde and gnome both installed. :) it could cause weirdness.. but i havent really seen any issues with differnt de's in well.. years,57
+414,"<xmetal> in mint i even downloaded (i think i have the name right) ""ubuntu-desktop"" (I am sure this means Unity with a few extras)",57
+415,<Dr_Willis> !info ubuntu-desktop,57
+416,"<ubottu> ubuntu-desktop (source: ubuntu-meta): The Ubuntu desktop system. In component main, is optional. Version 1.299 (raring), package size 3 kB, installed size 58 kB",57
+417,<Dr_Willis> meta packages just pull in a lot of other packages. an easy way to 'group' things,57
+418,<xmetal> (while i was on high speed internet and was downloading as much as possible),57
+419,<xmetal> and i backed up all the DEBS too :),57
+420,<Dr_Willis> but now they are all outdated. ;P,57
+421,<xmetal> lol true,57
+422,"<xmetal> i love downloading software and then after its installed it says ""new version availible""",57
+423,<xmetal> i mean i JUST downloaded it,57
+424,<Dr_Willis> with gentoo.. by the time you got the latest compiled.. theres a new version.,57
+425,<oicory> I went from here to Gentoo once.,57
+426,<oicory> Tis a silly place.,57
+427,"<oicory> Arch is nice, but I always come back to Ubuntu",57
+428,<Dr_Willis> I dont have much need for the other disrtos on my PC.  now on my Pi. I play with some of the differnt ones.,57
+429,<Dr_Willis> but they tend to be more specilized,57
+430,<oicory> I actually want about 3-6 Pis because I want to play with VMs,57
+431,"<xmetal> ah not as bad as slackware (I love slackware but its a pain at times) ... have to install 100 dependencies from the tarballs, mannually",57
+432,<xmetal> then you end up forgetting the INTIAL program you were trying to install in the first place,57
+433,<xmetal> lol,57
+434,"<oicory> Yea, I had the same problem with Gentoo. Spent 4 hours trying to set the correct use flags to get the dependencies for Firefox",57
+435,"<oicory> Then forgot what I was trying to install... When went to go try to google how to do something and was like ""Oh yea. Need a browser""",57
+436,<xmetal> i mean I (before version 14) last use mint when @ Ubuntu 9.04 was out ...and wanted to try Mint again .. If i was on high speed and/or had more pc's (to try it on) .. I'd get the newest ubuntu,57
+437,<xmetal> i think the two are so similar though,57
+438,<xmetal> i like trying new distros (just to see what they are like),57
+439,<xmetal> :),57
+440,<Dr_Willis> i dont see much point in Mint.  Some of their projects are finally making it into the default ubuntu repos however.,57
+441,<xmetal> either or,57
+442,"<xmetal> i know i get grief for mentioning mint in here sometimes, but they are so alike i think, that many of the issues a user may have (say with a DE) would apply to either Idstro",57
+443,<xmetal> ack,57
+444,<xmetal> distro *,57
+445,<xmetal>    back when i tried mint (version number ???? ) when Ubuntu 9.04 was new ... they looked 100% alike to me,57
+446,<xmetal> ( i am sure there may have been suttle diffewrences though),57
+447,<xmetal> -w,57
+448,<xmetal> dang fingers this time of night,57
+449,<oicory> 2am here. cant sleep.,57
+450,<universal> I installed ubuntu-restricted-extras package....but something went wrong and flashplugin-nstaller and mscorefonts did not install and now I downloaded flash archieve from adobe and copy pasted flash file it in browser directory ...but its still saying flash missing....whats wrong ? how to fix it ?,60
+451,<lemonsparrow> W: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/m/mysql-5.1/mysql-client-5.1_5.1.61-0ubuntu0.10.10.1_i386.deb   404  Not Found [IP: 91.189.92.181 80],61
+452,<lemonsparrow> getting this error while trying to install mysql,61
+453,<Dr_Willis> try a differnt mirror perhaps.,61
+454,<Dr_Willis> you have done an sudo apt-get update  recently?,61
+455,<Dr_Willis> universal:  id reinstall the flash-installer package from the repos. and let it do it,60
+456,<Dr_Willis> universal:  the askubuntu.com site may have some guides on how to properly use the flash archive from adobe. I never use it that way,60
+457,<Dr_Willis> If adobe changes the version# or somthing to their flash archives on their sites - it can break the flash-installer package/tools unfortunatly. Untill they get changed.,60
+458,<lemonsparrow> Dr_Willis: to me ?,61
+459,<Dr_Willis> lemonsparrow:  yes. try a update/upgrade and try again. if still fails. try another mirror,61
+460,<universal> Dr_Willis: well the version in adobe archieve and ubuntu repo is same - falsh- x.x.202.297 and I did it before so i know its works.....but I dont know what happened this time.....maybe the ubuntu-restricted-extras package flash script is still hanging on for download and install and maybe thatswhy its blocking blocking it ?,60
+461,<lemonsparrow> Dr_Willis: when I do sudo apt-get update this is what I get http://pastebin.com/U6wQSYgg,61
+462,<Dr_Willis> ubutu-restricted-extras just pulls in the flash-installer package  same as if you installed it by itself.,60
+463,<universal> I also did sudo apt-get install flashplugin-installer but it says its already installled and of the newest version,60
+464,<Dr_Willis> perhaps 'reinstall' the flashplugin-installer,60
+465,LoganG is now known as LoganG|off,62
+466,<Dr_Willis> !maverick,61
+467,"<ubottu> Ubuntu 10.10 (Maverick Meerkat) was the thirteenth release of Ubuntu. !End-Of-Life on April 10th, 2012, see http://ubottu.com/y/maverick for details.",61
+468,<Dr_Willis> lemonsparrow:  you are using 10.10 ?,61
+469,<lemonsparrow> Dr_Willis: yes,61
+470,<Dr_Willis> notice how ALL the servers are 404? ;),61
+471,<Dr_Willis> its End of Life..  its time to upgrade.,61
+472,<universal> yea....but that time it was unable to fetch it.....and there is a script for flash and mscorefnts in ubuntu-restricted package for a later download and install...that I clicked to download and install now,61
+473,<Dr_Willis> once a release goes EOL the servers get moved to some archive-servers so those in your sources.list are no longer valid.,61
+474,<Dr_Willis> !eol,61
+475,"<ubottu> End-Of-Life is the time when security updates and support for an Ubuntu release stop, see https://wiki.ubuntu.com/Releases for more information. Looking to upgrade from an EOL release? See https://help.ubuntu.com/community/EOLUpgrades",61
+476,<lemonsparrow> when I try to update to 11.04 from update manager it says fetching failed. There may be a n/w problem,61
+477,<lemonsparrow> Dr_Willis: ^,61
+478,<Dr_Willis> see the !EOL url given. you MUST alter your sources.list,61
+479,<Dr_Willis> Or just do a clean install. (faster),61
+480,<lemonsparrow> Dr_Willis: can I do clean install without having to format or backup ?,61
+481,<universal> wtf.....I purged the flashplugin-installer package and it marked it for removal ad started downloading mscorefonts now Dr_Willis,60
+482,<Dr_Willis> lemonsparrow:  err.. you do a clean install. its a clean system. No backups = you lost anything on the system.,61
+483,"<Dr_Willis> thats sort of what 'clean' means., :)",61
+484,<lemonsparrow> Dr_Willis: this is how my source.list looks http://pastebin.com/CYmh0YUG can you modify this for me as to how it should be really look like,61
+485,<mascotte> ciao,63
+486,<mascotte> !list,63
+487,"<ubottu> mascotte: No warez here! This is not a file sharing channel (or network); read the channel topic. If you're looking for information about me, type <unconvertable> /msg ubottu !bot <unconvertable> . If you're looking for a channel, see <unconvertable> /msg ubottu !alis <unconvertable> .",63
+488,"<Zenger> Hi guys could you please help me, my sound has suddenly disappeared. I'm sure the my headphones are okay, because when I boot into windows the sound is okay.",64
+489,<Zenger> I didn't do anything in particular. Didn't modify the sound driver or anything since the instalation of my system.,64
+490,<lemonsparrow> Dr_Willis: ?,61
+491,<Dr_Willis> lemonsparrow:  i always do clean installs. so ive rarely had to  fight with upgradeing a release AFTER its gone eol.,61
+492,<lemonsparrow> Dr_Willis: help me please..,61
+493,<Dr_Willis> looks like you dident change archive in all the lines at the end.,61
+494,<lemonsparrow> Dr_Willis: I dont know much abt these stuffs.. I wanna get through this without much time.. like I dont wanna do format n all that something easy and fast :),61
+495,<Dr_Willis> reinstalling most lilkely will be faster then upgradeing,61
+496,<zykotick9> Wizrd: i'd look at ~/.bashrc (but it's not something i do),65
+497,<mascotte> ciao,63
+498,<Dr_Willis> http://askubuntu.com/questions/91815/how-to-install-software-or-upgrade-from-old-unsupported-release/237118#237118,61
+499,<mascotte> list!,63

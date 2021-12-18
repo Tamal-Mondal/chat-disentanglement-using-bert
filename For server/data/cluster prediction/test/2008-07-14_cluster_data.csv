@@ -1,0 +1,501 @@
+,line,cluster number
+0,"<Dream> ive got a white box in the top left of my screen, and my computer is not responding >_< as if a terminal client is corrupted any thing i can do?",1
+1,"<MXIIA> How can I get the correct driver for my printer? HP C4385,",2
+2,"<Seveas> Dream, ctrl+alt+del?",1
+3,metalmaniac is now known as evangellions,3
+4,"<Dream> Seveas: no response, this is when i logged in",1
+5,<duncanm> is medibuntu down?,4
+6,<Ferchault> I'm unable to browse a samba share on my own computer using nautilus. If I try to access a windows share I only get a empty window. Any hints/ideas?,5
+7,"<norman_x> hi, when I downlad files from the repositories, where in Ubuntu Linux they will be saved?",6
+8,"<Seveas> duncanm, yes",4
+9,<trakinas> norman_x: depends on what you want.,6
+10,<duncanm> Seveas: is there a mirror somewhere?,4
+11,"<Seveas> Dream, power switch it is then",1
+12,<duncanm> Seveas: seems like even DNS is down,4
+13,<trakinas> the debs goes to /var/smth/i/forgot/packages/,6
+14,<norman_x> trakinas:  I want to save some of them to a usbstick after they where saved on my harddisk,6
+15,<tckb> anybody knows how to work with aptcacher,7
+16,<whileimhere> what package do I uninstall to get rid of the evolution program?,8
+17,drago is now known as Drago84,9
+18,"<Seveas> whileimhere, evolution",8
+19,"<Seveas> trakinas, /var/cache/apt/archives :)",6
+20,<trakinas> Seveas: there. hehe,6
+21,"<Robzy> is there any way i can use the .orig.tar.gz and .dsc and diff.gz to come up with a ""source tree""?",10
+22,<trakinas> norman_x: /var/cache/apt/archives/,6
+23,"<Robzy> so that i can manually ""./configure && make && make install""?",10
+24,"<Seveas> Robzy, dpkg-source -x filename.dsc",10
+25,<trakinas> (is the second time in a roll that i press the middle buttom to paste. damn windows.),6
+26,<Seveas> you need the dpkg-dev package for that,10
+27,"<Robzy> bah, shouldve known :P",10
+28,<Robzy> thanks,10
+29,<Robzy> thanks Seveas :),10
+30,<whileimhere> Okay I have uninstalled Evolution but the icon is still on the menu. It doesnt work but its still there. Any idea why?,8
+31,<trakinas> norman_x: then you just cp /var/cache/apt/archives /your/pen/drive/,6
+32,<trakinas> whileimhere: right-buttom > remove from panel,8
+33,<MXIIA> Could my printer  problem be the wrong port? what is the default port for a printer?,11
+34,<sree> Im facing a problem with ubuntu hardy. The automount feature is not working now. I have to manually mount. How can I getback the automount?,12
+35,<whileimhere> traakinas I do not get that option because it isnt in the panel its in the panel's menu,8
+36,<trakinas> whileimhere: so run alacart and remove it through there.,8
+37,<trakinas> alacart is used to edit the menu,8
+38,"<keanu> Seveas, mplayer also doesn't work.  Tested with an album locally stored that I know has worked before",13
+39,<carib909> Can someone help install alsa drivers for sound card?,14
+40,<Wicky656> is there a way to set ulimits for a user to unlimited in ubuntu permanently?,15
+41,"<Dream> Seveas: said anything else, i  had to go afk :/",1
+42,<MXIIA> Can someone help me find the correct driver for my printer (HP C4385 802.11g),2
+43,<trakinas> MXIIA: is probably a driver problem. search it on cups site.,11
+44,<MXIIA> ok,11
+45,<jbroome> or linuxprinting.org to see how supported your printer is,11
+46,"<Seveas> Dream, power switch it is then",1
+47,<carib909> sudo tar xvfj alsa-driver*  gives me an error,14
+48,"<MXIIA> ok, thanks trakinas and jbroome",11
+49,<Dream> Seavas: done that :/ and its the same,1
+50,"<Dream> Seavas: never mind, its booted",1
+51,<ER_A> quick Q: what do prog do u use in ubuntu to burn .iso images to disk?,16
+52,<trakinas> ER_A: cdrecord.,16
+53,"<Seveas> ER_A, rightclick, select ""burn to disk""",16
+54,<trakinas> or mkisofs,16
+55,"<michi666> hi all, can anybody help my with usb driver programming?",17
+56,<ER_A> ok ty,16
+57,<carib909> anyone know command syntax?,14
+58,<keanu> FLACs also don't play....weird,13
+59,<carib909> tar: alsa-driver-1.0.16: Cannot read: Is a directory,14
+60,"<carib909> tar: At beginning of tape, quitting now",14
+61,<carib909> tar: Error is not recoverable: exiting now,14
+62,<carib909> bzip2: Compressed file ends unexpectedly;,14
+63,<carib909>         perhaps it is corrupted?  *Possible* reason follows.,14
+64,"<FloodBot1> carib909: Please don't flood, use http://paste.ubuntu.com to paste, don't use Enter as punctuation.",14
+65,<carib909> bzip2: Invalid argument,14
+66,<sree> Im facing a problem with ubuntu hardy. The automount feature is not working now. I have to manually mount. How can I getback the automount?,12
+67,<whileimhere> Is there a channel or F-SPOT?,8
+68,<whileimhere> or = for,8
+69,"<Shujah> sree, automount ntfs partitions?",12
+70,"<p_bclr> hi, i cant update lighttpd to 1.4.19 (already tried google but...). I did apt-get update and then apt-get upgrade but i got the same version... thanks!",18
+71,<trakinas> whileimhere: try /j #fspot or #f-spot,8
+72,<carib909> What did I do?,14
+73,<carib909> Flood?,14
+74,<Lusule> testing hello?,19
+75,<sree> Shujah: no cdroms and usb drives,12
+76,<trakinas> carib909: use pasetbin,14
+77,<trakinas> *pastebin,14
+78,"<Seveas> carib909, don't paste text in here. that's useless",14
+79,<Lusule> hi everyone :)  is this a good place for a complete newb to get help?,20
+80,"<Shujah> carib909, too many messages in too short a time = bot time",14
+81,<carib909> what is pastebin?,14
+82,<sree> Shujah: no problem with audio cds and blank disks,12
+83,<trakinas> !pastebin,14
+84,<ubottu> pastebin is a service to post multiple-lined texts so you don't flood the channel. The Ubuntu pastebin is at http://paste.ubuntu.com (make sure you give us the URL for your paste - see also the channel topic),14
+85,<whileimhere> Both fspot and f-Spot are dead rooms,8
+86,"<Seveas> Lusule, yeah",20
+87,<carib909> pasetbin?,14
+88,"<Lusule> i've just started using Ubuntu for the first time, I'm new to Linux - how do I get my two monitors to work properly?",21
+89,"<Seveas> Lusule, system -> preferences -> screen resolution",21
+90,<Lusule> by 'work properly' i mean 'not be two cloned versions of the same thing',21
+91,<anthony> tonien88@hotmail.fr,22
+92,"<trakinas> carib909: paSTe, i made a typo",14
+93,<trakinas> carib909: http://paste.ubuntu.com/,14
+94,"<Dream> Seavas: ""Error Starting the GNOME settings Deamon""",1
+95,<anthony> salu,22
+96,"<Seveas> Dream, ah. Pastebin your /etc/network/interfaces and the output of ifconfig",1
+97,"<Dream> Seavas shall do, if i can access the net propperly on it ><_",1
+98,<Seveas> :),1
+99,"<merther> Hi, is anyone available to assist me in getting wifi up and running?",23
+100,<sree> Shujah: no. cdroms and usb drives,12
+101,"<Seveas> Dream, check if the following lines are present in /etc/network/interfaces:",1
+102,<sree> Shujah: no problem with audio cds and blank disks,12
+103,"<cottima> hello, does 8.04 desktop install have softRAID (dmraid), because 7.10 did not?  I had to use 7.10 alternate.",24
+104,<Seveas> iface lo inet loopback,1
+105,"<ajonat> Hi! I've trying to compile a custom kernel using hardy's git and I get ""No rule to make target binary-modules-generic"" when i do ""fakeroot debian/rules binary-modules-generic"".. I'm following https://wiki.ubuntu.com/KernelMaintenance, anyone know what could be wrong?",25
+106,<Seveas> auto lo,1
+107,<Seveas> if they're not: add them,1
+108,<Seveas> and 'ifup lo',1
+109,"<Matthew12> I'm using cairo dock. When I mouse over the applications and they grow, I black background appears around the dock. This is purely aesthetic, but I'd like to fix it if I could, any ideas?",26
+110,<carib909> Trying to install alsa driver. Got error :  see http://paste.ubuntu.com/27314/,14
+111,<CarlFK> what is the sources.list line that will let me apt-get source vloopback from http://debian.ljudmila.org/~debian/pool/main/v/vloopback/,27
+112,<sree> Im facing a problem with ubuntu hardy. The automount feature is not working now. I have to manually mount. How can I getback the automount?,12
+113,"<Shujah> sree, attach a usb to ubuntu and go to menu > places check if its there",12
+114,"<Seveas> CarlFK, http://debian.ljudmila.org/~debian/ unstable main local unofficial",27
+115,<carib909> Can someone help install sound card drivers please?,14
+116,"<Oswy> Hi, I just installed Hardy on my computer with Dapper right now. When I boot, though, I can only get to the GRUB loader with Dapper on it, so I have no way to access Hardy at all.",28
+117,<CarlFK> Seveas: thanks,27
+118,<Xucrute> hi.. I installed Hardy yesterday. Today I did software update and GUI stopped working. All I get now is text based login. Tried dpkg-reconfigure xserver-xorg withou success,29
+119,"<sree> Shujah: Nope. Its there in ""Computer"" but not mounted",12
+120,<Sorlag> @all. is there a GUI feedreader which integrates itself into the desktop. just like the weatherpanel?,30
+121,"<Oswy> Err, maybe it's Edgy, not Dapper. Whatever.",28
+122,<sree> Shujah: says cant mount file,12
+123,<carib909> While extracting driver files I get an error: Please see http://paste.ubuntu.com/27314/,14
+124,"<Lusule> was anyone able to help with getting dual displays to show different things, or is that not possible?",21
+125,"<Shujah> sree, do the usbs/cdroms  have entries under /etc/fstab? I think you got a prob with fstab",12
+126,<Sorlag> cant find a good-looking one,30
+127,"<Seveas> Lusule, system -> preferences -> screen resolution",21
+128,"<Seveas> Lusule, untick the 'clone screen' box",21
+129,<Lusule> seveas - it's not ticked ><,21
+130,"<glam> Hi, I want to start a shell script automatically after I boot up the system, how to do it?",31
+131,"<MXIIA> Um, My printer isn't showing up on the linuxprinting.org website... I have HP Photosmart C4385, I only see 80",11
+132,"<Seveas> Lusule, you might need to modify xorg.conf if you have 2 1280x1024 monitors",21
+133,<sree> Shujah: /etc/fstab are unchaged. I didn't have this problem. Got it recently,12
+134,"<Lusule> seveas - i have one 1280 x 1024, and one 1440 x 900",21
+135,"<Xucrute> hi.. I installed Hardy yesterday. Today I did software update and GUI stopped working. All I get now is text based login. Tried dpkg-reconfigure xserver-xorg withou success. Yet, if I type startx I get graphical interface. Whats may be the problem?",29
+136,"<Oswy> I just installed Hardy on my computer with Edgy right now. When I boot, though, I can only get to the GRUB loader with Edgy on it, so I have no way to access Hardy at all. Can someone help me? It may be a BIOS issue or something, but I checked the boot priority and that was fine.",28
+137,"<Seveas> Lusule, yup, you need to modify xorg.conf and will lose compiz",21
+138,<Lusule> will lose compiz?,21
+139,<__ryan__> is there anyway to change the ubuntu icon on the applications tab at the top left corner of gnome?,32
+140,<Lusule> how do i modify xorg.conf?,21
+141,"<Matthew12> Can someone help me figure out why a black background appears around the edges of Cairo Dock, when I mouse over the apps?",26
+142,"<Seveas> Lusule, __ryan__ locate distributor-logo, and change that picture :)",32
+143,"<__ryan__> Seveas,  thanks",32
+144,<Seveas> (locate distributor-logo is a command you need to run),32
+145,<carib909> seveas can you take a look at my pastebin ?,14
+146,"<__ryan__> Seveas,  any idea which one it is, quite a few come up",32
+147,"<Lusule> erg sorry seveas, i'm getting confused ><  i'll look it up online",21
+148,<trakinas> MXIIA: http://hplip.sourceforge.net/supported_devices/index.html,11
+149,"<Shujah> sree, dude ive got 3 torrents running + irs + opera dont be sending me files now :S. pastebin",12
+150,<carib909> seveas can you take a look at this please http://paste.ubuntu.com/27314/,14
+151,"<Seveas> __ryan__, most of'em should be symlinks :)",32
+152,<sree> Shujah: ok,12
+153,"<__ryan__> Seveas,  will do, thanks again",32
+154,<sree> Shujah: proc /proc proc defaults 0 0,12
+155,<sree> # Entry for /dev/sda3 :,12
+156,"<sree> UUID=6e35d56a-9067-47d8-b84e-50ca84a2ff89 / ext3 relatime,errors=remount-ro 0 1",12
+157,<sree> # Entry for /dev/sda8 :,12
+158,<sree> UUID=b27e569b-036b-4d6b-916e-563924cdc3bf none swap sw 0 0,12
+159,"<FloodBot1> sree: Please don't flood, use http://paste.ubuntu.com to paste, don't use Enter as punctuation.",12
+160,"<sree> /dev/scd0 /media/cdrom0 udf,iso9660 user,noauto,exec,utf8 0 0",12
+161,<MXIIA> thanks trakinas,11
+162,"<Oswy> I just installed Hardy on my computer with Edgy right now. When I boot, though, I can only get to the GRUB loader with Edgy on it, so I have no way to access Hardy at all. Can someone help me? It may be a BIOS issue or something, but I checked the boot priority and that was fine.",28
+163,<IdleOne> !pastebin > sree,12
+164,"<ubottu> sree, please see my private message",12
+165,"<Shujah> sree, terminal > gnome-volume-properties",12
+166,<wols_> Oswy: is edgy still on the disk?,28
+167,<Oswy> Yeah.,28
+168,"<Oswy> Err, no.",28
+169,<Oswy> They're on different HDs.,28
+170,<wols_> Oswy: ubuntu can only handle one version at the same time. you must edit your menu.lst by hand,28
+171,<suselin> if vbox 1.6 is not in the repo(synaptic) is there a site that i can get the ubuntu version (of 1.6),33
+172,<wols_> the edgy menu.lst that is,28
+173,<Oswy> wols_: How do I do that?,28
+174,"<Oswy> ie, where is the file?",28
+175,<wols_> by editing it. reading grub docs for starters. /boot/grub/menu.lst,28
+176,<Xucrute> After an update I lost gnome in my  hardy machine. All I get is text based login. What should I do?,29
+177,<wols_> the edgy menu.lst. NOT the hardy one,28
+178,"<Oswy> OK, thanks, I'll try that.",28
+179,<wols_> Xucrute: install gdm,29
+180,<sree> Shujah: There is no info about the CD/USB drives,12
+181,<Xucrute> wols_. thanks .. will see that,29
+182,"<Shujah> sree, terminal > gnome-volume-properties <-check if automount is turned on",12
+183,<sree> Shujah: Just cameras and PDAs,12
+184,"<Oswy> wols_: What, so do I just cut out all the stuff currently there?",28
+185,<wols_> no. then you lose edgy. you add the entries for hardy. no I'm no gonna walk you through it and feed it to you,28
+186,<sree> Shujah: There is no option such as automount,12
+187,<Oswy> wols_: Fair enough.,28
+188,"<Shujah> sree, open nautilus > edit > prewferences > media (last tab)",12
+189,<jam4> What's Ubuntu ?,34
+190,<Seveas> !ubuntu | jam4,34
+191,"<ubottu> jam4: Ubuntu is a complete Linux-based operating system, freely available with both community and professional support. It is developed by a large community and we invite you to participate too! - Also see http://www.ubuntu.com",34
+192,<jam4> How do I get Ubuntu?,35
+193,<sree> Shujah: I see thanks. Let me check again,12
+194,<Nix> anyone have any idea on how to get socks4 working with curl?,36
+195,<Seveas> !download | jam4,35
+196,"<ubottu> jam4: Ubuntu installation CDs can be downloaded from http://nl.releases.ubuntu.com - Mirrors can be found at http://wiki.ubuntu.com/Mirrors - PLEASE use the !torrents to download Hardy, and help keeping the servers' load low!",35
+197,"<Shujah> sree, if that doesnt work terminal > gconf-editor    apps > nautilus > preferences [see if automount is checked]",12
+198,<jam4> Why is Ubuntu better than other operating systems,37
+199,"<Seveas> Nix, according to ist manpage: curl --socks4 <host[:port]>",36
+200,"<Shujah> jam4, didnt like ubuntu much I gather :|",37
+201,<n0gear> how do i change my grub loader? Need to get the win as a default,38
+202,"<Reformer81> I used Compiz with the AWN dock.  However, there are times when I need to turn off Compiz (switching to metacity) and I lose the dock.  So my question is this:  How can I create a panel in Gnome that disappears while Compiz & AWN are running, but comes back when I disable Compiz?",39
+203,<netcatc> hello folks,40
+204,<sree> Shujah: No the previous step has no effect. in gconf automount is enabled but automount is not working. Ive tried that earlier,12
+205,"<Seveas> n0gear, gksudo gedit /boot/grub/menu.lst, move the entry with windows to above the line that says AUTOMAGIC KERNEL LIST",38
+206,<tofaffy> I'm trying to install xchat 2.4.6 from source - it says glib is missing - which package would be glib?,41
+207,<Seveas> !compiling | tofaffy,41
+208,<ubottu> tofaffy: Compiling software from source? Read the tips at https://help.ubuntu.com/community/CompilingSoftware (But remember to search for pre-built !packages first),41
+209,"<Seveas> tofaffy, apt-get build-dep xchat will install all build dependencies for you",41
+210,* delcoyote hi,42
+211,<tofaffy> thanks Seveas,41
+212,"<kancerman> *follows the worms* MarchMarchMarch ... oi, too much Pink Floyd :D",43
+213,"<netcatc> help  me , my sda3 type system disappeared",44
+214,<Xucrute> wols_. that worked. but I can only get to xfce.. gnome is not available anymore.. not even Failsafe Gnome,29
+215,<netcatc> what do I make ?,44
+216,<d0t> in case i want to make a partition of FAT32 on my HD (ext3) do i HAVE to reboot into the liveCD or can i just make it straight away?,45
+217,<wols_> Xucrute: dpkg -l |grep ubuntu-desktop,29
+218,<sree> Shujah: No the previous step has no effect. in gconf automount is enabled but automount is not working. Ive tried that earlier,12
+219,<wols_> d0t: you can make it straight away. unmount the ext3 and reforamt it. you cannot change the root partition to fat however,45
+220,<carib909> grrrrrrrrrrrr!!! can get sound!  can install alsa driver  Help pleeeeeeease?,14
+221,<Nix> Use of undefined constant CURLPROXY_SOCKS4,36
+222,"<Lusule> Seveas - thanks a load, that worked!  Slight risk of losing programs off the top but i'll live with that",21
+223,"<Seveas> Lusule, you're welcome :)",21
+224,<d0t> wols_: so how come i can't see the partition with cfdisk ?,45
+225,<Xucrute> wols_.  nothing...,29
+226,yacc_ is now known as yacc,46
+227,<wols_> d0t: which one?,45
+228,<Xucrute>  I think I will reinstall eeverything again,29
+229,<d0t> should i use gparted instead?,45
+230,<wols_> Xucrute: reinstall gnome. it was removed for some reason,29
+231,"<netcatc> sorry, Can someone help me",44
+232,<wols_> d0t: no,45
+233,<wols_> !ask | netcatc,44
+234,"<ubottu> netcatc: Please don't ask to ask a question, ask the question (all on ONE line, so others can read and follow it easily). If anyone knows the answer they will most likely answer. :-)",44
+235,"<Seveas> wols_, he did ask before :)",44
+236,<edju> What happened to medibuntu.org?  It can't reslove.,47
+237,<Xucrute> wols_.  many apps seem to have gone... even firefox,29
+238,<ZwazO> #Tsubasa-Fansub@irc.recycled-irc.net,48
+239,<wols_> Seveas: still. asking like that is still useless,44
+240,<Seveas> !medibuntu | edju,47
+241,<n0gear> Thanks Seveas...couldnt save my changes previously,38
+242,<ubottu> edju: medibuntu is a repository of packages that cannot be included into the Ubuntu distribution for legal reasons - See http://www.medibuntu.org - it is currently offline due to load issues,47
+243,<netcatc> wols_: my type system sda3 disappeared,44
+244,"<carib909> Cant get sound, cant install alsa drivers. Can anyone help? see http://paste.ubuntu.com/27320/",14
+245,<d0t> wols_:  do i need to run cfdisk </dev/blah> ?,45
+246,"<wols_> Xucrute: yes. for some reason or other your install removed lots of stuff. keep better attention next time when you install anything. READ before you press ""Y""",29
+247,<Seveas> !repeat | carib909,14
+248,<netcatc> wols_: erro 17 no Grub,44
+249,"<ubottu> carib909: Don't feel ignored and repeat your question quickly; if nobody knows your answer, nobody will answer you. You can search https://help.ubuntu.com or http://wiki.ubuntu.com while you wait. Also see !patience",14
+250,<kafitz> can anyone in here help me with this rtorrent mess ive madr,49
+251,luc__ is now known as breizh,50
+252,<wols_> netcatc: what did you do?,44
+253,<Xucrute> wols_.  will do. THanks!!,29
+254,"<edju> Well, that answers that!",47
+255,<sree> Shujah: No the previous step has no effect. in gconf automount is enabled but automount is not working. Ive tried that earlier. Any other way,12
+256,<wols_> !grub | netcatc,44
+257,<ubottu> netcatc: grub is the default Ubuntu boot manager. Lost grub after installing windows: https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows - Making GRUB floppies & other GRUB howtos: https://help.ubuntu.com/community/GrubHowto,44
+258,<redduck676> kafitz: what kind of mess?,49
+259,<wols_> netcatc: use a live CD and check what's still there of the partition,44
+260,"<kafitz> i installed it from source, ran into so difficulties and now need help uninstalling it",49
+261,<kafitz> so i can do it from apt-get,49
+262,"<carib909> seveas, what should i repeat?",14
+263,<kafitz> ive tried removing everything,49
+264,<redduck676> kafitz: if you still have a source do ''make uninstall'',49
+265,"<Seveas> carib909, you should *stop* repeating your question every minute",14
+266,<wols_> kafitz: ask who gave you the source how to unisntall. or read the docs. there is no standard way of uninstalling self compiled source. that's a big reason we discourage it,49
+267,"<Shujah-1> sree, check this out > http://www.tuxfiles.org/linuxhelp/fstab.html  -- might help",12
+268,<netcatc> wols_: already am witch Live Cd at moment,44
+269,"<redduck676> kafitz: and no, apt-get won't help you removing stuff you compiled by hand",49
+270,<kafitz> make uninstall only worked for liltorrent,49
+271,<netcatc> wols_: /dev/sda3            8111       18159    80718592+  83  Linux,44
+272,<d0t> wols_:  cfdisk /dev/sdb works fine :) thanks.,45
+273,<wols_> netcatc: so it's ther,44
+274,<kafitz> theres a make clean for rtorrent and make distclean,49
+275,<sree> Shujah: OK,12
+276,<carib909> If you read the two questions you will see that one said can the oher corrected it to can and added the pastebin link.,14
+277,<wols_> netcatc: erm. look at its CONTENTS,44
+278,<netcatc> wols_:,44
+279,<netcatc> unable to mount as the type disappeared,44
+280,"<Reformer81> I used Compiz with the AWN dock.  However, there are times when I need to turn off Compiz (switching to metacity) and I lose the dock.  So my question is this:  How can I create a panel in Gnome that disappears while Compiz & AWN are running, but comes back when I disable Compiz?",39
+281,<carib909> cant,14
+282,<redduck676> kafitz: you can look at the files in the install target and remove them by hand.,49
+283,<wols_> netcatc: file -s  the partition,44
+284,<redduck676> (next time use aptitude to install it in the first place),49
+285,<baconnessie> kafitz: you can look at the files in the install target and remove them by hand.,49
+286,<d0t> wols_: do i need to delete the partition and then resize it ?,45
+287,<baconnessie> (next time use aptitude to install it in the files in the first place),49
+288,"<kafitz> ok, i will try that then",49
+289,<netcatc> wols_: data,44
+290,<wols_> redduck676: that would mean he understands waht a makefile means,49
+291,"<kafitz> yeah, i will",49
+292,<wols_> d0t: why?,45
+293,<netcatc> wols_: dev/sda3: data,44
+294,<wols_> netcatc: seems you hosed your sda3,44
+295,<baconnessie> netcatc: file -s,44
+296,<d0t> wols_: so how can i resize it ?,45
+297,"<Shujah-1> Reformer81, as far as I know only way to do that would be to increase the unhide time of bottom panel 10 times and use awn on top of it",39
+298,<wols_> d0t: you can etierh delte it and recreate it at the new size or use gparted,45
+299,<baconnessie> kafitz: you can look at the files in the install target and remove them by hand.,49
+300,<Reformer81> Shujah-1: Hmm... I guess that is doable.,39
+301,"<baconnessie> yeah, i will try that would be to increase the new size or use awn on top of it",39
+302,<Reformer81> Thank you,39
+303,<netcatc> baconnessie: /dev/sda3 data,44
+304,"<kafitz> sorry for being naive, but how do i find the install target?",49
+305,<baconnessie> wols_: so how can i guess that is doable.,39
+306,<sree> Shujah: I Think there is no problem with my fstab. It is something else,12
+307,<baconnessie> i guess that is doable.,39
+308,<netcatc> baconnessie: must mount the partition,44
+309,<baconnessie> baconnessie: /dev/sda3 data,44
+310,<netcatc> wols_: must mount the partition,44
+311,<Seveas> !ops | baconnessie,51
+312,"<ubottu> baconnessie: Help! Channel emergency! (ONLY use this trigger in emergencies) - Mez, LjL, elkbuntu, imbrandon, DBO, gnomefreak, Hobbsee, rob, ompaul, Madpilot, , CarlK, crimsun, ajmitch, tritium, Nalioth, thoreauputic, apokryphos, tonyyarusso, PriceChild, Amaranth, jrib, jenda, nixternal, Myrtti, mneptok, Pici, Jack_Sparrow, nickrud, jpds, bazhang or jussi01!",44
+313,<wols_> netcatc: you can't. it's not ext3 anymore. something you did overwrote it. restore from backup,44
+314,<baconnessie> it is something else,12
+315,<baconnessie> wols_: so how can etierh delte it and recreate it and recreate it at the new size or use gparted,45
+316,"<carib909> seveas, how long should one wait to repeat question?",14
+317,<Myrtti> Seveas: hum?,44
+318,<wols_> Myrtti: baconnessie is a bot. an annoying one,44
+319,"<baconnessie> seveas, how long should one wait to increase the unhide time of it",14
+320,"<Seveas> Myrtti, baconnessie only repeats what others said. I suspect bot",44
+321,"<baconnessie> reformer81, as far as i know only way to increase the partition and then",39
+322,<Myrtti> noted,44
+323,<wols_> that is no suspicion. he copied my typos verbatim,44
+324,"<Shujah-1> baconnessie, is a bot or something?",44
+325,<pakonja> how can i test does my graphic card drivers are installed and ready for 3D games?,52
+326,<Reformer81> Hmm... that was pathetic.,39
+327,<wols_> pakonja: glxinfo |grep direct,52
+328,"<Seveas> Myrtti, xkcd spammer :p",44
+329,"<Malix> hi all. How do you get rid of firefox3.0 beta 5. no matter what I do, thats what I get when I install firefox from official hardy repository",53
+330,<trooper> is there a gnome-panel-applet around that shows BOTH cpu temperature and frequency with the possiblity to alter the frequency like cpufreq-selector does?,54
+331,<trakinas> xkcd pws!,44
+332,<Myrtti> Seveas: better than telling why it's doing that for real ;-),44
+333,"<Shujah-1> Reformer81, didnt work?",39
+334,"<threedee> I'd like to download the source for commands ""ls"" and ""cd"". How can I do that. Thankyou.",55
+335,<trooper> err that doesnt show both but lets one choose the frequency from it :-),54
+336,"<Seveas> threedee, apt-get source coreutils",55
+337,"<pakonja> Seveas, direct rendering: Yes, that means I got it installed... thanks",52
+338,<DarkAudit> Malix: do you have the updates repository enabled?,53
+339,<threedee> Seveas: Thankyou very much,55
+340,"<Reformer81> Shujah-1: Oh, not that.  I haven't tried it yet :)  I'm sure it will work, though.",39
+341,<netcatc> wols_: reiserfsck --rebuild-tree,44
+342,<Reformer81> Shujah-1: But then I'm still going to need to take extra steps to make the gnome panel useful after disabling compiz.,39
+343,<Sinister> why does devede take so damn long i have 4gb ram a 3.2 dual core pent 4 and it takes hours whats the deal is there anything faster ?,56
+344,"<netcatc> wols_: ext3, what will be",44
+345,<Malix> DarkAudit: yes I do,53
+346,<wols_> netcatc: with reiser? good luck. lol,44
+347,<carib909> is there another ubuntu server or channell?,57
+348,sheep is now known as Starnestommy,58
+349,"<Shujah-1> Reformer81, make sure hide time is super short too & hide pixel are 0.",39
+350,"<MethodOne> threedee: ls is part of coreutils, and cd is part of bash. run the command apt-get source coreutils or apt-get source bash",55
+351,"<Malix> DarkAudit: it says the candidate version is: 3.0+nobinonly-0ubuntu0.8.04.1, but still I get 3.0b5 o_O",53
+352,"<Malix> I have ran apt-get clean, apt-get update, etc, but still I all get is beta5",53
+353,<gnomefreak> Malix: enable -proposed and you will get 3.0.1,53
+354,"<Malix> k, I'll try that",53
+355,<gnomefreak> Malix: you also need -updates enabled to get 3.0 final,53
+356,<gnomefreak> Malix: and you have final,53
+357,"<keanu> asked this earlier but had to leave - yesterday I was able to play music fine in amarok (it's all I've been using) and was able to play files locally and from my NAS.  Today, I can't play any mp3 or flac (don't have any others to test) in Amarok, VLC, totem, mplayer, or xine.  any ideas on how to fix it?",59
+358,<IdleOne>       .gfggvggygvftvgrfgtvbfggnbtbghhbvhgthhhjhfkjgghfftvf6hje53521grgtgrAGSYZGDVFARFCFTRATRZCXFTYASGDRstf7annmmmmmmmmmmmmmmmmmmmmmmmmm,60
+359,<IdleOne> 'jxkmm,61
+360,<gnomefreak> IdleOne: problems?,61
+361,<wraund> keanu: are there any error messages?,59
+362,<Pici> IdleOne: Finished?,61
+363,<netcatc> wols_: thanks for incentive,44
+364,<Malix> gnomefreak: whats 'proposed' in kubuntu terms,53
+365,"<keanu> wraund, nope.  it acts like it's about to play, and just sits there doing nothing.  skipping to the next track (which also doesn't work) in most of the above programs causes them to freeze",59
+366,<wraund> ahh..,59
+367,<wraund> close it all down,59
+368,<gnomefreak> Malix: proposed is a repo that is used to push packages to before they go into update (im fairly sure its updates),53
+369,"<wraund> then open a terminal, and run 'killall amarokapp' without quotes",59
+370,<wraund> then type amarok,59
+371,<wraund> and press enter,59
+372,"<graft> does anyone have an audio setup that ""just works"", i.e. all applications can use the sound card without interference or crashing simultaneously? and if so, how was it achieved?",62
+373,<wraund> see if errors are displayed there :),59
+374,"<Lusule> quick question:  assume i've installed this on a small fraction of my drive and now decide i like it - can i expand it to get rid of windows completely, or do i have to reinstall?",63
+375,<Malix> gnomefreak: but I have all those enabled o_O,53
+376,<gnomefreak> Malix: once in proposed it needs testing before it hits normal repos,53
+377,"<keanu> wraund, I've restarted both the NAS and laptop several times with no luck.",59
+378,<wraund> keanu: see if any terminal messages appear,59
+379,<gnomefreak> Malix: no you dont. you dont have proposed if you didnt add it,53
+380,"<keanu> wraund, ok",59
+381,"<Shujah-1> graft, you can have one too > http://ubuntuforums.org/showthread.php?p=4928900",62
+382,"<Malix> gnomefreak: ok, but I did have 3.0 final before, today I noticed it got back to b5",53
+383,<IdleOne> n njhakhgyhhgcxbghsbgdh4 nvgxxxzzzzxzzcxcx,64
+384,<gnomefreak> Malix: if you look at list you will see something like deb http://gb.archive.ubuntu.com/ubuntu/ intrepid-proposed main restricted universe multiverse,53
+385,"<keanu> wraund, no errors when trying to play music - it just sits there doing nothing",59
+386,<wraund> ok,59
+387,<gnomefreak> Malix: 3.0.1 is in proposed it is next security point release,53
+388,<wraund> open...,59
+389,<wraund> settings > configure amarok,59
+390,<wraund> look under engine,59
+391,"<Malix> gnomefreak: yes, but isn't 3.0 final already there?",53
+392,<wraund> what is it using,59
+393,<gnomefreak> Malix: but it will your repos in a week or so,53
+394,<gnomefreak> Malix: final is in -updates,53
+395,"<Reformer81> Shujah-1: Well, this will work for now.  But I'm curious... isn't there someway to modify the panel's configuration file on the fly?  For example, set a ""visible"" attribute to zero?",39
+396,"<Malix> atleast I have it on _this_ computer, but on the other it reverted to b5 o_O",53
+397,"<keanu> wraund, xine",59
+398,<oobe> im having a problem with cron not working is there somthing special i need to do to get cron to work,65
+399,<gnomefreak> Malix: 3.0.1 is newer than final,53
+400,"<Malix> gnomefreak: well, obviously, but isn't there 3.0 final in the normal repositories?",53
+401,<Malix> no?,53
+402,<wraund> keanu: and what is the output plugin shown as?,59
+403,<wols_> Malix: apt-cache policy   for ffox3?,53
+404,"<graft> Shujah-1: hm, okay, trying that",62
+405,<gnomefreak> Malix: than you need to update it becasue only one not updated to final is in gutsy and im working on that sort of,53
+406,"<DarkAudit> Malix: -updates, not the main ones",53
+407,"<keanu> wraund, auto detect",59
+408,<gnomefreak> Malix: yes its in -updates repo,53
+409,"<carib909> No sound, cannot find card! how to fix?",14
+410,<gnomefreak> Malix: not in gutsy only hardy,53
+411,"<Shujah-1> Reformer81, you can probably make a script for it, place it on the desktop - But I gather that would be too much hassle for something like that",39
+412,<wraund> keanu: what options does the drop down menu give you,59
+413,<Malix> gnomefreak: I have hardy,53
+414,<wols_> !sound | carib909,14
+415,"<ubottu> carib909: If you're having problems with sound, first ensure ALSA is selected, by double clicking on the volume control, then File -> Change Device (ALSA Mixer). If that fails, see https://help.ubuntu.com/community/Sound - https://help.ubuntu.com/community/SoundTroubleshooting - http://alsa.opensrc.org/DmixPlugin - For playing audio files, see !Players and !MP3",14
+416,jose is now known as jose_bcn,66
+417,<gnomefreak> Malix: make sure updates repos are enabled and you will have final if you upgrade,53
+418,"<peter__> hi i have a problem with my desktop, gnome seems to be managing my desktop when id rahter have xfce4 manage it",67
+419,<wols_> peter__: then install xubuntu-desktop,67
+420,<Malix> gnomefreak: but I _have_ the update repos enabled,53
+421,"<Shujah-1> peter__, gnome has been known for such mischievous behavior :P",67
+422,<Malix> that is why I am so puzzled about this,53
+423,<wols_> Malix: I asked you something,53
+424,<gnomefreak> peter__: than log into xfce login instead of gnome,67
+425,<Lusule> does anyone know how i get rid of the entry/exit messages in pidgin?,68
+426,"<keanu> wraund, pulseaudio, alsa, osd, ess, and file",59
+427,<gnomefreak> Malix: than what are you talking about you dont have final?,53
+428,<wraund> keanu: try setting it to alsa,59
+429,<wraund> then restart it,59
+430,<wraund> and try then,59
+431,<peter__> yeah thats what i do but the only thing that doesnt run under xfce is my desktop,67
+432,<gnomefreak> Malix: you dont have the update repos enabled if you dont have final,53
+433,<kaushal> hi all,69
+434,<Malix> wols_: apt-cache policies?,53
+435,<gnomefreak> Malix: what is the exact version you have,53
+436,<wols_> Malix: no. read it again,53
+437,<kaushal> how can i get berl in ubuntu hardy,70
+438,<gnomefreak> Malix: apt-cache policy firefox,53
+439,<wols_> kaushal: beryl does not exist anymore,70
+440,<wols_> !compiz | kaushal,70
+441,<ubottu> kaushal: Compiz (compositing window manager) and XGL (X server architecture layered on top of OpenGL) - Howto at http://help.ubuntu.com/community/CompositeManager - help in #compiz-fusion,70
+442,<gnomefreak> Malix: type the command i gav eyou,53
+443,"<Shujah-1> kaushal, beryl expired use compiz",70
+444,<kaushal> is it compiz fusion,70
+445,<peter__> meaning i have gnome icons and whenever i try to change my desktop it brings up the gnome destop manager,67
+446,<gnomefreak> baryl didnt expire,70
+447,<gnomefreak> beryl even,70
+448,"<Keaton> I downloaded a patch from the wine appdb, but I'm not sure how to use it. The MIME type is text/x-patch, if that helps at all.",71
+449,<gnomefreak> kaushal: yes,70
+450,"<Shujah-1> gnomefreak, isnt beryl & compiz a joint venture now?",70
+451,candrews is now known as candrews_,72
+452,<DarkAudit> Malix: it should say  Installed: 3.0+nobinonly-0ubuntu0.8.04.1,53
+453,<kaushal> i need more features in compiz,70
+454,candrews_ is now known as candrews,73
+455,<kaushal> i cant get all of them,70
+456,"<MXIIA> Ok, can someone PLEASE tell my how to force-uninstall AlienArena?!",74
+457,<Reformer81> kaushal: So write them :),70
+458,<Reformer81> oh,70
+459,<gnomefreak> yes beryl merged with compiz to create compiz-fusion,70
+460,<DarkAudit> 3.0~b5+nobinonly-0ubuntu3 0 is the beta 5,53
+461,"<Malix> gnomefreak: just listen for a second here, adept says the canditate version is: 3.0+nobinonly-0ubuntu0.8.04.1 for firefox, and thats what I am installing. still, the app which I launch by typing firefox-3.0 in konsole, is firefox 3.0 beta 5",53
+462,<Malix> I kid you not,53
+463,<gnomefreak> Malix: that is final,53
+464,<gnomefreak> Malix: where do you see b5 at?,53
+465,<sirjoebob> quick question on bash scripting. i am trying to write a script that will execute commands when I get connected to the internet. I have conky setup with weather that fails and does not update. i want it to only launch after i get online,75
+466,<Reformer81> Malix: Have you purged the old Firefox 3.0 beta first?,53
+467,"<Malix> yes, I know it should be, but still there is only firefox 3.0 b5 on the computer I try to install it",53
+468,"<Malix> Reformer81: yes, I have",53
+469,<wols_> Malix: do what several people told you instead of giving useless paraphrasing stuff without any information content,53
+470,<ltp> hola,76
+471,<gnomefreak> Malix: you just pasted the final version,53
+472,<kaushal> as per the video,70
+473,<wols_> Malix: use apt-cache policy,53
+474,<gnomefreak> saying that you had it,53
+475,<kaushal> compiz vs ubuntu,70
+476,<socialevil> hi there,77
+477,<sid> hello every body,78
+478,<kaushal> in youtube,70
+479,<oskie_> how can I tell ubuntu to generate en_GB.ISO-8859-1 locale?,79
+480,<sid> can some one talk here about mencoder,80
+481,<Myrtti> !enter | kaushal,70
+482,"<ubottu> kaushal: Please try to keep your questions/responses on one line - don't use the ""Enter"" key as punctuation!",70
+483,<kaushal> i mean vista vs ubuntu,70
+484,<gnomefreak> 3.0+nobinonly-0ubuntu3 is final Malix,53
+485,<wols_> kaushal: ask #compiz not us. or best the user who uploaded the video,70
+486,<gnomefreak> well maybe without the 3 and with ~8.04,53
+487,"<Sigike> Hey, I'm desperate, I really need help on getting my videocard to work",81
+488,"<Seveas> oskie_, add it to /var/lib/locales/supported.d/local",79
+489,"<keanu> wraund, wow...that worked.  I guess now my question is, what happened to pulseaudio?",59
+490,"<Malix> wols_: okay I ran the command, what exactly should I be seeing?",53
+491,<wols_> Sigike: what card?,81
+492,<Reformer81> kaushal: Install compizconfig-settings-manager,70
+493,<gps23> how can i debug dwm?,82
+494,<DarkAudit> Malix: it should say  Installed: 3.0+nobinonly-0ubuntu0.8.04.1,53
+495,"<Seveas> oskie_, and run locale-gen",79
+496,<kaushal> i have that,70
+497,<Sigike> Radeon x1950PRO (pci-e version-,81
+498,<gnomefreak> Malix: what version do you see on the installed line of apt-cache policy,53
+499,<hagus> I have ubuntu 8.04 but have damaged by grub menu.lst.  I can boot into windows but not into ubuntu.,83

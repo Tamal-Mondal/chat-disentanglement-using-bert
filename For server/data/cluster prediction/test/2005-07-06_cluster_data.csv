@@ -1,0 +1,501 @@
+,line,cluster number
+0,"<jonbusby> well no, their java applet windows. I'm running firefox with sun-j2rel.5 java vm",1
+1,<xliu> how to disable the updator when gnome startup?,2
+2,"<holycow> okay, what site?",1
+3,<rob^> heh,3
+4,stig_ [~stig@dsl-121-26.oeke.tiscali.no]  has joined #ubuntu,4
+5,<stig_> how can I get access to my NTFS files from ubuntu? (fresh newbie asking) :),5
+6,"<holycow> stig_, unfortunately for now it requires a bit of work",5
+7,<holycow> a: you will only be able to read the ntfs files,5
+8,<holycow> b) you wont be able to write to an ntfs partition,5
+9,<stig_> I only need to read from it :),5
+10,"<holycow> ms keeps ntfs info secret, and any interim support for write has essentially dissapeared as no one cares enough to maintain the components",5
+11,<holycow> okay,5
+12,<holycow> then,5
+13,<jonbusby> hmmm hang on,1
+14,<jonbusby> may have solved this,1
+15,<jonbusby> brb,1
+16,<holycow> 1. you need to find your ntfs partition with sudo fdisk -l,5
+17,"fge [~insomniac@fge.user]  has left #ubuntu [""May]",6
+18,<holycow> 2. you need to create a folder in say /media to wher eyou will mount to the ntfs partition ... mine is /media/ntfs,5
+19,<holycow> 3. you need to add info about the partition to your /etc/fstab,5
+20,<jonbusby> stig_ the ubuntuguide.org is really good on this,5
+21,<holycow> i'll paste a sample that i use,5
+22,<holycow> oh i don't have the line on this system,5
+23,<stig_> holycow: I think I made it it point 3... but dont know how I do that,5
+24,<holycow> google for fstab mount ntfs ... you will get lots of examples of the entry,5
+25,<holycow> the 4. sudo mount /media/ntfs,5
+26,"<stig_> ok, thanks",5
+27,[noobuntu]  [~chris@dsl-082-082-220-126.arcor-ip.net]  has joined #ubuntu,7
+28,<holycow> then 5. you can browse to /metdia/ntfs and read the files from there,5
+29,"<holycow> i presume in the future some outomount feature will be available, not sure",5
+30,Shorty` [~shorty@persephone.trancelab.org]  has joined #ubuntu,8
+31,"<holycow> stig_, google step 3 then :) you will need to reaserch a bit, i don't intend on teaching you how to use nano or whatever :)",5
+32,amnesia [~remember@VPN-034-012.rz.fh-ulm.de]  has joined #ubuntu,9
+33,<[noobuntu]> anyone familiar w/ a prob getting the sound running on a K7S41Gx mainboard?,10
+34,"<holycow> no, i have tons of those, run ubuntu just fine",10
+35,<holycow> how new is it?,10
+36,<holycow> maybe they have changed the chipset again,10
+37,theplateau [~james@cpe-024-211-050-039.sc.res.rr.com]  has joined #ubuntu,11
+38,Shufla [~shufla@router.kkzabrze.com.pl]  has joined #ubuntu,12
+39,<Shufla> hello ubuntiers :),13
+40,Dreco [~administr@c1-115-rrba.isadsl.co.za]  has joined #ubuntu,14
+41,<[noobuntu]> chips are SIS SI7012 with CMI 9761 mixer,10
+42,"migma [~migma@210.213.244.114]  has left #Ubuntu [""Leaving""]",15
+43,<Dreco> Question: How do I search for a specific file name ?,16
+44,jobli_ [~jobli@b1118c0888f965c1.session.tor]  has joined #ubuntu,17
+45,<Shufla> Dreco: find <dir> -name <fname>,16
+46,"<[noobuntu]> Dreco, try locate <filename>",16
+47,<Shufla> 49min2go :D,18
+48,<Dreco> thank you,16
+49,"<Tomcat_> Dreco: There's also a ""Search for file"" in the ""Places"" menu.",16
+50,edulix [~edulix@136.Red-80-59-147.pooles.rima-tde.net]  has joined #ubuntu,19
+51,<[noobuntu]> crimsun is not here..,20
+52,<Dreco> I am trying to find out where wine dumps its fake.windows installation files ?,16
+53,<Dreco> or where I can find fake.windows,16
+54,<Shorty`> ~/,16
+55,"<mjr> Dreco, .wine/fake_windows by default, I think",16
+56,<Shorty`> ;),16
+57,ztonzy [~ztonzy@ztonzy.artist.blender]  has joined #ubuntu,21
+58,<Dreco> no wine folder under root,16
+59,<holycow> not root,16
+60,<holycow> in your /home/user dir,16
+61,AfroDude [~JakobKK@160.80-202-65.nextgentel.com]  has joined #Ubuntu,22
+62,"<holycow> open up nautilus, do edit preferences",16
+63,<holycow> check of 'show hidden files',16
+64,<holycow> then when you open up your home folder from places you will see a .wine dir there,16
+65,"<holycow> everything is in there, including windows apps you install",16
+66,miscz [~miscz@amx209.neoplus.adsl.tpnet.pl]  has joined #ubuntu,23
+67,epselon [~epselon@p548AE67E.dip.t-dialin.net]  has joined #ubuntu,24
+68,<AfroDude> dosen't Ubuntu support read/write to NTFS disks?,5
+69,<holycow> read yes,5
+70,<holycow> write no,5
+71,DJ_Mirage [~djmirage@biggetje.xs4all.nl]  has joined #ubuntu,25
+72,<holycow> no linux distro properly supports ntfs writes,5
+73,<Dreco> thank you,16
+74,<AfroDude> how/where can I reach it?,5
+75,"<holycow> ntfs is proprietary and undocumented, and the project that used the windows dlls to do writing is no longer supported, primarily because no one really cares",5
+76,<holycow> reach what?,5
+77,"<AfroDude> a disk with NTFS file system. Tried /dev/hd1, but couldn't open it :/",5
+78,<holycow> let me paste instructions i just gave to anothe guy 2 minutes ago,5
+79,<holycow> holycow 1. you need to find your ntfs partition with sudo fdisk -l,5
+80,<holycow> holycow 2. you need to create a folder in say /media to wher eyou will mount to the ntfs partition ... mine is /media/ntfs,5
+81,<holycow> holycow 3. you need to add info about the partition to your /etc/fstab,5
+82,"<holycow> google step 3, i dont have sample line here",5
+83,<holycow> holycow the 4. sudo mount /media/ntfs,5
+84,<holycow> holycow then 5. you can browse to /metdia/ntfs and read the files from there,5
+85,<amnesia> anyone using the cool networkmanager from breezy?,26
+86,"<AfroDude> ok, thanks",5
+87,"<holycow> amnesia, not until breezy is release",26
+88,<holycow> d,26
+89,<holycow> >_>,26
+90,umarmung [~Schreiber@p54AA0B2B.dip0.t-ipconnect.de]  has joined #ubuntu,27
+91,adnans [~adnans@noterik2.demon.nl]  has joined #ubuntu,28
+92,"<amnesia> holycow: oh well, I don't use breezy just upgraded the things needed for NM and beagle, wanted to see them running",26
+93,<amnesia> but I will upgrade after the exams :),26
+94,"<holycow> if you want to play with that stuff, maybe run breezy as a separate instance? that way you can do unlimited damage without harm to the main pc",26
+95,minholi [~minholi@200.193.131.1]  has joined #ubuntu,29
+96,"<amnesia> no thanks, I can repair most of that",26
+97,davro [~davro@cpc4-ches2-3-0-cust194.lutn.cable.ntl.com]  has joined #ubuntu,30
+98,"<holycow> cool, whatever",26
+99,"<amnesia> I'm just not sure I need to configure the interfaces for hal, since NM says I have no devices :)",26
+100,Robinho_Peixoto [~preview@200.128.80.254]  has joined #ubuntu,31
+101,Robinho_Peixoto_ [~preview@200.128.80.254]  has joined #ubuntu,32
+102,LinuxNewbie [~kpagariga@202.69.173.245]  has joined #ubuntu,33
+103,Albaraha [~Albaraha@217.17.244.64]  has joined #ubuntu,34
+104,"Balu [~balu@foghorn.bartels-schoene.de]  has left #ubuntu [""oops""]",35
+105,<LinuxNewbie> hello im back,36
+106,<Albaraha> y doesm,37
+107,<Albaraha> why doesn't gnome reload firefox on the startup?,37
+108,<holycow> what do you mean on startup?,37
+109,<holycow> sounds like the question answers it self,37
+110,<LinuxNewbie> i have read that samba support active directory like windows,38
+111,<LinuxNewbie> how can i download the latest version of samba?,38
+112,<holycow> sudo apt-get install samba,38
+113,<LinuxNewbie> that will install the latest?,38
+114,atholas [~atholas@222-153-59-57.jetstream.xtra.co.nz]  has joined #ubuntu,39
+115,"<Albaraha> holycow, whenever I start the desktop it starts gnome-terminal and xchat automatically",37
+116,<holycow> the latest that counts ... you will have a lot of reading/research to do to get it to work right,38
+117,<Albaraha> but that doesn't happen with firefox,37
+118,miscz_ [~miscz@amd39.neoplus.adsl.tpnet.pl]  has joined #ubuntu,40
+119,<holycow> of course,37
+120,<holycow> you don't have it in your session,37
+121,<holycow> system / preferences / sessions,37
+122,<LinuxNewbie> ok now,38
+123,<LinuxNewbie> in samba you can create usernames?,38
+124,<LinuxNewbie> for students,38
+125,<mcquaid> damnit,41
+126,d-man [~d-man@cpe-68-203-172-88.houston.res.rr.com]  has joined #ubuntu,42
+127,"<holycow> yes, but i'm not a samba expert, i avoid it like the plague, i want no windows compatability anywhere in my world",38
+128,ivoks [~ivoks@wall2.grad.hr]  has joined #ubuntu,43
+129,<mcquaid> if compiling something and make fails due to lack of harddrive space is there a way to continue off and not ahve to start over?,41
+130,guohongyan [~guohongya@61.54.153.252]  has joined #ubuntu,44
+131,"<Albaraha> There is no application in the list, while I have xchat and gnome-terminal loading at the startup",37
+132,<LinuxNewbie> i can only see that you can create shared foldr,38
+133,<LinuxNewbie> there is no usernames,38
+134,"<holycow> LinuxNewbie, you are heavily underestimating how much work your getting your self into",38
+135,<holycow> first this is the wrong channel to ask,38
+136,<holycow> second start buying books :),38
+137,marcin_ant [~marcin@www.e-dev.tele2.pl]  has joined #ubuntu,45
+138,<LinuxNewbie> linux books are not very popular in our country,38
+139,<LinuxNewbie> usually windows is the prefered OS around here,38
+140,<LinuxNewbie> could you suggest a chanel,38
+141,<holycow> #samba?,38
+142,<holycow> -_-,38
+143,<LinuxNewbie> ok,38
+144,markuman [~markuman@p50924016.dip.t-dialin.net]  has joined #ubuntu,46
+145,kzm [~ketil@sefirot.ii.uib.no]  has joined #ubuntu,47
+146,lok [kvirc@pouet.dnsalias.org]  has joined #ubuntu,48
+147,delire [~delire@adm6-188.itu.dk]  has joined #ubuntu,49
+148,<Prottie> LinuxNewbie: didnt you download the pdf I gave you the link too?,38
+149,<Prottie> that explains samba very well,38
+150,<CarlFK> whats the wiki URL of a sources.list ?,50
+151,erommer [~rommer@203-219-130-10-qld.tpgi.com.au]  has joined #ubuntu,51
+152,<LinuxNewbie> ok last thing how can i use GAIM to access yahoo,52
+153,thomas__ [~thomas@x1-6-00-0d-87-39-ad-7e.k549.webspeed.dk]  has joined #ubuntu,53
+154,<delire> LinuxNewbie: create a new 'yahoo' account,52
+155,ep [~ep@ip68-97-122-98.ok.ok.cox.net]  has joined #ubuntu,54
+156,<LinuxNewbie> found it,38
+157,<LinuxNewbie> thx,52
+158,dghgdfgdl [~chatzilla@247.137-182-adsl-pool.axelero.hu]  has joined #ubuntu,55
+159,norah [~norah@port271.ds1-hj.adsl.cybercity.dk]  has joined #ubuntu,56
+160,tanek [~tanek@h22n1fls34o1104.telia.com]  has joined #ubuntu,57
+161,<thomas__> I want to install xmms-wma so I can listen to wma files... I have added both universe and multiverse but still I can't find it ? where can I get that package ?,58
+162,<thomas__> sorry my english...,58
+163,<delire> thomas__: try 'apt-cache search wma xmms' and see if it turns up,58
+164,<thomas__> ok,58
+165,<delire> thomas__: and make sure you 'apt-get update' first!,58
+166,Toka` [~Toka@dsl-084-058-007-007.arcor-ip.net]  has joined #ubuntu,59
+167,<LinuxNewbie> in the synaptic manager,58
+168,"<delire> or yes, use synaptic ;)",58
+169,JzE [jze@a84-231-49-203.elisa-laajakaista.fi]  has joined #ubuntu,60
+170,<thomas__> hehe,58
+171,<delire> thomas__: synaptic is just a good GUI to the same commands..,58
+172,<LinuxNewbie> ah?,58
+173,<LinuxNewbie> im here right now,58
+174,<LinuxNewbie> there is so many,58
+175,<LinuxNewbie> like in communication,58
+176,<thomas__> okay... I updated and now I can see the package... thank you..,58
+177,<LinuxNewbie> base platform,58
+178,<LinuxNewbie> so i need to update them all?,58
+179,<delire> thomas__: anytime,58
+180,<thomas__> :),58
+181,alkuovi [~Jag@dsl-083-102-064-205.lohjanpuhelin.fi]  has joined #ubuntu,61
+182,delire notes that 'updating' really means grabbing a list of all the debian packages from servers specified in /etc/apt/sources.list (or via a GUI 'add repository').,58
+183,<CarlFK> anyone recomend a script for setting up port forwarding?,62
+184,<delire> CarlFK i use ipmasq,62
+185,<LinuxNewbie> talking about respository,58
+186,<LinuxNewbie> ive change that when i went to a site,58
+187,n0cturnal [~invert@mercury.invert.net.au]  has joined #ubuntu,63
+188,<LinuxNewbie> then ive execute the command that has a update,58
+189,<LinuxNewbie> and upgrade,58
+190,<LinuxNewbie> is that the same in the synaptic manager,58
+191,"<n0cturnal> im trying to get a minitar pcmcia wireless card working, though it's asking for the location of my kernel src... any ideas?",64
+192,<holycow> yep,58
+193,indypende [~indypende@d83-176-16-63.cust.tele2.it]  has joined #ubuntu,65
+194,"<delire> LinuxNewbie: yep, synaptic and/kpackage are interfaces to the apt and dpkg suite of tools",58
+195,narkceh [~narkceh@dsl-aur4-a1a.dial.inet.fi]  has joined #ubuntu,66
+196,ChaKy [~chaky@83-131-137-54.adsl.net.t-com.hr]  has joined #ubuntu,67
+197,<LinuxNewbie> ic,58
+198,<delire> n0cturnal: usually /usr/src/linux-$(uname -r),64
+199,<LinuxNewbie> so i dont need to use the sudo,58
+200,<delire> n0cturnal: ls /usr/src and see if it's there.,64
+201,<markuman> someone here has a radeon all in wonder ???,68
+202,<LinuxNewbie> just go there if i need some updating,58
+203,"<CarlFK> oh oh.. I am intalling Hoary to a toshiba 4600 laptop - it just ""finished"" and I get ""I cannot start the X server....""",62
+204,"<narkceh> hello. i installed ubuntu ""server"" so its the base. then i installed x-system and xfce4. But the problem is that how can i get root system console because here is now xterm or something?",69
+205,<CarlFK> and the it isn't responding to keyboard,62
+206,<delire> LinuxNewbie: use synaptic if you're more comfortable with it. think of it as a bit like a peer-to-peer client.,58
+207,"<n0cturnal> yah... contains only ""rpm""",64
+208,<delire> CarlFK: ctrl-alt-F1 and login. then we'll look at some logs,62
+209,<delire> narkceh: do you really need root? you can just 'sudo <command>',69
+210,[noobuntu]  [~chris@dsl-082-082-220-126.arcor-ip.net]  has joined #ubuntu,70
+211,<LinuxNewbie> ok tnx a lot you guys!,58
+212,<delire> narkceh: if you really do need root just 'sudo passwd root' and create an account,69
+213,<LinuxNewbie> have a nice day or evening =),58
+214,<delire> LinuxNewbie: you too!,58
+215,"<Albaraha> I have lib++dfb-0.9-22_0.9.22-1_i386.deb  libdirectfb-0.9-22_0.9.22-1_i386.deb splashy_0.1.5.svn2_i386.deb, and need to install them. ""dpkg -i"" says this http://paste.ubuntulinux.nl/356",37
+216,"<thomas__> Well... Is there some kind of ""learn linux in 24 hours"" somewhere ?It would be nice",71
+217,kanichEEE [~kaniche@WLL-27-pppoe087.t-net.net.ve]  has joined #ubuntu,72
+218,<delire> Albaraha: try an 'apt-get update && dpkg --configure -a' to fix this problem,37
+219,<narkceh> delire: sudo apt-get -f install && apt-get install build-essential libncurses5-dev kernel-package | says that E could not open lock file /ver/lib/dpkg/lock - open (13 permission denied) E: are you root?,69
+220,<delire> thomas__: hehe there is actually this book i think. there are really good books in the Oreilly series.,71
+221,<kanichEEE> I know I gonna get flammed for this but... How I can change the default boot to windows? is because I m not hte only one who uses this pc :(,73
+222,"<holycow> LinuxNewbie, welcome to linux anywhoo, give it time, it will start to make sense eventually",58
+223,<delire> narkceh: you need the second sudo in there ;),69
+224,<narkceh> delire: dammit :DDDD,69
+225,"<mjr> kanichEEE, /boot/grub/menu.lst, change the default entry",73
+226,<narkceh> delire: thank you :P,69
+227,<delire> narkceh: np ;),69
+228,<thomas__> Yes... I have looked a lot at thease oreilly books... but there is so many ? I don't know which I should use ?,71
+229,<n0cturnal> farkit,64
+230,<joachim> how do I get to the apache manual through my browser? the link on http://localhost/apache2-default/ is dead,74
+231,<n0cturnal> i think ima have to put winblows back on,64
+232,<narkceh> delire: im into debian all the time cannot use sudo.,69
+233,<kanichEEE> mjr to what?,73
+234,"<Albaraha> delire, http://paste.ubuntulinux.nl/357",37
+235,<delire> joachim: what about just http://localhost,74
+236,<delire> narkceh: yeah a bit weird at first ..,69
+237,Vjaz [peksi@htklx2.htk.fi]  has joined #ubuntu,75
+238,"<joachim> delire, that just shows an index",74
+239,"<CarlFK> delire -i dont think you understand ""isn't responding to keyboard"" ;)",62
+240,<joachim> with a link to apache2-default/,74
+241,"<mjr> kanichEEE, to whatever your windows entry is?",73
+242,<Vjaz> Anyone here successfully installed a 2.6.12 kernel on Hoary?,76
+243,<kanichEEE> you mean hda1?,73
+244,<CarlFK> ctrl-alt-F1 did nothing,62
+245,"<delire> CarlFK: ahah, hehe sorry. just a moment",62
+246,JonA [~jonathan@alxpc1jaa2.alx.aber.ac.uk]  has joined #ubuntu,77
+247,"<Vjaz> I wanted to try 2.6.12 on my Hoary system, but I ran into trouble. First it wouldn't even boot, and when it did my sound card didn't work and I think I recall some other quirks too.",76
+248,"<mjr> kanichEEE, no, the number of the menu entry, starting with 0",73
+249,"<delire> Albaraha: hmm, a bit of a tangle there... try an 'apt-get -f install' and pase the output (don't hit ""Yes"")",37
+250,<kanichEEE> Oh...,73
+251,<kanichEEE> Got it lol,73
+252,<delire> Vjaz: always wait a couple of months before trying out a new kernel ;),76
+253,"<Vjaz> delire: Hehhe. Yeah, that's a good idea. :-)",76
+254,"<delire> Vjaz: i have had problems here also, and i've been compiling kernels since v2.1",76
+255,"<Vjaz> delire, There was an infrared driver patch that I really wanted in 2.6.12.",76
+256,"<Albaraha> delire, http://paste.ubuntulinux.nl/358",37
+257,icaro [~icaro@adsl-ull-61-31.44-151.net24.it]  has joined #ubuntu,78
+258,<delire> Albaraha: good work. choose Y to that.,37
+259,icaro hi all,79
+260,<delire> Albaraha: we'll fix up splashy afterwards,37
+261,<delire> icaro: hi,79
+262,"<Vjaz> delire, Yeah, I'm no stranger to compiling my own kernel. It seems to me that Ubuntu is a different animal than Gentoo or Debian kernel wise.",76
+263,<delire> Vjaz: i wanted some new bluetooth and Asus stuff..,76
+264,<thomas__> hmm,80
+265,<delire> Vjaz: it is a little. i think the best approach with Ubuntu is let the maintainers ship the kernel for you.,76
+266,delire is now known as delire_phone,81
+267,<thomas__> does ubuntu install nvidia drivers on default ? or do I have to install them myself ?,80
+268,"<Albaraha> delire_phone, done",37
+269,"<mjr> thomas__, it doesn't install the proprietary drivers, but it does make it easy",80
+270,dutch [~dutch@cpe-065-190-182-028.nc.res.rr.com]  has joined #ubuntu,82
+271,"<Vjaz> delire, Yeah. I might wait until Breezy I guess. I think I'll need to do a BIOS upgrade on my laptop before I can even use that infrared stuff, so unless I find myself wiping my hard drive to install Windows or buying a USB floppy drive, I don't think it's a problem just yet.",76
+272,<icaro> hi delire_phone :D,79
+273,Arago [~Arago@host164-40.pool80182.interbusiness.it]  has joined #ubuntu,83
+274,<Arago> hello.,84
+275,<thomas__> okay :),80
+276,<thomas__> hi,84
+277,"<mjr> thomas__, see eg. http://ubuntuforums.org/archive/index.php/t-21111.html",80
+278,"<Arago> Someone can help me for install ""FreePops"" on hoary ?",85
+279,"<CarlFK> delire - it does respond to the power button - displays ""entering rl 0"" and shuts down",62
+280,"amnesia [~remember@VPN-034-012.rz.fh-ulm.de]  has left #ubuntu [""Leaving""]",86
+281,"<mjr> (I just googled for it, there might be better instructions, but seems simple enough)",80
+282,"<thomas__> mjr, okay... I check it out... thanks :D",80
+283,dudutz [~daniel@82.77.146.236]  has joined #ubuntu,87
+284,"<Arago> Someone can help me for install ""FreePops"" on hoary ?",85
+285,berkes [~Miranda@d46082.upc-d.chello.nl]  has joined #ubuntu,88
+286,beyond [~beyond@200-171-140-32.dsl.telesp.net.br]  has joined #ubuntu,89
+287,no0tic [~no0tic@host158-157.pool8249.interbusiness.it]  has joined #ubuntu,90
+288,[noobuntu]  is now known as lol[noobuntu],91
+289,<berkes> alright. I am completely FEDUP withj the stupid wireless cards. Any care to help. Again?,92
+290,delire_phone is now known as delire,93
+291,<narkceh> sudo echo fglrx >> /etc/modules | permission denied. Why?,94
+292,"<berkes> I bought a SMC card, that is supposed to work out of the box with the prism45 in ubuntu",92
+293,<berkes> firmware and all should be right.,92
+294,"<delire> Vjaz: well given the Ubuntu release cycle, you won't have to wait for long.. another few months",76
+295,rob^ [~rob@rob-ubuntu.student.supporter.pdpc]  has joined #ubuntu,95
+296,afonit [~afonit@199.72.169.10]  has joined #ubuntu,96
+297,"<berkes> It is detected, the leds are all happy and stuff",92
+298,"<delire> Albaraha: ok, now type 'apt-cache show splashy' and note the dependencies. where are you getting splashy from anyway?",37
+299,"<Vjaz> narkceh, because you're trying to open /etc/modules as a regular user. what you're doing is essentially running ""echo fglrx"" with sudo and redirecting it to /etc/modules. You should run ""sudo -s"" or ""sudo su -"" and then run ""echo fglrx >> /etc/modules""",94
+300,"<berkes> however, iwconfig gives me a ""NOT READY!""",92
+301,<delire> CarlFK: is this an install or the LiveCD? sorry lost you in the scrollback,62
+302,chaitat [~chaitat@gb.jb.70.95.revip.asianet.co.th]  has joined #ubuntu,97
+303,"<CarlFK> narkceh - either the ""enter password"" is being >> to something you don't have rights to yet, or the sudo only applies to the echo fglrx",94
+304,<CarlFK> delire - install,62
+305,<delire> CarlFK: do you have another Linux box around? perhaps you can ssh into it,62
+306,"<Vjaz> delire, Yeah, it's nice. I can't use my infrared before that though, but I haven't been able to do that before either, so it's not much of a problem. I might install vanilla Debian or something to see if it works while waiting.",76
+307,<delire> CarlFK: CarlFK: also note the other boot options,62
+308,"<Albaraha> delire, http://www.ubuntuforums.org/showthread.php?t=41709",37
+309,"<narkceh> Vjaz: ok, thanks. got it.",94
+310,"<CarlFK> delire - I did istnall oppenssh-server, and if I boot to (rescue) I can start it and ssh to it",62
+311,"<Albaraha> Replaces: usplash, debsplash-utils",37
+312,"<Albaraha> Depends: libc6 (>= 2.3.2.ds1-21), libdirectfb-0.9-20, libglib2.0-0 (>= 2.6.0)",37
+313,"<Albaraha> Conflicts: usplash, debsplash-utils",37
+314,<delire> Vjaz: well i'm going to wait a month or so. i run debian on this lappie,76
+315,"<CarlFK> delire - but if I let it boot, no ssh",62
+316,"<Vjaz> narkceh, I do the same thing all the time. It's a bit non-intuitive I guess, but makes sense. :-)",94
+317,"<berkes> so, qnyone on wireless with a prism45 ?",92
+318,"<delire> CarlFK: right, well the thing to check is 'cat /etc/X11/Xorg.0.log | grep EE' to look for errors",62
+319,odin666 [~odin@p548127E8.dip0.t-ipconnect.de]  has joined #ubuntu,98
+320,hellothere55 [~eric@69-168-12-148.chvlva.adelphia.net]  has joined #Ubuntu,99
+321,<odin666> moin,100
+322,"<Vjaz> delire, Ok. It probably is a good idea to wait a while to see that there are no major problems with the kernel, I guess.",76
+323,andy_ is now known as beezly[tm],101
+324,Hylas [~Hylas@dialup-192.162.220.203.acc01-gurw-wag.comindico.com.au]  has joined #ubuntu,102
+325,"<narkceh> Vjaz: yeah, this ubuntu is pretty new for me for example I allways forget sudo when installing something.",94
+326,"theine [~theine@d013224.adsl.hansenet.de]  has left #ubuntu [""Leaving""]",103
+327,<CarlFK> delire - (WW) TRIDENT(0): config file hsync range 28-49kHz not within DDC hsync ranges.,62
+328,"<delire> Albaraha: if you are feeling risky, you can install that lib framebuffer stuff that was failing earlier with 'dpkg -i --force-all <package>' and see take the risk to see if it goes through.",37
+329,njan [~james@www.reboot-robot.net]  has joined #ubuntu,104
+330,"<delire> Albaraha: also, it can sometimes be worth an apt-get upgrade to bring packages up to the same level before attempting installation of custom packages like splashy",37
+331,"<Albaraha> delire, http://paste.ubuntulinux.nl/359",37
+332,<delire> CarlFK: that doesn't look to brutal. is that all? no 'EE'?,62
+333,ptlo [~senko@cmung2699.cmu.carnet.hr]  has joined #ubuntu,105
+334,Maeth [~montecris@200.72.224.242]  has joined #ubuntu,106
+335,<CarlFK> delire - (EE) Synaptics Touchpad no synaptics touchpad detected and no repeater device,62
+336,njan [~james@www.reboot-robot.net]  has joined #ubuntu,107
+337,<Albaraha> I don't think it's risky to force it to be installed since it says: splashy: Depends: libc6 (>= 2.3.2.ds1-21) but 2.3.2.ds1-20ubuntu13 is to be installed,37
+338,"<delire> CarlFK: hmm, that looks like the culprit",62
+339,<CarlFK> but I don't have a touchpad.. I have the nub in the keyboard,62
+340,<CarlFK> delire that would cause it to lock up?,62
+341,<delire> CarlFK: read the lines after these. see where X breaks,62
+342,<delire> Albaraha: give it a shot.,37
+343,AlohaWulf [alohawolf@cpe-67-49-96-168.socal.res.rr.com]  has joined #ubuntu,108
+344,<CarlFK> delire - http://paste.ubuntulinux.nl/360,62
+345,Deanodriver [~dean@ppp64-167.lns1.mel2.internode.on.net]  has joined #ubuntu,109
+346,Markuman [~Markuman@p50924016.dip.t-dialin.net]  has joined #ubuntu,110
+347,Chrischan [~Chrischan@p54BFBBFA.dip.t-dialin.net]  has joined #ubuntu,111
+348,<delire> CarlFK: weird. have you customised this install in anyway?,62
+349,AlohaWulf [alohawolf@cpe-67-49-96-168.socal.res.rr.com]  has joined #ubuntu,112
+350,<delire> CarlFK: 'fixed' font support is fairly native.,62
+351,narkceh [~narkceh@dsl-aur4-a1a.dial.inet.fi]  has joined #ubuntu,113
+352,corza [~corey@ppp116-193.lns1.bne3.internode.on.net]  has joined #ubuntu,114
+353,<corza> hi,115
+354,<corza> anyone here play GuildWars?,116
+355,AlohaWulf [alohawolf@cpe-67-49-96-168.socal.res.rr.com]  has left #ubuntu [],117
+356,<AfroDude> what's the best file system for a partition that should be reached from both Windows and Linux (Ubuntu)? FAT?,118
+357,mgalvin [~mgalvin@host-66-202-95-170.spr.choiceone.net]  has joined #ubuntu,119
+358,<delire> CarlFK: in the worst case you can comment out the line in /etc/X11/xorg.conf that includes the unix/:7100 fonts,62
+359,<delire> AfroDude: yes,118
+360,<corza> AfroDude:,118
+361,<corza> AfroDude: dont worry about making a new partition.. i found a tutorial somewhere so my ubuntu system can just read my ntfs,118
+362,<delire> AfroDude: vfat as fat16 is known in linux. it will then be writeable from both sides.,118
+363,"<delire> corza: yes, but NTFS is generally not writeable..",118
+364,<Deanodriver> i thought it was also fat32,118
+365,"mgalvin [~mgalvin@host-66-202-95-170.spr.choiceone.net]  has left #ubuntu [""Leaving""]",120
+366,<Juhaz> it is,118
+367,<corza> delire: i can write,118
+368,"<delire> Deanodriver: sorry, you are right. my bad. fat16 == fat fat32 == vfat",118
+369,"<narkceh> I have installed alsamixer and gstreame.0.8-plugins, but i dont know where in settings I can change to input to ALSA because my rhytmbox says that E: Could not open resource for writing?",121
+370,"<PTK> corza, really?!",118
+371,<CarlFK> delire - I aptgeted  cvs build-essential nmap screen libgtk1.2-dev sox autoconf kdoc openssh-server,62
+372,<corza> delire: wait no i cant lol.. just read,118
+373,<delire> corza: awesome. many can't,118
+374,<delire> corza: hehe..,118
+375,<CarlFK> delire - but havn't done anything yet,62
+376,<corza> delire: nvm dont get excited lol,118
+377,<AfroDude> ok. What command/program do I need to create a partition of a unused space on the HD?,118
+378,<delire> CarlFK: i would tell the people in the ubuntu-dev channel (that's the name i think). you have definitely found a rare bug.,62
+379,<corza> Does anyone here play Guild Wars?,116
+380,han_ [~han@203.122.113.90]  has joined #ubuntu,122
+381,"<berkes> allright, lemme try again ;) anyone here who can help me with my wireless prism45 card?",92
+382,<delire> corza: nope,116
+383,<delire> CarlFK: have you used Linux before?,62
+384,<CarlFK> yup,62
+385,<delire> CarlFK: which flavour?,62
+386,<CarlFK> all of them ;),62
+387,"<delire> berkes: sadly not, i use a Centrino here.",92
+388,<delire> CarlFK: hehe. do you have another Ubuntu install around?,62
+389,<CarlFK> delire - I made this: https://wiki.ubuntu.com/LocalNetInstall,62
+390,han_ is now known as wizo,123
+391,"<berkes> delire, what module does that one use?",92
+392,<CarlFK> delire - I got a small fleat of them,62
+393,<delire> CarlFK: you wrote that page or you used that installation method?,62
+394,<CarlFK> (only 4 or 5 really...),62
+395,<CarlFK> wrote,62
+396,vmware [~vmware@adslemp-b5-248-26.telepac.pt]  has joined #ubuntu,124
+397,<CarlFK> but I have only started doing X in the last 6 months,62
+398,ficoc [~ficoc@p508727CB.dip0.t-ipconnect.de]  has joined #ubuntu,125
+399,ptlo [~senko@cmung728.cmu.carnet.hr]  has joined #ubuntu,126
+400,phaedrus44 [~phaedrus4@cpe-24-198-29-175.maine.res.rr.com]  has joined #ubuntu,127
+401,<CarlFK> about 2 weeks ago I found a bug in the installer (both hoary and breezy) - apparently I am the first person to isntall Ubunto with an ISA VGA card ;),62
+402,<AfroDude> anyone know what command/program I need to create a new partition of an unused space on the hard disk?,118
+403,<Markuman> whitch xorg version is on hoary 5.04 ???,128
+404,<phaedrus44> ello..,129
+405,"<narkceh> hmh, should there be some command like gstream-properties or gstreamer-properties where I can change settings to alsa?",121
+406,Chameleon22 [~Serg@60.240.143.81]  has joined #ubuntu,130
+407,<phaedrus44> does ubuntu come with ndiswrapper?,131
+408,D1 [~damian@pool-71-104-109-195.lsanca.dsl-w.verizon.net]  has joined #ubuntu,132
+409,<goldfish_> phaedrus44: no,131
+410,<goldfish_> phaedrus44: apt-get install ndiswrapper-utils,131
+411,<phaedrus44> uh....,131
+412,ubuntu [~ubuntu@61.cust23.qld.dsl.ozemail.com.au]  has joined #ubuntu,133
+413,<phaedrus44> need the wireless card before i can do apt-get,131
+414,<phaedrus44> lol,131
+415,<delire> berkes: 'modprobe -l | grep prism',92
+416,<phaedrus44> no other connection devices,131
+417,<goldfish_> phaedrus44: ah,131
+418,ubuntu is now known as epssy,134
+419,<phaedrus44> hard to install manually?,131
+420,welan__ [~welan@host-69-144-141-38.csp-wy.client.bresnan.net]  has joined #ubuntu,135
+421,<goldfish_> dont think so,131
+422,<delire> phaedrus44: 'dpkg -l | grep ndis' see if you have it installed already,131
+423,<goldfish_> phaedrus44: there is a howto on the wiki to install manually,131
+424,FLD [~FLD@a80-186-7-135.elisa-laajakaista.fi]  has joined #ubuntu,136
+425,"<epssy> I'm using ubuntu to recover from a serious problem with my pc (hardware went ""bang"", have new hardware now) and I need to be able to get access to some files on my existing partition (using the livecd)... how do I do this?",137
+426,<delire> CarlFK: well i would try the CD method. netinstalls are often a bit hairy.,62
+427,Albaraha [~Albaraha@217.17.244.64]  has joined #ubuntu,138
+428,<FLD> anybody got 3acceleration work with pcie ati in ubuntu?,139
+429,<FLD> 3dac,139
+430,mindmedic [~mind@80.109.61.190]  has joined #ubuntu,140
+431,pow3r [~roque@200-112-142-226.bbt.net.ar]  has joined #ubuntu,141
+432,"<berkes> delire, my prism is loaded properly",92
+433,<delire> FLD: many many have. see the BinaryDriverHowto on the wiki,139
+434,<FLD> k,139
+435,"<wizo> how can i er, share my files on my ubuntu on my network with other computers running on windows",142
+436,<delire> berkes: can you 'sudo iwconfig'?,92
+437,<FLD> delire are you sure about Ati PCIE,139
+438,<delire> wizo: samba,142
+439,<wizo> is that the only way?,142
+440,<wizo> =s,142
+441,"<delire> FLD: oh, didn't see the E at the end ;)",139
+442,"<Albaraha> delire, it works. Thanks",37
+443,<delire> wizo: no you can ftp,142
+444,<FLD> yeah you try screw me,139
+445,<Albaraha> how would I change gdm resolution,143
+446,<FLD> >:(,139
+447,<delire> Albaraha: what worked in the end?,37
+448,<wizo> oo lala,142
+449,<wizo> which method is easier?,142
+450,"<Albaraha> delire, splashy",37
+451,<delire> FLD: hehe,139
+452,<phaedrus44> i dont think i have it already because i just installed ubuntu,131
+453,<delire> Albaraha: an older version?,37
+454,<FLD> im not eaven sure does atis own driver support it,139
+455,<FLD> they dont tell it :<,139
+456,<delire> FLD: hmm..,139
+457,<FLD> :/,139
+458,kev0r_ [~kev0r@adsl-65-42-242-141.dsl.lgtpmi.ameritech.net]  has joined #ubuntu,144
+459,<Albaraha> I've forced installing splashy,37
+460,<FLD> hmm mayby i try find finnish customer support for ati,139
+461,<FLD> phone,139
+462,refuze2looze [~amit@DSL199-203-67-30.bb.netvision.net.il]  has joined #ubuntu,145
+463,"<delire> Albaraha: ok, yeah i didn't think that would be too much of a problem",37
+464,"<mindmedic> wizo, samba is pretty easy",142
+465,<wizo> hmm ok thx,142
+466,iLLf8d [~neener@user-0can1fc.cable.mindspring.com]  has joined #ubuntu,146
+467,<wizo> i`ll give it a go now,142
+468,<mindmedic> install samba and use shares-admin,142
+469,"<delire> FLD: yep, give them a call.",139
+470,<FLD> YEAP i will,139
+471,<wizo> thx,142
+472,<mindmedic> bye,142
+473,<FLD> and i will tell what i feel about them,139
+474,"samiam [~samurai@12-223-60-229.client.insightbb.com]  has left #ubuntu [""Client]",147
+475,"<delire> mindmedic: yep, good call. shares-admin is the way to go.",142
+476,fdr [~fdr@62.97.40.10]  has joined #ubuntu,148
+477,"<Juhaz> hah, if they do happen to have a customer support, do you really expect the drone to know something about Linux?",139
+478,Nige [~Nige@CPE-203-45-201-160.qld.bigpond.net.au]  has joined #ubuntu,149
+479,<mindmedic> wizo,150
+480,<wizo> supp,150
+481,samiam [~samurai@12-223-60-229.client.insightbb.com]  has joined #ubuntu,151
+482,<Nige> g'day all,152
+483,<delire> FLD: hehe yep. tell them you'll buy an NVIDIA card if they don't help.,139
+484,<iLLf8d> anyone around whose bind savvy enough to helpout with a convoluted bind problem? the questions quite large thats why I asked first,153
+485,<Nige> how are we :),152
+486,<mindmedic> be sure to name each of your shares,150
+487,"<wizo> err, shares?",150
+488,<FLD> delire haha i must first find number,139
+489,<delire> Nige: we're good. don't know about the others,152
+490,<mindmedic> if you dont you get a corrupted samba.conf,150
+491,<wizo> =s,150
+492,"<fdr> please, what is the key to use in order to switch virtual desktop in gnome? Thank you!",154
+493,<Nige> oh well it all good,152
+494,"<wizo> care to er, tell me more about the ``shares``",150
+495,<Nige> i am stuck with wireless networking,152
+496,<Nige> :(,152
+497,<Nige> and its driving me crazy!!!,152
+498,<FLD> does anybody know how to get dsniff to work :<,155
+499,<iLLf8d> heh,150

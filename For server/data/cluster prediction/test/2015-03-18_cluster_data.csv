@@ -1,0 +1,501 @@
+,line,cluster number
+0,<galentanner> http://pastebin.com/N0WCR5UP,1
+1,<galentanner> http://pastebin.com/hDEZ9vJB,1
+2,<galentanner> I'm just going in circles.  Is there anything I can do?,1
+3,<gr33n7007h> that system is a mess,1
+4,<galentanner> I guess so.,1
+5,<gr33n7007h> what was the dpkg command?,1
+6,<galentanner> I don't know.  I'm not a programmer.  I am just trying everything I can find.,1
+7,<gr33n7007h> is this a new install of xubuntu?,1
+8,<galentanner> I've had it on this machine for a couple weeks.,1
+9,<Xanather> is xubuntu exactly the same as ubuntu except with a different UI?,2
+10,<gr33n7007h> Xanather: yes,2
+11,<Xanather> okay thought so thanks,2
+12,"<gr33n7007h> you got anything on that is important, cos without knowing what you done this could take forever",1
+13,<galentanner> Are we talking about wiping and reinstalling?,1
+14,"<gr33n7007h> galentanner: yes, if need be",1
+15,<galentanner> There is no way to find out what is running and shut it down?,1
+16,<gr33n7007h> or you could just use wired until your new usb wifi stick comes,1
+17,<galentanner> I guess so.,1
+18,"<ebernhardson> well sure, you can `sudo fuser /var/lib/dpkg/lock` to get a list of processes that have that file open, but just shutting it down may not really help",1
+19,<galentanner> Would that tell us what is running and causing this?,1
+20,"<ebernhardson> it gives you a PID, a process id",1
+21,"<galentanner> ok..I did that it came back ""2335""",1
+22,<ebernhardson> then `ps aux | grep 2335`,1
+23,<galentanner> galentanner@ubuntu:~$ ps aux | grep 2335,1
+24,<galentanner> root      2335  0.0  0.0  19560    88 ?        S    21:58   0:00 dpkg --configure -a,1
+25,<galentanner> galenta+  3427  0.0  0.2  11740   916 pts/6    S+   22:14   0:00 grep --color=auto 2335,1
+26,<galentanner> ok.,1
+27,<ebernhardson> so that says you have dpkg open and its trying to configure all unconfigured packages.  Do you have a terminal open somewhere thats running apt-get ?,1
+28,"<ebernhardson> or aptitude, or i bet ubuntu has a few other programs these days (i cant keep up)",1
+29,<galentanner> I have one open that I'm using to do the commands.,1
+30,"<ebernhardson> try `ps auf`, that should draw some nice lines between parents and children to ee who owns the dpkg --configure process",1
+31,"<ebernhardson> you'll have to look through it for the dpkg line, then trace back the lines its draws",1
+32,<galentanner> I'm not smart enough for that..,1
+33,<galentanner> galentanner@ubuntu:~$ ps auf,1
+34,<galentanner> USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND,1
+35,<galentanner> galenta+  3339  0.0  0.2  22756  1052 pts/6    Ss   22:03   0:00 bash,1
+36,<galentanner> galenta+  3437  0.0  0.2  18440  1232 pts/6    R+   22:16   0:00  \_ ps auf,1
+37,<galentanner> root      1392  4.3  3.7 240756 16188 tty7     Ss+  21:54   0:56 /usr/bin/X -cor,1
+38,<ebernhardson> you'll have to use a paste site for more than a couple lines :),1
+39,"<ebernhardson> but basically you see the line it drew from ps auf to bash?  wherever your dpkg --configure -a is, it should have similar lines.  If not means its unparented",1
+40,<galentanner> http://pastebin.com/d33DTtN4,1
+41,"<ebernhardson> it is unattached,  i forgot you need `ps auxf`,  the x shows the unattached processes",1
+42,"<galentanner> should I run the "" ps auxf ""?",1
+43,<ebernhardson> yes,1
+44,"<ebernhardson> just guessing, but with it showing a ? for TTY its probably spawned from a GUI program",1
+45,<ebernhardson> rather than a shell,1
+46,<galentanner> http://pastebin.com/gbf6mxL1,1
+47,<manpriya> #ceph,3
+48,<galentanner> I think my head is about to explode.,1
+49,"<ebernhardson> you can try `sudo kill 3280`, basically it looks like dpkg is configuring some package(can't tell becaue it cuts off on the right hand side), and the modprobe command is stuffed",1
+50,<galentanner> ok,1
+51,<galentanner> done,1
+52,"<ebernhardson> ps auxf again,  is modprobe still listed with a line drawn to it from dpkg --configure?",1
+53,<florian> hi,4
+54,`hypermist` is now known as sleepypc,5
+55,"<ebernhardson> reasonable chance since modprobe talks directly to the kernel that a plain kill wasn't enough.  TBH the ""easiest"" way might just be a reboot (hard reboot if necessary)",1
+56,<galentanner> http://pastebin.com/nWAaGzYN,1
+57,"<ebernhardson> dpkg looks to no longer be listed, in theory that also means dpkg is no longer locked and whatever you were trying to do with it should be possible now",1
+58,<galentanner> What's the difference between a reboot and a hard reboot?,1
+59,<ebernhardson> galentanner: a hard reboot is when you just shut off the power without letting the machine do a proper shutdown,1
+60,<galentanner> oh.  ok.,1
+61,"<galentanner> I'm trying to get the Broadcom 4318 wireless card to work.  Everyone says it's supported, but I can't get it to work.",1
+62,"<ebernhardson> galentanner: not generally suggested, although not as dangerous now as it used to be :) but can be necessary when things that talk to the kernel get stuffed and refuse to complete (but not necessary in your current situation)",1
+63,<galentanner> ok,1
+64,"<ebernhardson> getting hardware to work is a pain in the ass, i have an IT department that chooses laptops for me :)",1
+65,<galentanner> Nice.  I am the IT department.  I'm an idiot.  I just want it to work...,1
+66,<ebernhardson> :),1
+67,<galentanner> I'm trying to run these commands:,1
+68,<galentanner> sudo apt-get purge bcmwl-kernel-source,1
+69,<galentanner> sudo apt-get install linux-firmware-nonfree,1
+70,<galentanner> Should I try them now?,1
+71,<ebernhardson> sounds reasonable,1
+72,<galentanner> here goes....,1
+73,<galentanner> I think the first one is working now.,1
+74,kernel is now known as Guest25080,6
+75,<galentanner> The first command seems to have finished.  Should I reboot or run the second command?,1
+76,"<ebernhardson> just run the next one, you hardly need to reboot a linux box",1
+77,<galentanner> ok...,1
+78,<galentanner> second one is chewing,1
+79,<galentanner> linux-firmware-nonfree is already the newest version.,1
+80,"<galentanner> 0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.",1
+81,<galentanner> Is this ok?,1
+82,"<ebernhardson> it means the package is installed, and thats what you wanted, so i guess yes?",1
+83,<galentanner> So the website calls for a couple modprobe commands next....,1
+84,<galentanner> sudo modprobe -rv b43,1
+85,<galentanner> sudo modprobe -v b43,1
+86,<ebernhardson> basically that means remove and re-insert the b43 driver,1
+87,<galentanner> ok...,1
+88,<ebernhardson> (you can `man modprobe` to get a manual page explaining all of this),1
+89,"<ebernhardson> man is the manual command, works for most all things you can type into the command line",1
+90,<ebernhardson> quality of the manual varies greatly though :),1
+91,<galentanner> This is what I did..,1
+92,<galentanner> galentanner@ubuntu:~$ sudo modprobe -rv b43,1
+93,<galentanner> galentanner@ubuntu:~$ sudo modprobe -v b43,1
+94,<galentanner> insmod /lib/modules/3.13.0-46-generic/kernel/drivers/ssb/ssb.ko,1
+95,<galentanner> The website says I may need to reboot now.  Should I?,1
+96,"<ebernhardson> it seems odd they want you to remove and reinsert the kernel module, then reboot.  but sure why not",1
+97,"<galentanner> Then the wireless should be working, you think?",1
+98,<ebernhardson> a definite maybe :),1
+99,"<galentanner> I'll be back in a jif....BTW, thanks for the help.  You are very kind a patient.",1
+100,<galentanner> and patient...,1
+101,<ebernhardson> np,1
+102,<galentanner> ugh!,1
+103,<galentanner> brb,1
+104,<sndcoe-mml02> searching for tips and tricks for linux,7
+105,<KurisuIRC> gonna have to be a bit more specific...,7
+106,"<sndcoe-mml02> like i want to connect to my college server,but i m not in homegroup.",7
+107,"<KurisuIRC> in the File Explorer, there's a Connect to server button. put in it's ip",7
+108,<galentanner> WOO HOO!  IT WORKS!,1
+109,"<sndcoe-mml02> it's asking for password,and i dont have it.",7
+110,<galentanner> I have been messing with this thing for three weeks!,1
+111,<KurisuIRC> What was wrong galentanner ?,1
+112,<KurisuIRC> Then you can't connect sndcoe-mml02,7
+113,<ebernhardson> galentanner: congratz :),1
+114,<KurisuIRC> Windows is different to Linux,7
+115,<galentanner> I'm a step closer to having a functioning computer again!!,1
+116,"<galentanner> Ebernhardson, You are truly a gentleman and a scholar!",1
+117,"<sndcoe-mml02> ok,thanks for helping.I'll try it later after getting password.",7
+118,<KurisuIRC> np,7
+119,<galentanner> Is there a way to reach out to you again if...when I need help?,1
+120,"<KurisuIRC> galentanner, probably just come back here if you need help.",1
+121,"<KurisuIRC> galentanner, just ping him if you want him specifically",1
+122,"<ebernhardson> yea, theres plenty of smart people in here that can help you",1
+123,* KurisuIRC blushes,1
+124,<galentanner> how do I ping?,1
+125,<KurisuIRC> just type their name,1
+126,<galentanner> ebernhardson,1
+127,"<KurisuIRC> like when i type galentanner it should highlight in chat, and depending on the client, make a ding noise",1
+128,<galentanner> did that ping you?,1
+129,<KurisuIRC> looks like it did from here,1
+130,"<ebernhardson> yes, although i have my pings mostly silent, it just changes the rooms active color from white to red",1
+131,<galentanner> cool. That's awesome!,1
+132,<KurisuIRC> #justircthings,1
+133,<galentanner> Thanks all.  I've read that fixing the wireless might allow the computer to actually poweroff.  What do you think?,1
+134,<ebernhardson> depends why it wont power off ),1
+135,<KurisuIRC> ...? what was the problem originally,1
+136,"<ebernhardson> sometimes if it wont power off you can ctrl-alt-F7 (or F1, F2, try them all) to end up at a screen that has some debug output",1
+137,<ebernhardson> but only sometimes,1
+138,<galentanner> It just sits there and runs after restart or shutdown command either from GUI or from the command line.  I have to unplug the battery and the power cord to get it to shut off.,1
+139,"<ebernhardson> also instead of unplugging everything, many computers and laptops will force a shutdown if you just hold the power button for >5s",1
+140,<galentanner> I've tried that.  doesn't work here.,1
+141,<ebernhardson> :(,1
+142,"<galentanner> So, If I use the shutdown command in the gui system.  The screen will go black.  After a few minutes, I, Instead of unplugging everything, try the ctrl-alt- F7...etc.  That should generate some code?",1
+143,"<ebernhardson> if your lucky, one of them will have some debug output on them.  Its not really generated at that point though basically those are virtual terminals that always exist but are not typically seen these days because everything boots straight into GUI",1
+144,"<galentanner> SO, If is hit those buttons, the system will send the report the next startup?",1
+145,xCore is now known as xCore|sleep,8
+146,"<ebernhardson> sorry no, i mean those are text consoles (like the one you type your commands into in the gui) that still exist from the days before GUI was popular",1
+147,<ebernhardson> if you are lucky some debug output goes to one of them when shutting down,1
+148,<ebernhardson> they wont persist through a reboot,1
+149,"<galentanner> so, I'll see the output, write it downand send it out.",1
+150,<holyguyver> I am having problem starting jackd http://pastebin.com/dwGMQdcW,9
+151,<ebernhardson> a picture with your phone might be easier than writing it down :),1
+152,<galentanner> ok.  I can send that to you if I get anything?,1
+153,<ebernhardson> you can just post it here,1
+154,<galentanner> ok  I'll see you guys in the ether!  PEacE!  and thanks again!,1
+155,<holyguyver> can someone help tell me what is wrong here & what I need to do to fix this. I am having a problem starting jackd http://pastebin.com/dwGMQdcW,9
+156,<galentanner> Ladies and Gentlemen.  Ebernhardson is my savior. He stuck with me and helped me fix my problem that has been plaguing me since I installed Xbuntu 14.04.  My WiFi works and the computer now shuts down and off as it is expected to do!  Thank you so much Ebernhardson!,1
+157,<tryhard2> hip hop huuray for Ebernhardson!,1
+158,<galentanner> This was the solution: http://ubuntuforums.org/showthread.php?t=2174511&page=8,1
+159,"<galentanner> Goodnight to all!  I shall be back with another problem, when I have one!",1
+160,"<ConsoleFx> hey Folks, I am facing a weird driver issue in my thinkpad t430 laptop... wireless//audio//usb drives works on liveCD environment but doesnt work in installed version of the same! plz help...",10
+161,<treelzebub> ConsoleFx: go to Additional Drivers and look for alternative drivers for your a/v hardware :),10
+162,<ConsoleFx> treelzebub: yeah i have tried that... but no luck! :(,10
+163,<ConsoleFx> its totally bizzare,10
+164,<ConsoleFx> all was working fine flawless... all of a sudden all stopped working,10
+165,<treelzebub> ConsoleFx: this seems to fit your problem: http://askubuntu.com/questions/541475/ubuntu-14-04-live-works-perfect-but-after-installation-nothing-but-the-keyboard,10
+166,<treelzebub> possibly an issue caused by not updating while installing?,10
+167,<ConsoleFx> treelzebub: let me give it a shot!,10
+168,<ConsoleFx> hope it works :),10
+169,"<darius93> I have a question about shred, it is said that it zeros the file (or partition if one decide to use that feature) but when it comes to zeroing a file, why does it run so fast? I havent tried using it with a partition but if I use dd to destroy a file, it takes slightly longer depending on if its a hdd, ssd, whats io operations going on on disk, etc",11
+170,"<rypervenche> darius93: If you're using dd on a disk, it's using 512 bytes by default, which is extremely slow. If you were to use 32M for example for the byte size, it would go much more quickly.",11
+171,<darius93> Ah that explains it but I generally use 1M,11
+172,"<rypervenche> darius93: I've also found shred to be a little slow, but I've never done a side-by-side. They are both binaries that do different things, so yeah.",11
+173,ubuntu is now known as Guest84332,12
+174,"<darius93> rypervenche, i never used it against a drive itself, just files to securely erase them, but i guess it varies. Shred does do several passes through the file (i think 4 or 24 passes by default) which is why it is slower than dd which only does one pass through",11
+175,"<cage> If I encrypt my ""home directory""",13
+176,"<rypervenche> darius93: Yep, there is that as well. 3 by default.",11
+177,<cage> Then I have all my files there. How safe is that,13
+178,"<cage> I'm trying to refer to files in other places, suchs as temporary files",13
+179,<cage> Or what is the status quo on ubuntu encryption?,13
+180,"<darius93> cage, as long as you keep your key safe, your home directory should be safe in theory. I do not know the extent of the security but i do know its pretty secured from stories",13
+181,"<rypervenche> cage: Well, so long as the directory is decrypted your files are just as opened as unencrypted files.",13
+182,"<rypervenche> cage: It is only when your home directory is not decrypted (i.e., your machine is turned off) that you will have the security.",13
+183,<treelzebub> encrypted home dir + vpn should be just fine for most people,13
+184,"<rypervenche> I personally don't use an encrypted home dir, but rather a LUKS encrypted disk. I have seen people have problems with encrypted home directories from time to time.",13
+185,"<treelzebub> LUKS totally screwed up my boot partition. i gave it 2 months, and spent lots of time with awesome people in this channel.",13
+186,"<rypervenche> treelzebub: Our of curiosity, what went wrong?",13
+187,<darius93> im curious as to what went wrong as well,13
+188,<rypervenche> I don't think I have ever seen anyone have a problem with a LUKS-encrypted drive or partition before.,13
+189,<treelzebub> hold. finding relevant info,13
+190,<treelzebub> https://bugs.launchpad.net/ubuntu/+source/ecryptfs-utils/+bug/1310058,13
+191,"<ubottu> Launchpad bug 953875 in ecryptfs-utils (Ubuntu Vivid) ""duplicate for #1310058 Encrypted swap no longer mounted at bootup"" [High,Fix released]",13
+192,"<treelzebub> Fix released, eh? Looks like I suck at life.",13
+193,<rypervenche> ecryptfs is not LUKS.,13
+194,<treelzebub> hm. yeah. and my issue was actually with LVM swap. maybe i should stop talking at this point.,13
+195,<cage> Thanks for your replies,13
+196,"<treelzebub> i've been tracking ubuntu issues in my free time, while developing android/java in my work-time. apologies for my tangent",13
+197,<rypervenche> It's all good :),13
+198,<cage> Do you guys know a lot of companies that use this ubuntu home folder encryption?,13
+199,<cage> I guess it's called ecryptfs?,13
+200,<treelzebub> companies?,13
+201,<rypervenche> I don't think any company would use that.,13
+202,<cage> What would a company using ubuntu use?,13
+203,<Myrtti> luks.,13
+204,"<rypervenche> If they were going to use encryption, it would be on the entire disk. Either LUKS or something proprietary.",13
+205,<rypervenche> cage: I would recommend LUKS though. It is part of the Linux kernel.,13
+206,<cage> okay,13
+207,<Myrtti> /boot isn't encrypted.,13
+208,<cage> https://help.ubuntu.com/community/EncryptedFilesystemHowto3,13
+209,<cage> Should this be enough?,13
+210,"<viscera> Does anyone know if there are any plans to do proper security support for universe/multiverse? Every time I consider trying Ubuntu again, this aspect turns me off",14
+211,croppa_ is now known as croppa,15
+212,<kurkkupoikaFi> HYGFUTR6UTYU8,16
+213,<kurkkupoikaFi> hAK,17
+214,"<muravey> hello, can anyone help me resolve a dependency issue? I am using ubuntu 12.04 and want to install libstdc++6 v4.9",18
+215,<kurkkupoikaFi> TNT,19
+216,<kurkkupoikaFi> PASKA,20
+217,<kurkkupoikaFi> DKOIRIR,21
+218,<kurkkupoikaFi> GFIDFREJTU,22
+219,<kurkkupoikaFi> TIREITRITIRI,23
+220,<kurkkupoikaFi> DKIGFTKI,24
+221,<kurkkupoikaFi> K,25
+222,<kurkkupoikaFi> K,26
+223,<kurkkupoikaFi> K,27
+224,<kurkkupoikaFi> K,28
+225,<kurkkupoikaFi> K,29
+226,<muravey> thanks,18
+227,<muravey> exact message is Depends: libstdc++6 (>= 4.9) but 4.6.3-1ubuntu5 is to be installed,18
+228,<muravey> I ran apt-get update,18
+229,<muravey> I thought 12.04 was an LTS release to be kept updated for a while :\,18
+230,gms is now known as Guest98127,30
+231,administrator is now known as Guest66873,31
+232,<Guest66873> ubuntu,32
+233,"<MrDoctor> In Ubuntu 14.04, when I go to facebook, or gmail/youtube, firefox prompts me to install them as desktop applications. What backend application runs when these ""desktop applications"" are executed?",33
+234,<lotuspsychje> MrDoctor: do you mean online accounts?,33
+235,"<MrDoctor> I got the answer lotuspsychje, it executes a program called unity-webapps-runner.",33
+236,"<lotuspsychje> MrDoctor: if you click yes, it will create a startup icon in your sidebar to access facebook faster",33
+237,<lotuspsychje> ok,33
+238,<jtdoncas> literally the stupidest thing ever conceived,33
+239,"<MrDoctor> Well, some would say Logic is the stupidest thing ever conceived jtdoncas :p",33
+240,<sam3> i just pooped my pants awww fuck,34
+241,<lotuspsychje> jtdoncas: the user got the choice to disable online accounts,33
+242,<lotuspsychje> !ops | sam3,34
+243,"<ubottu> sam3: Help! Channel emergency! (ONLY use this trigger in emergencies) - Pici, Myrtti, jrib, Amaranth, tonyyarusso, Nalioth, lamont, CarlK, elky, mneptok, PriceChild, Tm_T, jpds, ikonia, Flannel, genii, wgrant, stdin, h00k, IdleOne, nhandler, Jordan_U, popey, Corey, ocean, cprofitt, djones, Madpilot, gnomefreak, lhavelund, k1l, rww, phunyguy, bazhang",34
+244,<DJones> sam3: PLease don't,34
+245,"<jtdoncas> lotuspsychje: sure, but it's just bloat. people can create shortcuts manually",33
+246,<lotuspsychje> jtdoncas: true,33
+247,"<MortezaE> Hi, today -for first time oc- i see this in log, btw i guess it's due to lack of memory. anyway i'm curious if there is any solution other than reboot",35
+248,"<MortezaE> ""usbhid can't add hid device""",35
+249,<MortezaE> mouse doesn't work after this error,35
+250,ReScO is now known as Natsu_Dragonslay,36
+251,Natsu_Dragonslay is now known as ReScO,37
+252,<ace2race> my computer needs a driver to install on my sd card.. what driver do i need for win 7?,38
+253,<ablest1980> ace2race ##windows,38
+254,<zetheroo1> how does one release/renew the DHCP IP in Ubuntu 14.04 ?,39
+255,"<Secret-Fire> how come when I connect my android mtp device, the system recognizes it with gphoto2 and i cannot transfer files to my computer?",40
+256,<ace2race> join,38
+257,<ablest1980> ace2race type /join ##windows,38
+258,<ablest1980> zetheroo1 http://ubuntuforums.org/showthread.php?t=2162439,39
+259,<zetheroo1> ablest1980: that dhclient stuff doesn't work ...,38
+260,<ablest1980> zetheroo1 http://computerbeginnersguides.com/blog/2014/04/07/release-renew-a-dhcp-address-in-ubuntu-14-04/,39
+261,<zetheroo1> yeah - been there tried that,39
+262,"<ikonia> the dhclient stuff ""does"" work",38
+263,<ikonia> if it's not working for you - then your setup has a problem,38
+264,"<zzarr> hello! if I had a sim-card which I could use to call/sms and transfer data in a mobile-internet modem, could I use it in Ubuntu with the phone-app?",41
+265,<ikonia> zzarr: what phone app ?,41
+266,<zzarr> the one in ubuntu-phone,41
+267,"<ikonia> if you are using it on a phone, yes",41
+268,<zzarr> if I had a tablet with a USB port and plugged in the modem?,41
+269,<ikonia> a phone isn't a modem,41
+270,<ikonia> (from your description),41
+271,"<ikonia> if you're in doubt, try it",41
+272,<ikonia> maybe a surprise,41
+273,<zetheroo1> ikonia: setup is Ubuntu 14.04 with DHCP configured Ethernet connection,38
+274,<zzarr> I currently don't have the hardware,41
+275,<ikonia> zetheroo1: that means nothing,38
+276,<zetheroo1> ok :D,38
+277,<ikonia> zetheroo1: are you using network manager ?,38
+278,<zetheroo1> ikonia: the user is a super simple user ... so I am keeping it simple,38
+279,<ikonia> the user is simple ???,38
+280,<ikonia> what has the user got to do with it ?,38
+281,"<zetheroo1> yes, the user has only ever used network manager",38
+282,"<ikonia> zetheroo1: ok - so you need to interact with network manager directly then, not dhclient",38
+283,<ikonia> as network manager is calling/managing the stak,38
+284,<zetheroo1> well the user is not one to go tinkering with /etc/network/interfaces file or anything else,38
+285,<zetheroo1> ok,38
+286,<newuser789> what kind of file .zsync is ? what to do with it ? zetheroo1 http://mirror.yandex.ru/ubuntu-cdimage/releases/14.04.2/release/,42
+287,<ikonia> stack,38
+288,<zzarr> basically what I'm asking is: is a table/computer with a USB-mobile-internet-modem considered a phone?,41
+289,<geirha> newuser789: zsync is a way to download similar files without downloading everything each time,42
+290,<newuser789> geirha: just like torrent or something else ? and how to use it ?,42
+291,<zetheroo1> ikonia: I really am not finding anything about using the network manager to reassign DHCP IP's though,38
+292,"<geirha> newuser789: the file is split into sizable pieces, then checksums for each piece is stored in the .zsync file.  When you download with zsync, you provide it with similar files you've already downloaded. It checks those files if they have any matching pieces, and only downloads any missing ones.",42
+293,"<ikonia> zetheroo1: stop the network, remove the lease file, start the network is a hard way around it",38
+294,"<geirha> newuser789: It's mainly for the daily images, where today's and yesterday's image likely only contains a few differences. So you might end up downloading 10% of the actual size instead of 100%",42
+295,<ikonia> zetheroo1: that will just depend on the servers reservation then,38
+296,"<zzarr> there seems to be a app called ""dia-gnomeler-app""",41
+297,<zzarr> but the package can't be found,41
+298,<zetheroo1> ikonia: the lease has been removed from the server for this PC,38
+299,<ikonia> zetheroo1: ok - so remove it from the server,38
+300,<zetheroo1> so 'service networking stop' and then remove this file ... and then 'service networking start',38
+301,"<newuser789> geirha: sounds like its same as torrent, files are split and their hashes are stored in torrent file, when we download then it checks for missing pieces and downloads the missing ones",42
+302,<ikonia> zetheroo1: seems a simple approach,38
+303,"<ikonia> you could also look at the nmcli options, see if there is a renew/release option",38
+304,"<geirha> newuser789: similar, sure, but you only download from the one server, not other peers",42
+305,"<newuser789> geirha: ohh, so zsync is centralized to a single server and torrent is decentralized to seeds and peers, torrents can be dangerous but zsync will be verified by server",42
+306,<newuser789> my messages are visible /readable ?,43
+307,<eahm> yes,43
+308,<jbo> Y,43
+309,<newuser789> so how to use zsync ?,42
+310,<jbo> sorry but I don't know,42
+311,<k1l> newuser789: read this https://help.ubuntu.com/community/ZsyncCdImage,42
+312,<k1l> but you could just md5sum for the isos,42
+313,badon_ is now known as badon,44
+314,<sre-su> What does this line in auth.log means? Connection from 127.0.0.1 port 42396 on 127.0.0.1 port 22,45
+315,"<newuser789> k1l: what are md5sums-metalink, md5sums-metalink.gpg and md5sums.gpg files ? what I know is that gpg is an encryption tool and how to use these files ?",42
+316,<k1l> newuser789: read this for md5sum checks https://help.ubuntu.com/community/HowToMD5SUM,42
+317,<rypervenche> sre-su: Someone logged in using SSH on the server itself.,45
+318,<sre-su> rypervenche: Oh! And is it possible to see what all commands were issued?,45
+319,<newuser789> k1l: the page has no mention to md5sums-metalink and md5sums-metalink.gpg https://help.ubuntu.com/community/HowToMD5SUM,42
+320,<k1l> what link?,42
+321,<newuser789> https://help.ubuntu.com/community/HowToMD5SUM,42
+322,<newuser789> files here ---> http://mirror.yandex.ru/ubuntu-cdimage/releases/14.04.2/release/,42
+323,<umbra_purus> Hey. Quick question. If I'm using ubuntu in a virtual box it's not recommended to use lvm in my disk right?,46
+324,<k1l> newuser789: you are using wubi?,42
+325,<umbra_purus> Ignore last message. Solved,46
+326,<newuser789> k1l: wubi ?,42
+327,<k1l> newuser789: they are/were used for the wubi installer. but that is not recommended anymore,42
+328,"<sre-su> I recently changed log level from info to verbose, is that why I'm getting such auth messages?",45
+329,<sre-su> rypervenche: ^,45
+330,<Satan-lucifer> Hey guyz i am running elementary os and i installed the openbox environment the problem is when i go to back to the pantheon environment it all gets messy i mean that the exit button disappears and everything has a dark border itself,47
+331,"<newuser789> no, I'm downloading ubuntu 14.04.2 and 14.10 images for installation so asking about md5sums, same-metalink and same-metalink.gpg files. I already downloaded md5sums and x64 images and I know how to check md5sums. I'm asking about zsync, metalink and metalink.gpg files mentioned on http://mirror.yandex.ru/ubuntu-cdimage/releases/14.04.2/release/",42
+332,<k1l> Satan-lucifer: best is to ask the elementary guys for help with that. we cant know what they all changed,47
+333,<Satan-lucifer> K,47
+334,<sre-su> k1l: Could you guide me with my above ssh query?,45
+335,<newuser789> torrent vs zsync -- which is better ? faster ? I now know that zsync is more secured for sure,48
+336,<Fizzy_Changeling> newuser789: Torrent is faster,48
+337,"<rypervenche> sre-su: No, it should be there no matter what, even for info.",45
+338,<k1l> newuser789: its not rocketscience. just use one and check the iso (which torrent already does) and install it,48
+339,<sre-su> rypervenche: And is it possible to know what all commands were issued?,45
+340,<newuser789> Fizzy_Changeling: which one is advicable ? Fizzy_Changeling k1l,48
+341,<k1l> newuser789: every method works. so choose one,48
+342,<Fizzy_Changeling> ^,48
+343,"<newuser789> ok last one, zsync is something like rsync or completely different ?",48
+344,<k1l> newuser789: if you are so curious about it. why didnt you read the articles i linked you?,48
+345,<newuser789> k1l: currently reading it,48
+346,<newuser789> its open,48
+347,<drdozer> hi,49
+348,<drdozer> I've been upgrading my ubuntu install for about 4 years and it has now got some 'quirks' that I'd like to fix,50
+349,"<drdozer> when I log into the ubuntu or enlightnment desktops, it lists a whole load of crashed program launches",50
+350,<MiDOZAlAyyoubi> hello,51
+351,<MiDOZAlAyyoubi> what is the name of the software that wiggles and animates the window movement,52
+352,"<rypervenche> sre-su: No, it is not. The information is encrypted.",45
+353,<rypervenche> sre-su: You would have to use a different shell that logs those commands.,45
+354,"<rypervenche> sre-su: Or you could check the bash history, if it was done on the command line.",45
+355,<MiDOZAlAyyoubi> does anybody know?,52
+356,<geirha> MiDOZAlAyyoubi: compiz,52
+357,<MiDOZAlAyyoubi> Alright thatnks,52
+358,sandeep is now known as Guest66542,53
+359,<sre-su> rypervenche: I'm confused as to how is that even possible. And I'm not sure if it's something serious in terms of system security,45
+360,<drdozer> I've just logged into the 'ubuntu' session and I don't have any window decorations or the launch pannel,50
+361,<drdozer> the only way I could get out was to restart sddm,50
+362,"<sre-su> rypervenche: Recently, I noticed some bot's intrusive connection attempts with my system that my reconfigured ssh config",45
+363,<frederik_2> hi all,54
+364,<frederik_2> got a problem,55
+365,<sre-su> s/my/I*,45
+366,<rypervenche> sre-su: The connection you showed me was from the machine itself (localhost) and not from outside the machine.,45
+367,"<frederik_2> my pci-e tevii s482 seems to only show up as a usb controller under ubuntu. i loaded the correct kernel module and its get registered , but with dmesg its not found and also not asking for firmware",56
+368,"<frederik_2> under debian , when the kernel module is loaded , it shows up in dmesg asking for firmware ...",56
+369,"<rypervenche> sre-su: But you can protect yourself by only allowing keyed connections, and also changing your SSH port.",45
+370,"<sre-su> rypervenche: Yes, but I'm not sure how is that possible. I didn't try to connect to from within the system",45
+371,"<sre-su> rypervenche: Yes, I did all those changes yesterday",45
+372,"<drdozer> I have the option of a gnome session, but when I log in I just get a blank screen, and apt thinks that ubuntu-gnome-desktop is not installed",50
+373,<lapion> hello,57
+374,"<drdozer> plasma crashes on login with ""plasmashell closed unexpectedly""",50
+375,"<rypervenche> sre-su: Either you did try to connect and you didn't realize, or some program is misconfigured, or some program is trying to connect locally.",45
+376,<rypervenche> sre-su: It didn't say what user it was trying to connect as.,45
+377,"<lapion> Whenever I am in Recovery mode menu if I select ""dpkg"" the system consistently gives me the error message Unable to open screenrc",58
+378,<lapion> however there is a /etc/screenrc,58
+379,<sandeep_> what is tilda,59
+380,<lapion> tilde is ~,59
+381,badon_ is now known as badon,60
+382,<sandeep_> what is this '~',59
+383,<lapion> can anyone help me with this screenrc error ?,58
+384,<MiDOZAlAyyoubi> what's the error?,58
+385,"<k1l> sandeep_: its short for ""/home/user/""",59
+386,<geirha> in many contexts at least,59
+387,"<frederik_2>  my pci-e tevii s482 seems to only show up as a usb controller under ubuntu. i loaded the correct kernel module and its get registered , but with dmesg its not found and also not asking for firmware",56
+388,<frederik_2> under debian it works with same method .... am i missing something,56
+389,"<zzarr> hello again, I just realized that I have a phone app installed",41
+390,"<Rust3dCor3> hi. is there any way to launch a doom (the game) in tty, like in old dos machines? the problem might be sourceport varied since most sourceports are designed for x",61
+391,<ace2race> fshow do i format a usb as ntfs,62
+392,<Rust3dCor3> ace2race: you could use gparted,62
+393,<ace2race> thanks :),62
+394,"<Blinkiz> Hello. in file /etc/rsyslog.conf we have $ActionFileDefaultTemplate variable that should be commented out if wanting high precision timestamps. I do not want to touch /etc/rsyslog.conf file but instead add my own file /etc/rsyslog.d/timestamp.conf with ""$ActionFileDefaultTemplate RSYSLOG_FileFormat"". Problem is that this does not work, why?",63
+395,"<lapion> MiDOZAlAyyoubi, Whenever I am in Recovery mode menu if I select ""dpkg"" the system consistently gives me the error message Unable to open screenrc",58
+396,<keags> lapion: Are you trying to start a screen session,58
+397,<rypervenche> lapion: Have you messed with your screenrc file at all?,58
+398,"<lapion> rypervenche, nope default",58
+399,<lapion> I have 2 systems that have that error however non of my other systems have that error,58
+400,"<lapion> I get that same error whenever I do ""python3 /usr/lib/python3/dist-packages/DistUpgrade/dist-upgrade.py --partial --frontend DistUpgradeViewText --datadir /usr/share/ubuntu-release-upgrader""",58
+401,"<PCatinean> How come ""locate wkhtmltopdf"" returns 4 paths and two of them are missing completely, is it because of a previous symlink or something?",64
+402,"<rypervenche> PCatinean: Run ""sudo updatedb"" first.",64
+403,"<lapion> rypervenche, I get that same error whenever I do ""python3 /usr/lib/python3/dist-packages/DistUpgrade/dist-upgrade.py --partial --frontend DistUpgradeViewText --datadir /usr/share/ubuntu-release-upgrader""",58
+404,"<PCatinean> rypervenche, I did that it reduced the number of them but still some are missing",64
+405,<PCatinean> /home/wiz/usr/local/share/man/man1/wkhtmltopdf.1.gz,64
+406,<PCatinean> THat does not exist,64
+407,<lapion> which is the python script that I found after debugging the dpkg command,58
+408,"<rypervenche> lapion: Yeah, I'm not going to be able to help if you've made custom changes like that. Hopefully someone else can look into that for you.",58
+409,Necrozed` is now known as Necrozed,65
+410,"<lapion> rypervenche, absolutely no custom changes\",58
+411,<rypervenche> PCatinean: Did you install wkhtmltopdf manually? Or compile it?,64
+412,<PCatinean> dpkg -i .dev file rypervenche,64
+413,<rypervenche> PCatinean: dpkg -L file | grep man,64
+414,viking is now known as Guest46023,66
+415,amin is now known as mo_handes,67
+416,<ufk> i get tons of problems connecting to a vsftpd server... can anyone recommend me of a different good ftp server i can use ?,68
+417,<sre-su> rypervenche: Thanks,45
+418,<Kuro-Maii> hello I am using a logitech G19 keyboard and am going to reinstall my ubuntu box this week. the drivers for this keyboard are no longer available from the latest maintainer the site it self is even dead: http://www.russo79.com/gnome15 . I have it still installed on my system and wish to take it with me to the new installation. how can I do that?,69
+419,<Kuro-Maii> can I repack the software?,69
+420,<Kuro-Maii> or do I need to do something else...,69
+421,<ikonia> Kuro-Maii: you want to use a later version and the drivers are not available in the later version,69
+422,<ikonia> is that what you are saying,69
+423,saschpe_ is now known as saschpe,70
+424,"<Kuro-Maii> no I am saying the drivers are no longer available, period. not for a current distro nor for an older distro",69
+425,<ikonia> Kuro-Maii: so what do you want this channel to do ?,69
+426,"<lapion> rypervenche, the problem is resolved by uninstalling screen",58
+427,<Kuro-Maii> I want to know how I can take the currently installed driver/software and install it again after I reinstalled my ubuntu,69
+428,<ikonia> re-installed with the same version ?,69
+429,<ikonia> or a different version,69
+430,<Kuro-Maii> same,69
+431,<ikonia> should work,69
+432,<ikonia> just need to work out what the install script does,69
+433,<Kuro-Maii> how there is no repo,69
+434,<ikonia> I suspect it will be a kernel module,69
+435,<ikonia> it may do other things,69
+436,<Kuro-Maii> the repo died,69
+437,<Kuro-Maii> what was that command again to see what was installed?,69
+438,"<spitzi> Hi. Got Ubuntu 14.04 and a simple, wired Microsoft Intellimouse mouse. The side button on the mouse annoyingly fire ""back"" and ""forward"" events, and I need to disable these buttons. Any advice?",71
+439,Xano_ is now known as Xano,72
+440,<Kuro-Maii> okay so I just manage to findout how to find the instaled software paths for my gnome15 instalation ( it is the pakacg that does the g19 drivers ),69
+441,<Kuro-Maii> how do I install them again after I reinstalled my system,69
+442,<Kuro-Maii> ikonia? any suggestions?,69
+443,<Kuro-Maii> or any body else for that matter?,69
+444,"<atal421> i'm creating a post install script, how do i switch user to a user i've created earlier in the script?",73
+445,"<Kuro-Maii> you can do ""su - [username-here]""",73
+446,"<atal421> for some reason it says ""su must be run from a terminal""",73
+447,<atal421> i'm running the script by calling: bash my_script.sh,73
+448,<Kuro-Maii> sorry I just look it up in a script I have that does it:,73
+449,"<Kuro-Maii> su $USERNAME -l -c ""$(readlink -f $0) $*""",73
+450,<atal421> Kuro-Maii: oh man,73
+451,<Kuro-Maii> it has a if satmant before it that checks if we are that user,73
+452,<atal421> how do i know what that does,73
+453,<atal421> i'll just look up each thing,73
+454,<atal421> thank you,73
+455,<Kuro-Maii> it will switch to the user in the var $USERNAME and call it self with all the arguments that were pass in to the initial call,73
+456,<atal421> what do you think of this? http://stackoverflow.com/questions/8940771/switch-user-in-a-init-script,73
+457,<atal421> will the user be THAT new user for the remainder/duration of the script?,73
+458,<Kuro-Maii> yes,73
+459,<atal421> great,73
+460,<anti-unix> hi,74
+461,<Kuro-Maii> and answer the link does the same thing I do except it calls a different script,73
+462,"<idlecool> hello, i am fighting with grub-pc and dpkg. its trying to spawn some kind of frontend to configure itself. and i am working on a server without a frontend",75
+463,<idlecool> i see something like this: http://pastebin.com/raw.php?i=rHveTvdg,75
+464,<idlecool> anyone has any idea how i should go about this?,75
+465,sale_ is now known as rasipnik,76
+466,rasipnik is now known as rasipnk,77
+467,<coffee-> hi i was hoping someone could tell me where syslog is?,78
+468,<k1l_> coffee-: /var/log/,78
+469,<coffee-> thanks k1l_,78
+470,<coffee-> :),78
+471,<Abdullah182> hey,79
+472,<Abdullah182> hello,79
+473,<Abdullah182> can someone help me with a problem with my mousepad?,80
+474,<Abdullah182> i was trying to activate multi touch and i missed it up,80
+475,<Abdullah182> now i can move the cursor with my mousepad,80
+476,<Abdullah182> i have to use an external mouse,80
+477,<Abdullah182> hello?,80
+478,"<snufft> potentially stupid question here, but is it possible to boot 14.10 straight to terminal without loading any gui?",81
+479,<k1l_> !text | snufft,81
+480,<ubottu> snufft: To start your system in text-only mode append 'text' (without the quotes) to the kernel line in the grub menu. You can access the grub menu by pressing Esc (Grub legacy) or Shift (Grub2) during boot. For more info see https://help.ubuntu.com/community/BootOptions#Text%20Mode,81
+481,<snufft> AWESOME!! :D,81
+482,<snufft> thanks k1l_ :),81
+483,<snufft> k1l_++,81
+484,"<coffee-> ok, My system went into sleep mode last nite and when i went to start it up again (ie: move the mouse, hit spacebar) it wouldn't come out of sleep mode and i was forced to do a reset, could someone look at my syslog?",82
+485,<Abdullah182> is there anyone here that can help with my mouse problem?,80
+486,"<TheBigDeal> what's the problem with help.ubuntu.com, 500 internal error :/",83
+487,<k1l_> TheBigDeal: no error here,83
+488,<ikonia> TheBigDeal: https://help.ubuntu.com,83
+489,<DJones> TheBigDeal: I seen a couple of people reporting an intermittent fault,83
+490,<TheBigDeal> k1l_: try this https://help.ubuntu.com/community/Upgrades,83
+491,"<PCatinean> Hey guys, how does one stop idle notification to be send from the operating system so other applications do not notice the lack of input?",84
+492,<DJones> TheBigDeal: I believe it was being reported as an intermittent fault,83
+493,<PCatinean> Kinda like having the mouse moved every X minutes?,84
+494,<k1l_> TheBigDeal: well yes,83
+495,<TheBigDeal> DJones: i see.,83
+496,<spitzi> Help ... Side buttons on mouse ... disable ....,71
+497,<snufft> this page is consistently giving me a 500 if that helps anyone: https://help.ubuntu.com/community/LiveCDCustomization,83
+498,<TheBigDeal> most of pages in help.ubuntu.com are broken :/,83
+499,<ErfanBs> !sublimetext,85

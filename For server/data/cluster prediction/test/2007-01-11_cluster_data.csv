@@ -1,0 +1,501 @@
+,line,cluster number
+0,<Vich> http://www.whatwouldjesusdownload.com,1
+1,ucenik is now known as evelin,2
+2,"<un_operateur> fabio__|,  what does fdisk -l give you?",3
+3,<Vich> ubuntu christian edition?,1
+4,dusan [n=dusan@p5085438E.dip0.t-ipconnect.de]  has joined #ubuntu,4
+5,<Vich> don't fall for it fabio__|,3
+6,<fabio__|> un_operateur: nothing listed at all.,3
+7,<Vich> fdisk formats your disk,3
+8,<Vich> OH NO,3
+9,<Vich> did you sudo it?,3
+10,<lupine_85> ...no it doesn't.... :D,3
+11,ZmasteR [n=ZmasteR@212.219.57.126]  has joined #ubuntu,5
+12,<Vich> :p,3
+13,"<Dormot> for the chmod, what otehr command do i need to granat permission a  folder",6
+14,Evelina [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,7
+15,joris__ [n=joris@217-19-28-124.dsl.cambrium.nl]  has joined #ubuntu,8
+16,<joris__> join #users.openoffice.org,9
+17,<Vich> chmod +r folder,6
+18,<Dormot> oh ok,6
+19,<Vich> or a number,6
+20,<jordo23> un_operateur: do I just copy paste the 12 lines under point 8?,10
+21,<Jowi> !chmod | Dormot,6
+22,"<ubotu> Dormot: The files and directories on an Ubuntu system are organized according to a standard, see http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard - file permissions are explained at https://help.ubuntu.com/community/FilePermissions - All filenames and directory names (and many other things) are case sensitive in Linux",6
+23,<jordo23> un_operateur: In fstab?,10
+24,<Vich> !ubotu | Jowi,6
+25,"<ubotu> Jowi: I am ubotu, all-knowing infobot. You can browse my brain at http://bots.ubuntulinux.nl - Usage info: http://wiki.ubuntu.com/UbuntuBots",6
+26,<Vich> :p,6
+27,neutrinomass [n=pandis@dhcp89.mansfield.ox.ac.uk]  has joined #ubuntu,11
+28,"<un_operateur> jordo23, almost .. but you need to substitute $CHROOT32 for the location you used",10
+29,xabbott [n=xabbott@c-24-129-86-149.hsd1.fl.comcast.net]  has joined #ubuntu,12
+30,eveline [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,13
+31,<Vich> !ubotu | grep yourself by the throat,6
+32,"<ubotu> grep yourself by the throat: I am ubotu, all-knowing infobot. You can browse my brain at http://bots.ubuntulinux.nl - Usage info: http://wiki.ubuntu.com/UbuntuBots",6
+33,"<fabio__|> un_operateur: i'm on a ubuntu desktop in live mode, i'm trying to understand if I can install ""ubuntu server"" on that machine with a pair of scsi disks in raid1/scsi mode.",3
+34,"<neutrinomass> Using vmware, can I install to a real partition ?",14
+35,"<Vich> !ubotu | The following paragraph is fiction, any resemblence to persons alive or dead is purely coincidental",6
+36,"<ubotu> The following paragraph is fiction, any resemblence to persons alive or dead is purely coincidental: I am ubotu, all-knowing infobot. You can browse my brain at http://bots.ubuntulinux.nl - Usage info: http://wiki.ubuntu.com/UbuntuBots",6
+37,babwe2 [n=poul@0x3e42bcbd.adsl.cybercity.dk]  has joined #ubuntu,15
+38,"<un_operateur> fabio__|, oh, errm, I think you need the alternate CD to do this -- you might need to configure RAID/LVMs independently",3
+39,<cableroy_> where can i remove gnome-sessions manual? my gnome wont start correctly,16
+40,Plengo` [n=Plengo@82-71-24-100.dsl.in-addr.zen.co.uk]  has joined #ubuntu,17
+41,swami [n=swami@subnet1.t19.ctv.tuiasi.ro]  has joined #ubuntu,18
+42,spytrdr [i=slc@host98.201-252-16.telecom.net.ar]  has joined #ubuntu,19
+43,"<jordo23> un_operateur: so replace ""$CHROOT32"" with /var/chroot/?",10
+44,"<un_operateur> jordo23, yep :)",10
+45,"<fabio__|> un_operateur: but actually i'm not trying to ""install"" ubuntu :) i'm just trying to understand if I can see correctly scsi/raid1 configuration",3
+46,<jordo23> un_operateur: What about line 11 (media),10
+47,"<un_operateur> jordo23, well, you'll need to compile your own lines for whatever you have in media .. but only if you want konqueror or other apps in the chroot to use these drives",10
+48,<Vich> you'd think that ubotu would ignore nicknames in those queries that have spaces in them,6
+49,<Vich> considering that nicknames can't have spaces,6
+50,<jordo23> un_operateur: I'll worry about that later...,10
+51,"<un_operateur> fabio__|, errm, I'm not too sure how this would work",3
+52,ucenik_ [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,20
+53,<selah> What's the difference between fdisk and cfdisk and is there an advantage to using one over the other?,21
+54,"<fabio__|> un_operateur: i will NOT install ubuntu with ""ubuntu desktop"", i'm just using ""ubuntu desktop"" in live mode, to check if i can mount that scsi/raid1 disks",3
+55,"<un_operateur> fabio__|, and i definitely think you might need a better ""recovery cd"" like knoppix to do what you are doing",3
+56,"<Vich> !xorg | Vich, you silly person! Here's what I know about xorg",6
+57,"<ubotu> Vich, you silly person! Here's what I know about xorg: The X Window System is the part of your system that's responsible for graphical output. To restart your X, type ""sudo /etc/init.d/?dm restart"" in a console - To fix screen resolution or other X problems: http://help.ubuntu.com/community/FixVideoResolutionHowto",6
+58,"<un_operateur> fabio__|, yes, i got you the first time :)",3
+59,l3on_ [n=l3on@83-103-90-62.ip.fastwebnet.it]  has joined #ubuntu,22
+60,ucenik_ [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,23
+61,"vlt [n=dm@p54B33C1E.dip0.t-ipconnect.de]  has left #ubuntu [""So]",24
+62,"<jordo23> un_operateur: Did that look right? Also, can I put these lines anywhere in the file?",10
+63,"<un_operateur> jordo23, looks good so far",10
+64,ucenik_ [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,25
+65,"<un_operateur> jordo23, best put at the end ..",10
+66,Jessica [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,26
+67,"<fabio__|> un_operateur: i have knoppix cd, but i think that is better to know if the pre-compiled kernel in ubuntu distro will like that hardware configuration or not.. maybe with knoppix it can work.. but maybe not with ubuntu :)",3
+68,<Jessica> idioti,27
+69,"<Dormot> ok, i messed up, now i cant access mu stuff, im gettin permission denied",6
+70,<Vich> wow,6
+71,<Vich> how'd you do that Dormot ?,6
+72,<Dormot> i tried chmod -rwx /home,6
+73,"<Jowi> selah, both tools are good. I prefer cfdisk.",21
+74,faeryNatsuki [n=Fairy@201.244.217.42]  has joined #ubuntu,28
+75,<Dormot> then i cant access anything,6
+76,<Vich> that was not wise,6
+77,Jessica [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,29
+78,<Vich> yeah,6
+79,"<selah> Jowi, any particular reason?",21
+80,"<Vich> since you removed read, write and execute",6
+81,"<un_operateur> fabio__|, i  really don't know too much about this, i've found knoppix to deal with hardware quite well.. plus it has the right tools for the job",3
+82,<Dormot> can i fix it,6
+83,Angelina [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,30
+84,<Vich> yeah,6
+85,<Dormot> how lol,6
+86,<Vich> sudo chmod +rwx /home,6
+87,<Dormot> i cant access terminal,6
+88,<Vich> why not?,6
+89,<Dormot> try diff account?,6
+90,"<fabio__|> un_operateur: ok thanks very much, i will try to look for some docs about ubuntu and raid1/scsi discs.. but i think it's not easy to be found",3
+91,PartyBoi2 [n=karl@c198-142-37-16.richm1.vic.optusnet.com.au]  has joined #ubuntu,31
+92,<Vich> I suppose,6
+93,"<Jowi> selah, I get a better overview with cfdisk and the options that i have.",21
+94,<Dormot> k,6
+95,<Vich> but I don't like the fact you can't access terminal,6
+96,kleftisx [n=kleftisx@213.7.56.252]  has joined #ubuntu,32
+97,"<selah> Jowi, ah. Thanks.",21
+98,<Vich> that doesn't sound good,6
+99,"<un_operateur> fabio__|, best you try docs on a more general scale .. not specific to ubuntu or knoppix",3
+100,kleftisx_ [n=kleftisx@213.7.56.252]  has joined #ubuntu,33
+101,"<Vich> !french | un_operateur, are you french? If so read this",34
+102,"<ubotu> un_operateur, are you french? If so read this: Allez a #ubuntu-fr ou #kubuntu-fr pour de l'aide et de la discussion en francais.",34
+103,<kleftisx_> hello how can i change between language? what keys i use (ex for windows Alt+Shift),35
+104,Evelin [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,36
+105,"<fabio__|> un_operateur: yes, but that machine have just that disks in scsi/raid1, so i need that the disks will be ""recognized"" during the ubuntu installation..",3
+106,"<un_operateur> Vich, merci mais je ne suis pas francais",34
+107,<Vich> lol,34
+108,"<selah> Do you need to use fdisk/cfdisk for anything if you are using Gparted/Qtparted/Diskdrake, etc.?",37
+109,patricio [n=patricio@200.127.221.140]  has joined #ubuntu,38
+110,<Dormot> goddamn it,6
+111,<Dormot> i broke it,6
+112,SHRIKEE [n=shrikee@ip5658ae4f.direct-adsl.nl]  has joined #ubuntu,39
+113,<Dormot> i cant access anything,6
+114,foxiness [n=nayif@88.213.46.1]  has joined #ubuntu,40
+115,<Vich> mai je suis parle francais,34
+116,ucenik [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,41
+117,<Vich> er,34
+118,<Dormot> not a single account,6
+119,<Vich> je parle francais,34
+120,ucenik is now known as evelin,42
+121,<faeryNatsuki> hello,43
+122,<Vich> not I am speak french,34
+123,<Vich> :S,34
+124,<Vich> it's been too long,34
+125,twiztr [n=twiztr@c-24-22-234-176.hsd1.mn.comcast.net]  has joined #ubuntu,44
+126,<Vich> mon petit chat et formidable!,34
+127,Anelisse [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,45
+128,"<faeryNatsuki> i need a hand, how can i set kopete to log my chats?",46
+129,<Vich> il mange toujours avec mon a table,34
+130,<Vich> or whatever,34
+131,"<Vich> Dormot, can you explain exactly what you did",6
+132,<jordo23> un_operateur: On step ten....where should this script reside?,10
+133,jag__ [n=jag@201-68-70-246.dsl.telesp.net.br]  has joined #ubuntu,47
+134,Joris1977 [n=joris@217-19-28-124.dsl.cambrium.nl]  has joined #ubuntu,48
+135,<Dormot> Vich gimme 1 sec i can acces terminal again,6
+136,"<Vich> faeryNatsuki,  #kopete",46
+137,"<Jowi> selah, you can't run gparted in a terminal",37
+138,<jordo23> un_operateur: and what should I name it?,10
+139,<Vich> lol,37
+140,<Dormot> Vich ow do i fix it,6
+141,Fredle [n=fredle@195-144-080-023.dyn.adsl.xs4all.be]  has joined #ubuntu,49
+142,<Vich> sudo chmod +rwx /home,6
+143,<Dormot> Vich its like in safe mode,6
+144,"<un_operateur> fabio__|, again, i dunno how it ought to work -- whatever floats your boat, ubuntu or knoppix  :)",3
+145,elth|spyden420 [n=spyden@200-211-161-70-amr.static.vivax.com.br]  has joined #ubuntu,50
+146,"<selah> Jowi, good point.",37
+147,_r1_ [n=R1@bgl93-5-82-245-170-179.fbx.proxad.net]  has joined #ubuntu,51
+148,gaubong [n=gaubong@cm138.sigma0.maxonline.com.sg]  has joined #ubuntu,52
+149,<kleftisx_> hello how can i change between languages? what keys i use (ex for windows Alt+Shift) ?,35
+150,"<un_operateur> jordo23, place it in /usr/bin .",10
+151,<jordo23> un_operateur: what should it be named?,10
+152,"<Jowi> selah, and I'm not sure if gparted can change the flags (never tried it)",37
+153,<faeryNatsuki> thanks Vich,46
+154,"<un_operateur> jordo23, call it err .. launch32.sh",10
+155,_r1_ [n=R1@bgl93-5-82-245-170-179.fbx.proxad.net]  has left #ubuntu [],53
+156,_magez_ [n=magez@cable-roi-fedfdd00-224.dhcp.inet.fi]  has joined #ubuntu,54
+157,"<Enverex> What would I need to install to get the kernel source files in ""/lib/modules/2.6.17-10-generic/source""? (and no, kernel-headers and kernel-source don't seem to be the right ones)",55
+158,"<selah> Jowi, better point! I'll research it.",37
+159,"<Vich> Dormot, if you want to apply it to subfolders and such",6
+160,<Vich> sudo chmod -R +rwx /home,6
+161,<Vich> the -R bit means recursive,6
+162,<Dormot> Vich whats the command for global permission,6
+163,<Vich> I don't think there is one,6
+164,zerod [n=zerod@88.151.5.81]  has joined #ubuntu,56
+165,<Vich> but,6
+166,AaSFi [n=AaSFi@70.pool85-49-74.dynamic.orange.es]  has joined #ubuntu,57
+167,<Dormot> like something with 777,6
+168,<Vich> 777,6
+169,<Vich> is all access to everything,6
+170,"<un_operateur> Dormot, chmod a+rwx /path/to/file",6
+171,<Vich> if you want to give read access to everyone,6
+172,<Vich> but only write access to others,6
+173,<jordo23> un_operateur: Okay...done.....now what...,10
+174,<Vich> er,6
+175,<Vich> write access to owner,6
+176,elth|spyden420 [n=spyden@200-211-161-70-amr.static.vivax.com.br]  has left #ubuntu [],58
+177,<Dormot> so if /home is the problem then chmod +rwx /home will fix it?,6
+178,elth|spyden420 [n=spyden@200-211-161-70-amr.static.vivax.com.br]  has joined #ubuntu,59
+179,<Vich> possibly,6
+180,<mneptok> Dormot: no,6
+181,<Vich> I don't know exactly what your problem is,6
+182,"<un_operateur> jordo23, errm, well .. i think you are ready to test fire -- try -- launch32.sh konqueror",10
+183,nolimitsoya [n=nolimits@176.139.216.81.static.vhe.siw.siwnet.net]  has joined #ubuntu,60
+184,<Dormot> i blocked access to my /home folder,6
+185,<Vich> a = all?,6
+186,<mneptok> Dormot: what are you trying to do?,6
+187,<Vich> you want a+rwx,6
+188,<Vich> possibly,6
+189,<Dormot> giving permission to access /home,6
+190,<jordo23> un_operateur: as normal user?,10
+191,<Dormot> cause i cant even log in in my account,6
+192,<Vich> I'm actually more used to the octal form of permissions,6
+193,<Vich> lol,6
+194,<mneptok> Dormot: ls -l /home,6
+195,"<fabio__|> thank you to all, i go to have lunch break",3
+196,<Dormot> ok,6
+197,<mneptok> Dormot: what does that say?,6
+198,"<un_operateur> jordo23, as normal user .. yep .. outside chroot",10
+199,<Vich> !lunch | fabio__|,3
+200,<Vich> NOTHING FOR LUNCH EH?,3
+201,"<ubotu> Sorry, I don't know anything about lunch - try searching on http://bots.ubuntulinux.nl/factoids.cgi",3
+202,<Vich> lol,3
+203,Gordan [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,61
+204,NinjjaX [n=ninjjax@201.79.169.232]  has joined #ubuntu,62
+205,"<Vich> !my second cousin twice removed on my mother's side who was once an apprentice plumber, before joining the circus",63
+206,<Dormot> mneptok its says all diff account names with drwxr-xr--26 <account name>,6
+207,<mneptok> Dormot: for *your* accounts home dir?,6
+208,<mneptok> *account's,6
+209,mralphabet [n=user_nam@71-89-33-80.dhcp.stpt.wi.charter.com]  has joined #ubuntu,64
+210,<Enverex> Do I need to install anything other than kernel-source and kernel-headers to compile and install drivers?,55
+211,"<un_operateur> jordo23,  what does this command give you?  which launch32.sh",10
+212,<selah> Coffee break! Cya later all.,65
+213,<Dormot> mneptok yea,6
+214,selah [n=chatzill@ip68-12-150-99.ok.ok.cox.net]  has left #ubuntu [],66
+215,<jordo23> un_operateur: what do you mean?,10
+216,"<un_operateur> jordo23, type the command out -- which launch32.sh",10
+217,KungFuHamster [n=kungfuha@ppp166-63.konnect.net]  has joined #ubuntu,67
+218,<Dormot> mneptok is it fixed like that?,6
+219,<mneptok> Dormot: what does the line for your home dir say? paste it.,6
+220,<DiKKy> hy,68
+221,<jordo23> un_operateur: /usr/bin/launch32.sh,10
+222,"<Dormot> cant, im on diff pc",6
+223,<jordo23> un_operateur: nothing opens graphically..,10
+224,<mneptok> Dormot: then tell me what the perms and owners are,6
+225,<Dormot> mneptok ill type it,6
+226,"<un_operateur> jordo23, yes, just testing to see if you had the right command -- try this-- /usr/bin/launch32.sh konqueror",10
+227,Anelisse [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,69
+228,silwol [n=silwol@193.170.132.134]  has joined #ubuntu,70
+229,<Dormot> mneptok it says for my main account drwxr-xr-r venom1588 venom1588 4096 ...,6
+230,"starz [n=starz@cpe-75-83-39-194.socal.res.rr.com]  has left #ubuntu [""Leaving""]",71
+231,QwertyM [n=Qwerty@59.92.43.118]  has joined #ubuntu,72
+232,XiXaQ [n=joerlend@237-191.dsl.freewave.no]  has joined #Ubuntu,73
+233,"<faeryNatsuki> one good program to use yahoo messenger?? (not kopete, not gaim, not yahoomessenger for linux, any other good suggestion???)",74
+234,"<un_operateur> jordo23, hmm .. that's odd, i can't really place my finger on the cause there -- anyway -- dchroot -d konqueror",10
+235,"<Dormot> from the console, how do i go back to log in menu or resart pc",6
+236,<Enverex> If I add a module to /lib/modules/whatever how do I update the system to see it? Just putting it there doesn't work due to needing to run modules-update or something but that doesn't work on Ubuntu anymore it seems,55
+237,jag-rabisco [n=jag@201-68-70-246.dsl.telesp.net.br]  has joined #ubuntu,75
+238,zxccvb [n=zxcvb@nusnet-228-5.dynip.nus.edu.sg]  has joined #ubuntu,76
+239,xopher- [n=xopher@dyn226-120.lpok.dnainternet.fi]  has joined #ubuntu,77
+240,jedilj [n=jedimast@c-67-171-145-112.hsd1.or.comcast.net]  has joined #ubuntu,78
+241,"<Jowi> Enverex, modprobe/insmod ?",55
+242,"<Enverex> Jowi, I just said it's not seen because you have to update the mod database first",55
+243,"<jordo23> un_operateur: seems that makes Konq load, but then crashes right away...",10
+244,<jordo23> un_operateur: a ton of terminal output too...,10
+245,silwol [n=silwol@193.170.132.134]  has left #ubuntu [],79
+246,<Enverex> So much for ever getting help in here :/,55
+247,<Dormot> whats the command to restart PC?,6
+248,baba-andrea [n=andrea@217.221.40.250]  has joined #ubuntu,80
+249,"<Jowi> Enverex, module-assistant update I believe (but not sure)",55
+250,<somerville32> !support | Enverex,55
+251,"<ubotu> Enverex: For your support options, see http://www.ubuntu.com/support",55
+252,"baba-andrea [n=andrea@217.221.40.250]  has left #ubuntu [""Ex-Chat""]",81
+253,<gaubong> faeryNatsuki: gyArch,74
+254,"<el-sio> cqn someone help me find my ""autoconf macro directory"" ?",82
+255,mk3y [n=mkey@pD9E36770.dip.t-dialin.net]  has joined #ubuntu,83
+256,samu [n=sam@svamppi.sby.abo.fi]  has joined #ubuntu,84
+257,"<mneptok> Dormot: still here, stand by",6
+258,"<Enverex> Jowi, Doesn't exist",55
+259,"<un_operateur> jordo23, ouch, ok, !pastebin please .. if you can't paste all --- try the command again but capture output -- dchroot -d ""konqueror"" &> debug   .. then !pastebin the contents of ./debug",10
+260,<Dormot> mneptok ywa,6
+261,felixthecat [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,85
+262,<zxccvb> hey...my sound does not work recently..i need help,86
+263,<jordo23> un_operateur: already there...one sec,10
+264,<twiztr> My internet connect is going at about 15kbps d/l... two days ago it was at around 450kbps...,87
+265,<twiztr> And ideas?,87
+266,"<Enverex> somerville32, er, yeah... thanks",55
+267,nickmcm [n=nickm@82.152.149.33]  has joined #ubuntu,88
+268,<jordo23> http://kubuntu.pastebin.com/856648,10
+269,<zxccvb> my sound does not work totally..suddenly about a week back..any help or past experiences,86
+270,<jordo23> un_operateur http://kubuntu.pastebin.com/856648,10
+271,"<Jowi> Enverex, then go with update-modules",55
+272,<zxccvb> i am a newbie..switched from windwos..pls help,86
+273,"<Enverex> Jowi, It seems to exit quietly and instantly",55
+274,Yeti_69 [n=yeti@33.215.98-84.rev.gaoland.net]  has joined #ubuntu,89
+275,"<Enverex> Jowi, It also says its depreciated",55
+276,PartyBoi2 [n=karl@c198-142-37-16.richm1.vic.optusnet.com.au]  has left #ubuntu [],90
+277,<Yeti_69> !french,91
+278,<ubotu> Allez a #ubuntu-fr ou #kubuntu-fr pour de l'aide et de la discussion en francais.,91
+279,chesty [n=chesty@unconcerned.org]  has joined #ubuntu,92
+280,socorrista_ach [n=socorris@84.90.126.49]  has joined #ubuntu,93
+281,"<Jowi> Enverex, oh. that's news to me",55
+282,<Jowi> I wonder what the replacement is...,55
+283,<zxccvb> how come i dont get any help..pls with sound,86
+284,<Enverex> When I try and compile the driver itself I get....,55
+285,<zxccvb> plssssssss,86
+286,<Enverex> make -C /lib/modules/2.6.17-10-generic/source O=/lib/modules/2.6.17-10-generic/build SUBDIRS=`pwd`,55
+287,<Enverex> make: *** /lib/modules/2.6.17-10-generic/source: No such file or directory. Stop.,55
+288,<socorrista_ach> ppl [[[] ] ],94
+289,malt [n=maltyz@dsl3-p226.intrstar.net]  has left #ubuntu [],95
+290,malt [n=maltyz@dsl3-p226.intrstar.net]  has joined #ubuntu,96
+291,finalbeta [n=finalbet@d5152A68A.access.telenet.be]  has joined #ubuntu,97
+292,<Dormot> mneptok u there,6
+293,<Jowi> !info modules-assistant,55
+294,"<twiztr> So, no ideas then...",87
+295,<ubotu> Package modules-assistant does not exist in any distro I know,55
+296,<jordo23> un_operateur: make any sense?,10
+297,adious__ [n=adious@203-49-223-17.dsl.dodo.com.au]  has joined #ubuntu,98
+298,Jessica [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,99
+299,<Jowi> !info module-assistant,55
+300,<zxccvb> what the hell is the problem with ppl...no helpful folks out there?,86
+301,<Jessica> exit,100
+302,"<ubotu> module-assistant: tool to make module package creation easier. In component universe, is optional. Version 0.10.6 (edgy), package size 78 kB, installed size 404 kB",55
+303,<Jessica> exit,100
+304,guibis [n=guibis@byj215.neoplus.adsl.tpnet.pl]  has joined #ubuntu,101
+305,"<un_operateur> jordo23, it doesnt look worrying ,.. i just think you need a reboot",10
+306,<jordo23> un_operateur: okay....brb,10
+307,<XiXaQ> how do I change logo on the system menu?,102
+308,decherdtt [n=scott@ppp-70-129-152-23.dsl.rcsntx.swbell.net]  has joined #ubuntu,103
+309,<zxccvb> ppllllllllllllllllllllllllllllllllssssssssssssssssssssssssssssssssssssssssss,86
+310,"<Jowi> zxccvb, if you describe your problem properly and still don't get a reply maybe it is because nobody knows. people in here are mostly volounters.",86
+311,"<XiXaQ> I mean, I'd like to change the Ubuntu logo with something else. Is it possible?",102
+312,sexy_ja [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,104
+313,<zxccvb> okay...my problem is that i have absolutely no sound from my comp and i am pretty sure that the speakers are working fine,86
+314,<mneptok> Dormot: sudo chmod -R 600 /home/demon1588 && chmod -R -x+X /home/demon1588/*,6
+315,"<Jowi> zxccvb, in the meantime. did you check the sound troubleshooting guide?",86
+316,ucenik [n=ucenik@89-172-204-188.adsl.net.t-com.hr]  has joined #ubuntu,105
+317,<mneptok> Dormot: oops,6
+318,<mneptok> Dormot: sudo chmod -R 600 /home/demon1588 && sudo chmod -R -x+X /home/demon1588/*,6
+319,sexy_ja is now known as sexy,106
+320,<mneptok> there we go,6
+321,ucenik is now known as evelin,107
+322,<Jowi> !sound | zxccvb,86
+323,"<ubotu> zxccvb: If you're having problems with sound, first ensure ALSA is selected, by double clicking on the volume control, then File -> Change Device (ALSA Mixer). If that fails, see https://help.ubuntu.com/community/Sound - https://help.ubuntu.com/community/SoundTroubleshooting - http://alsa.opensrc.org/index.php?page=DmixPlugin",86
+324,pucko- [n=arvidjo@c80-216-165-91.bredband.comhem.se]  has joined #ubuntu,108
+325,sexy is now known as sexy_ja,109
+326,<Dormot> mneptok ok,6
+327,Volstrup [n=volstrup@0x5552fb8d.adsl.cybercity.dk]  has joined #ubuntu,110
+328,jordo23 [n=jordo23@CPE-70-94-33-31.wi.res.rr.com]  has joined #ubuntu,111
+329,<Dormot> mneptok YES ITS FIXED,6
+330,<Dormot> mneptok ty alot,6
+331,"<hotti> hmm, i have problems with sound too, when using flash in 32bit firefox i cannot use the soundcard with any other program",86
+332,<Dormot> mneptok ok 1 more question,6
+333,<Dormot> mneptok i want to add a directory named hlds_1,6
+334,<Dormot> mneptok how do i do that,6
+335,"<Enverex> Jowi, still doesn't work, the module is there but it's still not seeing it. Under Gentoo I'd do ""update-modules -f"" but that doesn't seem to do anything here",55
+336,<jordo23> un_operateur: Ok.....what's the exact command again....I rebooted...,10
+337,Atomix [i=Atom@atomix.plus.com]  has joined #ubuntu,112
+338,<Dormot> i want to add a dir for running steam on my pc named hlds_1 how do i do that,6
+339,"<Jowi> Enverex, I'm lost. I used ""sudo update-modules"" in the past that worked. there's no info on what it will be replaced with either to see if there is an alternative way. must investigate.",55
+340,multichil [i=multichi@nova.brewery.b33r.net]  has joined #ubuntu,113
+341,<jordo23> un_operateur: same thing happened with dchroot -d konqueror,10
+342,"<Enverex> Jowi, It's diving me mad. The source wont compile that it comes with so I can't do it that way and no-one will help me and using their pre-made one doesn't work because nothing will see it",55
+343,<Enverex> root@Alpha:~/src/a828-install# find /lib/modules/2.6.17-10-generic/ -iname a828.ko,55
+344,<Enverex> /lib/modules/2.6.17-10-generic/kernel/drivers/misc/a828.ko,55
+345,QwertyM [n=Qwerty@59.92.43.118]  has joined #ubuntu,114
+346,"<Jowi> Enverex, you think depmod -a is needed?",55
+347,Caplain__ [n=matt@8.detroit-04-05rs.mi.dial-access.att.net]  has joined #ubuntu,115
+348,"<Enverex> Jowi, That worked, thanks",55
+349,<Jowi> pure luck from my part Enverex,55
+350,"<Enverex> Jowi, But it doesn't work because the module is for the wrong kernel, heh",55
+351,joellio1 [n=sgas@59.92.191.47]  has joined #ubuntu,116
+352,<Jowi> ouch,55
+353,<Enverex> I just need to find out why the source wont compile :(,55
+354,<twiztr> i benchmarked 3.2mbps about 3 days ago... now i am at dialup speeds on a cable line. im goign to have to fucking call cust support. damn,87
+355,sonam [n=mail2son@user-5445afe9.lns2-c13.telh.dsl.pol.co.uk]  has joined #ubuntu,117
+356,<Dormot> anyone how to create a new dir to install steam (halflife),6
+357,ogra [n=ogra@ubuntu/member/ogra]  has joined #ubuntu,118
+358,<sonam> help needed with my ethernet? ifconfig does not show eth0....why?,119
+359,rapid__ is now known as rapid,120
+360,sonam [n=mail2son@user-5445afe9.lns2-c13.telh.dsl.pol.co.uk]  has left #ubuntu [],121
+361,<mneptok> Dormot: why do you need to add a dir in /home ?,6
+362,PhibreOptix [n=PhibreOp@CPE-60-231-55-182.qld.bigpond.net.au]  has joined #ubuntu,122
+363,<Dormot> mneptok its not in /home but in the previous folder where i can run steam as a dedicated server,6
+364,<jordo23> un_operateur: still there?,10
+365,nickmcm [n=nickm@82.152.149.33]  has joined #ubuntu,123
+366,"<PhibreOptix> So, any news on a shockwave plugin for linux yet?",124
+367,"<mneptok> Dormot: the Steam server daemon will need to run as a user. i suggest you either run it under your account, or create an account for it",6
+368,<Dormot> mneptok check out http://www.japje.nl/linux-steam-and-cs16-install-guide,6
+369,ein_fuhrer [n=tweek@str90-2-82-243-228-199.fbx.proxad.net]  has joined #ubuntu,125
+370,<Dormot> mneptok thats where im gettin my info,6
+371,Vluid [n=vlad@dslb-084-063-041-144.pools.arcor-ip.net]  has joined #ubuntu,126
+372,sahin_w [i=kvirc@nat/hp/x-3a3112d249c25f95]  has joined #ubuntu,127
+373,coldtek [n=Daniel@p54A47EED.dip.t-dialin.net]  has joined #ubuntu,128
+374,"<mneptok> Dormot: ""Ok, Lets get started.Go to your homedir and lets make a new dir for the server, and then go into that dir.""",6
+375,<jordo23> jordo23,129
+376,el-sio is now known as el-sio[eat],130
+377,"<Dormot> mneptok how do i make the Dir, tahts my question",6
+378,<mneptok> Dormot: it wants you to create that folder in your own home,6
+379,<mneptok> Dormot: it wants you to create that folder *******in your own home*******,6
+380,jordo23 is tired,131
+381,<mneptok> ;),131
+382,pianoboy3333 [n=alex@ool-43567d61.dyn.optonline.net]  has joined #ubuntu,132
+383,"<Dormot> mneptok i tried mkdir but it didnt work, unless i got mkdir /home/hlds_1?",6
+384,<twiztr> 16.2mb proggy d/led in 24 sec,87
+385,"<un_operateur> jordo23, i'm back, went to get a coffee",10
+386,<Dormot> mneptok cause i need root to make dirs,6
+387,<mneptok> Dormot: /home/hlds_1 *****is not in your home dir*****,6
+388,"<un_operateur> jordo23, same exact thing eh?",10
+389,<twiztr> so... throwing a shoe at a cable modem will get it from 18kpbs to ~700kbps,87
+390,<jordo23> un_operateur: okay.....same thing happened....its like Konq wants to open but then the crash handler appears...,10
+391,<mneptok> Dormot: what is your home directory?,6
+392,<Dormot> mneptok i think venom1588,6
+393,nothlit [n=none@pcd340094.netvigator.com]  has joined #ubuntu,133
+394,finalbeta [n=finalbet@d5152A68A.access.telenet.be]  has joined #ubuntu,134
+395,mypapit reb00t!!!,135
+396,faeryNatsuki [n=Fairy@201.244.217.42]  has joined #ubuntu,136
+397,"<mneptok> Dormot: so, if those instructions are telling you to create a dir in your home ....",6
+398,"<Dormot> mneptok oh i see, the folder is there i was just looking in the wrong place",6
+399,ali_ [n=ali@87.109.243.18]  has joined #ubuntu,137
+400,divine [n=divine@kotnet-160.kulnet.kuleuven.be]  has joined #ubuntu,138
+401,"<un_operateur> jordo23, it's a KDE thing .. i don't really know much about KDE .. errm, can you try installing something non-KDE like firefox in the chroot to see if it works",10
+402,myrdhin [n=jlj@ARennes-357-1-64-164.w90-1.abo.wanadoo.fr]  has joined #ubuntu,139
+403,<jordo23> un_operateur: what was the link to that second page you sent me?,10
+404,"Bhaal [i=bhaal@freenode/staff/bhaal]  has left #ubuntu [""Coming]",140
+405,Bhaal [i=bhaal@freenode/staff/bhaal]  has joined #ubuntu,141
+406,yes [n=chatzill@61.246.46.70]  has joined #ubuntu,142
+407,FoXik [n=foxik@ws243.zone129.zaural.ru]  has joined #ubuntu,143
+408,barnabas [n=barnabas@ip72-199-118-96.sd.sd.cox.net]  has joined #ubuntu,144
+409,<PhibreOptix> Anybody know how to stop ubuntu from freezing when you leave it idle?,145
+410,samhuss [n=sam@ALille-254-1-43-186.w86-192.abo.wanadoo.fr]  has joined #ubuntu,146
+411,"<un_operateur> jordo23, errm, ok .. this should get you to the chrooted terminal - sudo dchroot -d ""bash""",10
+412,<jordo23> PhibreOptix: that used to happen when I ran dapper.....never figured that one out...,145
+413,<mneptok> Dormot: ;),6
+414,<PhibreOptix> Well I gotta figure it out,145
+415,<PhibreOptix> Or none of my friends are gonna change from windows to Ubuntu >.<,145
+416,"<un_operateur> jordo23, once at the terminal -- aptitude install firefox",10
+417,<Dormot> mneptok i got it,6
+418,"<un_operateur> jordo23, then, outside the chroot -- dchroot -d ""firefox""",10
+419,<barnabas> yeah my install freezes like that also,145
+420,<jordo23> un_operateur: with quotes?,10
+421,pengulord [i=lilpanne@c-24-1-54-81.hsd1.il.comcast.net]  has joined #ubuntu,147
+422,"<un_operateur> jordo23, yep",10
+423,"<un_operateur> jordo23, I need to do something quick .. be back in a few minutes ok",10
+424,poningru [n=poningru@adsl-074-245-140-197.sip.gnv.bellsouth.net]  has joined #ubuntu,148
+425,freelancer317 [n=chatzill@pool-71-251-150-75.hrbgpa.fios.verizon.net]  has joined #ubuntu,149
+426,<jordo23> un_operateur: that opened firefox...,10
+427,<jordo23> un_operateur: thanks...will be here...,10
+428,FaithX_ [n=faithful@ns.linuxterminal.com]  has joined #ubuntu,150
+429,Everflex [n=troels@0x50a104cf.virnxx9.adsl-dhcp.tele.dk]  has joined #ubuntu,151
+430,"<Jowi> Enverex, did you try the installer?",55
+431,"<Enverex> Jowi, For what?",55
+432,"<Jowi> Enverex, a828",55
+433,Miro_Offline is now known as Mir0,152
+434,"<Enverex> Jowi, Yeah, it fails because you have to be using one of the exact versions it lists",55
+435,"<Enverex> Jowi, I managed to get it to start compiling but it looks for kernel functions that don't exist in .17 so it fails :(",55
+436,"<Jowi> Enverex, ah. any more details in the log?",55
+437,joellio1 [n=sgas@59.92.191.47]  has left #ubuntu [],153
+438,grf [n=grf@egf210.internetdsl.tpnet.pl]  has joined #ubuntu,154
+439,pebblestone [n=user@bonzo.fs.se.uec.ac.jp]  has joined #ubuntu,155
+440,xe|| [n=xell@wikipedia/xell]  has joined #ubuntu,156
+441,<grf> bry,157
+442,"<Jowi> Enverex, should be /tmp/a828-install.log",55
+443,"<Enverex> Jowi, ... oh, for the automated install you mean? No that fails outright because it tries to put it in the wrong place",55
+444,"<Enverex> Jowi, and if you do it manually it doesn't work anyway becayse the mod doesn't match the kernel",55
+445,NET||abuse [n=lukeab@217.67.143.170]  has joined #ubuntu,158
+446,<barnabas> shame the developers nerfed the sudo terminal compile/install of custom kernels,159
+447,"<Enverex> Jowi, compile log",55
+448,<Enverex> make -C /usr/src/linux-headers-2.6.17-10-generic/ O=./ SUBDIRS=`pwd`,55
+449,<Enverex> make[1] : Entering directory `/usr/src/linux-headers-2.6.17-10-generic',55
+450,<Enverex>   LD      /home/enverex/src/a828-install/built-in.o,55
+451,<Enverex>   CC [M]   /home/enverex/src/a828-install/aver/osdep.o,55
+452,<Enverex>   CC [M]   /home/enverex/src/a828-install/a828-core.o,55
+453,<Enverex>   CC [M]   /home/enverex/src/a828-install/aver/osdep_usb.o,55
+454,<Enverex>   CC [M]   /home/enverex/src/a828-install/aver/osdep_dvb.o,55
+455,<Enverex> /home/enverex/src/a828-install/aver/osdep_dvb.c:88:20: error: dvbdev.h: No such file or directory,55
+456,"<Jowi> Enverex, hmmm. ok. they say they welcome feedback regarding the module so maybe send them a ""greeting"" at http://www.avermedia.com/cgi-bin/support_faq_form-new.asp",55
+457,<Enverex> /home/enverex/src/a828-install/aver/osdep_dvb.c:89:19: error: demux.h: No such file or directory,55
+458,<Enverex> /home/enverex/src/a828-install/aver/osdep_dvb.c:90:23: error: dvb_demux.h: No such file or directory,55
+459,Enverex [i=nobody@host-84-9-189-109.bulldogdsl.com]  has left #ubuntu [],160
+460,Enverex [i=nobody@host-84-9-189-109.bulldogdsl.com]  has joined #ubuntu,161
+461,<Enverex> /home/enverex/src/a828-install/aver/osdep_dvb.c:92:24: error: dvb_filter.h: No such file or directory,55
+462,<Enverex> /home/enverex/src/a828-install/aver/osdep_dvb.c:93:21: error: dvb_net.h: No such file or directory,55
+463,Enverex [i=nobody@host-84-9-189-109.bulldogdsl.com]  has left #ubuntu [],162
+464,desti [n=desti@p50920F89.dip0.t-ipconnect.de]  has joined #ubuntu,163
+465,"<pebblestone> Hi, I have a question. I'm using Intel-based Mac. When I build some program using the 'configure' script it provides, the default gcc flag march is 'i386'. I think it might be too underrated. Where can I specify the default GCC flag? and Which is the optimal configuration do you think?",164
+466,<barnabas> couldn't you use pastebin for ur log?,55
+467,bimberi [n=dave@ubuntu/member/pdpc.active.bimberi]  has joined #ubuntu,165
+468,"<NET||abuse> what can i use to play music, what's a good music app for ubuntu? amarok always gives me a ton of errors, kde stuff not available, dcop program not running, url error ""file:///""  and sound engine not found, updating kde configuration...... what's the beef jerky with that??",166
+469,<barnabas> xmms,166
+470,<NET||abuse> xmms is discontinues as i've been told,166
+471,"<NET||abuse> it's a dead project, so i suppose what can i use instead now?",166
+472,OrTigaS [n=ja@202.88.79.214]  has joined #ubuntu,167
+473,Vicus [n=mateusz@bwf107.neoplus.adsl.tpnet.pl]  has joined #ubuntu,168
+474,<OrTigaS> why vlc wont play rmvb files?,169
+475,<Music_Shuffle> !audio,166
+476,"<ubotu> Sorry, I don't know anything about audio - try searching on http://bots.ubuntulinux.nl/factoids.cgi",166
+477,<Music_Shuffle> !banshee,166
+478,"<ubotu> Audio (Ogg, MP3...) players: Banshee, Beep Media Player, Quod Libet, Rhythmbox, XMMS (GTK/Gnome based) and Amarok, JuK (Qt/KDE based).  Video players: Totem, Xine, MPlayer, VLC, Kaffeine  -  See also !codecs",166
+479,marcin_ant [n=marcin@194.114.146.126]  has joined #ubuntu,170
+480,<NET||abuse> installing banshee to see what that's about,166
+481,fraiddo [n=fred@AAmiens-151-1-46-4.w83-192.abo.wanadoo.fr]  has joined #ubuntu,171
+482,<linuxero> hola enverex!,172
+483,Yoric [n=yoric@81.185.98.150]  has joined #ubuntu,173
+484,fleischwurst [i=fleischw@unaffiliated/fleischwurst]  has joined #ubuntu,174
+485,imhotepp [n=haddad@81-179-48-49.dsl.pipex.com]  has joined #ubuntu,175
+486,mneptok [n=mneptok@modemcable178.77-70-69.static.videotron.ca]  has joined #ubuntu,176
+487,<Music_Shuffle> Pick any NET||abuse,166
+488,dellfan [n=jasper@85-14-72-13.akk.net.pl]  has joined #ubuntu,177
+489,FoXik [n=foxik@ws243.zone129.zaural.ru]  has left #ubuntu [],178
+490,Enverex [i=nobody@host-84-9-189-109.bulldogdsl.com]  has joined #ubuntu,179
+491,<socorrista_ach> does anyone here speaks portuguese?,180
+492,silwol [n=silwol@193.170.132.134]  has joined #ubuntu,181
+493,<Enverex> Sorry about that,55
+494,"<un_operateur> jordo23, i'm back",10
+495,"pebblestone [n=user@bonzo.fs.se.uec.ac.jp]  has left #ubuntu [""No]",182
+496,<jordo23> un_operateur: me too...see my messages...,10
+497,Belutz [n=belutz@ubuntu/member/belutz]  has joined #ubuntu,183
+498,<lupine_85> !pt,180
+499,<ubotu> Por favor use #ubuntu-br  ou #ubuntu-pt  para ajuda em portugus. Obrigada.,180
